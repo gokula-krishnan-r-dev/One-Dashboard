@@ -1,5 +1,18 @@
-import '../styles/globals.css'
-
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import Layout from '../components/Layout';
+import '../styles/globals.css';
+import { useRouter  } from 'next/router';
+function MyApp({ Component, pageProps }) {
+  const router = useRouter()
+  if(router.asPath == '/login' || router.asPath == '/signup'){
+    return (
+      <Component {...pageProps} />
+    )
+  }
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
+
+export default MyApp;
