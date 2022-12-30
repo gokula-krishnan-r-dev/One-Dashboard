@@ -1,13 +1,15 @@
 
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { menuItemClients } from './data/dataContents';
+import { menuItemClients, menuItemsAdmin } from './data/dataContents';
 import NavBar from './NavBar';
 import Image from 'next/image';
 import Logo from '../public/img/Logo.svg'
 import { RiTeamLine } from "react-icons/ri"
 export default function Layout({ children }) {
   const router = useRouter();
+  //const data = router.query;
+  //console.log(data)
   return (
     <div className='min-h-screen flex flex-col'>
       <div className='flex flex-col md:flex-row flex-1'>

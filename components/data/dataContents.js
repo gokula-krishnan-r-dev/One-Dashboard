@@ -340,6 +340,35 @@ const menuItemClients = [
         icon: <RiTeamLine className="text-black" />
       },
 ]
+
+const menuItemsAdmin = [
+    {
+        href: '/',
+        title: 'Overview',
+        icon : <SiDatabricks className="text-black" />
+      },
+      {
+        href: '/customers',
+        title: 'Customers',
+        icon: <RiTeamLine className="text-black" />
+      },  
+      {
+        href: '/orders',
+        title: 'Orders',
+        icon: <RiTeamLine className="text-black" />
+      }, 
+       {
+        href: '/messages',
+        title: 'Messages',
+        icon: <RiTeamLine className="text-black" />
+      }, 
+      {
+        href: '/settings',
+        title: 'Settings',
+        icon: <RiTeamLine className="text-black" />
+      },
+    
+]
 const dataUser = [
     {
         id: 1,
@@ -359,6 +388,7 @@ const dataUser = [
     }
 ]
 export {
+    menuItemsAdmin,
     dataUser,
     members,
     products,
