@@ -2,7 +2,8 @@
 import { GrNotification } from "react-icons/gr";
 import { BiMessageSquareDetail } from "react-icons/bi";
 import { AiOutlineMore } from "react-icons/ai";
-//BiMessageSquareDetail
+import { RiTeamLine } from "react-icons/ri"
+import { SiDatabricks } from "react-icons/si"
 const products = [
     {
         id: 1,
@@ -331,14 +332,12 @@ const menuItemClients = [
     {
         href: '/',
         title: 'My Project',
+        icon : <SiDatabricks className="text-black" />
       },
       {
         href: '/team',
         title: 'Team',
-      },
-      {
-        href: '/profile',
-        title: 'Profile',
+        icon: <RiTeamLine className="text-black" />
       },
 ]
 const dataUser = [

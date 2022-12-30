@@ -2,7 +2,6 @@ import Image from "next/image"
 import { members } from "../../components/data/dataContents"
 import { AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
 import { picImg } from '../../public/img/user/avatar_team.png'
-import Project from "../../components/Project";
 import Popup from "reactjs-popup";
 import React, { useState } from "react";
 const Team = () => {
