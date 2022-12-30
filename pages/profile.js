@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { AiOutlineMore } from "react-icons/ai";
-import PicImg from '../public/img/user/avatar.png'
+import PicImg from '../public/img/user/Avatar.png'
 const Profile = () => {
     return (
         <>
