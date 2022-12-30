@@ -43,7 +43,7 @@ const Team = () => {
                                                 <>
                                                     <tr>
                                                         <td className="flex items-center space-x-2 text-sm font-light px-6 py-4 whitespace-nowrap">
-                                                            <Image src='/img/user/avatar_team.png' alt="pic" width={32} height={32} />
+                                                            <Image src='/img/user/Avatar_team.png' alt="pic" width={32} height={32} />
                                                             <span className="font-semibold">{member.name}</span>
                                                         </td>
                                                         <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
@@ -81,14 +81,14 @@ const Team = () => {
                     </div>
                     <div className="flex items-center justify-between w-full py-2">
                         <div className="flex items-center space-x-2">
-                            <Image src="/img/user/avatar_team.png" width={48} height={48} alt="pic" />
+                            <Image src="/img/user/Avatar_team.png" width={48} height={48} alt="pic" />
                             <span className="font-medium text-sm">David Morgan</span>
                         </div>
                         <button className="text-blue-500 border border-blue-500 px-2 w-20 py-1 text-sm">Add</button>
                     </div>
                     <div className="flex items-center justify-between w-full py-2">
                         <div className="flex items-center space-x-2">
-                            <Image src="/img/user/avatar_team.png" width={48} height={48} alt="pic" />
+                            <Image src="/img/user/Avatar_team.png" width={48} height={48} alt="pic" />
                             <span className="font-medium text-sm">David Morgan</span>
                         </div>
                         <button className="text-blue-500 border border-blue-500 px-2 w-20 py-1 text-sm">Invite</button>
