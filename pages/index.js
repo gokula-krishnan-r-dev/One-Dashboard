@@ -1,12 +1,14 @@
 import { products } from "../components/data/dataContents";
 import CardProject from "../components/card/CardProject";
 import { BsSearch, BsChevronDown } from "react-icons/bs";
+import { useRouter } from "next/router";
 import React from "react";
 //BsSearch
 export default function Home() {
+  const router = new useRouter()
   return (
     <React.Fragment>
-      <div className="flex gap-4 p-4 pt-4 bg-[#FAFAFA] h-full">
+      <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
         <div className="flex flex-col w-full">
           <div className="overflow-x-auto font-play">
             <p className="text-gray-400">Overview</p>
@@ -40,12 +42,12 @@ export default function Home() {
                     <BsChevronDown />
                   </div>
                 </div>
-                <button className="bg-blue-500 text-white py-2.5 px-3">New Project Request</button>
+                <button className="bg-blue-500 text-white py-2.5 px-3" onClick={() => router.push('/create')}>New Project Request</button>
               </div>
             </div>
           </div>
-          <div className="overflow-x-auto">
-            <div className="py-2 inline-block min-w-full">
+          <div className="overflow-auto">
+            <div className="py-2 inline-block h-[900px] overflow-y-auto">
               <div className="flex flex-wrap gap-4 mt-8 items-center justify-between">
                 {products.map((product, index) => (
                   <div key={index}>

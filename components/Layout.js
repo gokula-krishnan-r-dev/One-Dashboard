@@ -3,16 +3,21 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { menuItemClients } from './data/dataContents';
 import NavBar from './NavBar';
+import Image from 'next/image';
+import Logo from '../public/img/Logo.svg'
 export default function Layout({ children }) {
   const router = useRouter();
   return (
     <div className='min-h-screen flex flex-col'>
-      <NavBar />
       <div className='flex flex-col md:flex-row flex-1'>
-        <aside className='bg-white border-r w-full md:w-72'>
-          {/*
-          <nav>
-            <ul className='mt-8'>
+        <aside className='border-r w-full md:w-72'>
+          <div className="pt-6 pl-8 fixed">
+             <Image src={Logo} alt="logo" width={158} height={60}/>
+          </div>
+    
+          <nav className="mt-24 fixed">
+            {/*
+            <ul>
               {menuItemClients.map(({ href, title }) => (
                 <li className='m-2' key={title}>
                   
@@ -31,10 +36,14 @@ export default function Layout({ children }) {
                 </li>
               ))}
             </ul>
+                    */}
           </nav>
-              */}
+              
         </aside>
-        <main className='flex-1'>{children}</main>
+        <main className='flex-1'>
+          <NavBar />
+          {children}
+        </main>
       </div>
     </div>
   );

@@ -220,7 +220,34 @@ const products = [
                 img: "/img/user/avatar_4.png",
             }
         ]
-    }
+    },
+    {
+        id:9,
+        title: "Baby Feeding Bottle",
+        status: 'Completed',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_6.png",
+        order_id : "OD170720201008",
+        progress: 100,
+        team: [
+            {
+                id: 1,
+                img: "/img/user/avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/avatar_4.png",
+            }
+        ]
+    },
 ]
 const notifications = [
     {

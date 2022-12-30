@@ -12,7 +12,7 @@ const Delivery = () => {
                     <div className="flex justify-between p-2">
                         <div className='flex space-x-2 items-center'>
                             <div className='w-[2px] h-full bg-blue-500'></div>
-                            <p className="text-black text-sm">Delivery</p>
+                            <p className="text-black font-medium text-sm">Delivery</p>
                         </div>
                         <span className="text-black">{clicked === false ? <BsChevronDown /> : <BsChevronUp />}</span>
                     </div>

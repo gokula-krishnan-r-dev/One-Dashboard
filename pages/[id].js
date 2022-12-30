@@ -8,6 +8,7 @@ import Requiretment from "../components/Requiretment"
 import Discussion from "../components/Discussion"
 import Delivery from '../components/Delivery'
 import OrderRating from "../components/OrderRating"
+import InputMessage from "../components/InputMessage"
 import { BsChevronRight } from "react-icons/bs";
 
 import React from "react"
@@ -54,6 +55,9 @@ const ProjectDetail = ({ itemData }) => {
                         </div>
                         <div className="py-2">
                             <Delivery />
+                        </div>
+                        <div className="py-2">
+                            <InputMessage />
                         </div>
                     </div>
                     <div className="w-1/3 flex flex-col pl-16">
