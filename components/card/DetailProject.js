@@ -3,14 +3,15 @@ import ProgressBar from "../ProgressBar"
 const DetailProject = (props) => {
     const { itemData } = props
 
-    const imgStatus = itemData.status == 'Pending Payment' ? '/img/icon/document_pending.svg' : '/img/icon/documents_review.svg'
-    
+    //const imgStatus = itemData.status == 'Pending Payment' ? '/img/icon/document_pending.svg' : '/img/icon/documents_review.svg'
+    const imgStatus = itemData.status == 'Pending Payment' ? '/img/icon/documents_review.svg' : itemData.status == 'Completed' ? "/img/icon/delivery-truck.svg" : itemData.status == 'In Repair' ? "/img/icon/inproduction.svg" : "/img/icon/documents_review.svg";
+
     return (
         <>
-            <div className="max-w-sm bg-white shadow-sm border font-play">
-                <div className="flex w-full items-center justify-between p-2">
+            <div className="w-[450px] bg-white shadow-sm border font-play p-4">
+                <div className="flex w-full items-center justify-between p-2 space-x-4">
                     <Image src={itemData.img} width={91} height={91} alt="product" className="w-1/4" />
-                    <div className="flex items-center justify-between space-x-4 w-1/2 font-medium">
+                    <div className="flex items-center justify-between w-1/2 font-medium">
                         <div className="full">
                             <p className="text-black py-2 text-[#131313] text-md">{itemData.title}</p>
                             <div className="w-36 bg-[#F9C152] py-2 text-[12px] text-white text-center rounded-full">{itemData.status}</div>

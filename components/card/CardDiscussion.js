@@ -36,7 +36,7 @@ const CardDisscussion = () => {
                 {dicussions.map((discuss, index) => {
                     return (
                         <>
-                            <div className="flex  space-x-2 border-b mb-4">
+                            <div key={index} className="flex space-x-2 border-b mb-4">
                                 <div className="w-16">
                                     <Image src={discuss.image} alt="pic" width={60} height={60} />
                                 </div>

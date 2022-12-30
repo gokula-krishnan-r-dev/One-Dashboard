@@ -6,7 +6,7 @@ import Link from "next/link";
 const CardProject = (props) => {
     const { product } = props
     return (
-        <div className="w-[370px] shadow-md p-2 bg-white font-play">
+        <div className="w-[385px] shadow-sm p-2 bg-white font-play">
             <div className="flex justify-between py-2">
                 <div className="bg-[#F5F5F5] py-2 px-2 text-[12px] text-[#13131380] rounded-full">{product.status}</div>
                 <div className="flex space-x-2 items-center"> 
@@ -28,7 +28,7 @@ const CardProject = (props) => {
                 </div>
                 
                 {/*<Link href={'/'+ product.id} key={product.id}>*/}
-                 <a className="block w-1/3 bg-[#007AFF] mt-4 py-2 text-white font-semibold mb-2 text-center"><Link href={'/'+ product.id} key={product.id}>View</Link></a>
+                 <li className="block w-1/3 bg-[#007AFF] mt-4 py-2 text-white font-semibold mb-2 text-center"><Link href={'/'+ product.id} key={product.id}>View</Link></li>
                 {/*</Link>*/}
             </div>
         </div>

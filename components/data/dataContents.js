@@ -55,7 +55,7 @@ const products = [
             {
                 id: 4,
                 img: "/img/user/avatar_4.png",
-            }
+            },
         ]
     },
     {
