@@ -7,6 +7,7 @@ import React, { useState } from "react";
 const Team = () => {
     const [open, setOpen] = useState(false)
     const closeModal = () => setOpen(false)
+   
     return (
         <React.Fragment>
             <div className="flex gap-4 p-4 pt-4 font-play ">

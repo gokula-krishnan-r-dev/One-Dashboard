@@ -9,6 +9,7 @@ import Discussion from "../../components/Discussion"
 import Delivery from '../../components/Delivery'
 import OrderRating from "../../components/OrderRating"
 import InputMessage from "../../components/InputMessage"
+import Satisfied from "../../components/Satisfied"
 import { BsChevronRight } from "react-icons/bs";
 
 import React from "react"
@@ -55,6 +56,12 @@ const ProjectDetailAdmin = ({ itemData }) => {
                         </div>
                         <div className="py-2">
                             <Delivery />
+                        </div>
+                        <div className="py-2">
+                            <Satisfied />
+                        </div>
+                        <div className="py-2">
+                            <OrderRating />
                         </div>
                         <div className="py-2">
                             <InputMessage />
