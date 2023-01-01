@@ -1,11 +1,11 @@
 
 
-import { products } from "../../components/data/dataContents";
+import { products, ordersdata } from "../../components/data/dataContents";
 import CardProject from "../../components/card/CardProject";
 import { BsSearch, BsChevronDown } from "react-icons/bs";
+import CardOrder from "../../components/card/CardOrder";
 import { useRouter } from "next/router";
 import React from "react";
-//BsSearch
 const AdminDashboard = () => {
   const router = new useRouter()
   return (
@@ -50,24 +50,28 @@ const AdminDashboard = () => {
           <div className="overflow-auto">
             <div className="py-2 inline-block">
               <h4 className="text-4xl text-blue-500 py-4">Active Order</h4>
-              <div className="flex flex-wrap gap-4 mt-8 items-center justify-between">
-                {products.map((product, index) => (
+              <div className="flex flex-wrap gap-4 mt-8 items-center">
+                
+                {ordersdata.map((product, index) => (
+                  product.status_order == 'active' && (
                   <div key={index}>
-                    <CardProject product={product} />
+                    <CardOrder product={product} />
                   </div>
-                ))}
+                )))}
+                
               </div>
             </div>
           </div>
           <div className="overflow-auto">
           <div className="py-2 inline-block">
               <h4 className="text-4xl text-blue-500 py-4">Awaiting Order</h4>
-              <div className="flex flex-wrap gap-4 mt-8 items-center justify-between">
-                {products.map((product, index) => (
+              <div className="flex flex-wrap gap-4 mt-8 items-center">
+              {ordersdata.map((product, index) => (
+                  product.status_order == 'awaiting' && (
                   <div key={index}>
-                    <CardProject product={product} />
+                    <CardOrder product={product} />
                   </div>
-                ))}
+                )))}
               </div>
             </div>
           </div>

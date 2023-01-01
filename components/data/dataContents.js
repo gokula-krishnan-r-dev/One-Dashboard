@@ -4,6 +4,8 @@ import { BiMessageSquareDetail } from "react-icons/bi";
 import { AiOutlineMore } from "react-icons/ai";
 import { RiTeamLine } from "react-icons/ri"
 import { SiDatabricks } from "react-icons/si"
+import { TbUsers } from "react-icons/tb";
+import { SlSettings } from "react-icons/sl"
 const products = [
     {
         id: 1,
@@ -330,12 +332,12 @@ const members = [
 
 const menuItemClients = [
     {
-        href: '/',
+        href: '/client/',
         title: 'My Project',
         icon : <SiDatabricks className="text-black" />
       },
       {
-        href: '/team',
+        href: '/client/team',
         title: 'Team',
         icon: <RiTeamLine className="text-black" />
       },
@@ -350,7 +352,7 @@ const menuItemsAdmin = [
       {
         href: '/admin/customers',
         title: 'Customers',
-        icon: <RiTeamLine className="text-black" />
+        icon: <TbUsers className="text-black" />
       },  
       {
         href: '/admin/orders',
@@ -360,12 +362,12 @@ const menuItemsAdmin = [
        {
         href: '/admin/messages',
         title: 'Messages',
-        icon: <RiTeamLine className="text-black" />
+        icon: <BiMessageSquareDetail className="text-black" />
       }, 
       {
         href: '/admin/settings',
         title: 'Settings',
-        icon: <RiTeamLine className="text-black" />
+        icon: <SlSettings className="text-black" />
       },
     
 ]
@@ -387,9 +389,377 @@ const dataUser = [
         img: "img/user/avatar_4.png",
     }
 ]
+
+const ordersdata = [
+    {
+        id: 1,
+        title: "Alpha UHS-VU Shoes",
+        status: 'Pending Review',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_1.png",
+        order_id : "OD170720201001",
+        progress: 15,
+        status_order: 'active',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/Avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/Avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/Avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/Avatar_4.png",
+            }
+        ]
+    },
+    {
+        id: 2,
+        title: "Good One Soda Drinks",
+        status: 'In Production',
+        dateTime: 'July 20, 2021',
+        img: "/img/product/product_2.png",
+        order_id : "OD170720201002",
+        progress: 60,
+        status_order: 'active',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/Avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/Avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/Avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/Avatar_4.png",
+            },
+        ]
+    },
+    {
+        id: 3,
+        title: "Terra Across Jacket",
+        status: 'Pending Payment',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_3.png",
+        order_id : "OD170720201003",
+        progress: 45,
+        status_order: 'active',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/Avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/Avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/Avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/Avatar_4.png",
+            }
+        ]
+    },
+    {
+        id: 4,
+        title: "Terra Across Jacket",
+        status: 'Pending Payment',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_3.png",
+        order_id : "OD170720201004",
+        progress: 45,
+        status_order: 'active',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/Avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/Avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/Avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/Avatar_4.png",
+            }
+        ]
+    },
+    {
+        id: 5,
+        title: "Smart Watch",
+        status: 'Draft',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_7.png",
+        order_id : "OD170720201005",
+        progress: 0,
+        status_order: 'active',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/Avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/Avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/Avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/Avatar_4.png",
+            }
+        ]
+
+    },
+    {
+        id: 6,
+        title: "Raami Glass",
+        status: 'In Repair',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_6.png",
+        order_id : "OD170720201006",
+        progress: 90,
+        status_order: 'active',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/Avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/Avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/Avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/Avatar_4.png",
+            }
+        ]
+    },
+    {
+        id:7,
+        title: "Baby Feeding Bottle",
+        status: 'Completed',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_6.png",
+        order_id : "OD170720201007",
+        progress: 100,
+        status_order: 'awaiting',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/Avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/avatar_4.png",
+            }
+        ]
+    },
+    {
+        id:8,
+        title: "Baby Feeding Bottle",
+        status: 'Completed',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_6.png",
+        order_id : "OD170720201008",
+        progress: 100,
+        team: [
+            {
+                id: 1,
+                img: "/img/user/avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/avatar_4.png",
+            }
+        ]
+    },
+    {
+        id:9,
+        title: "Baby Feeding Bottle",
+        status: 'Completed',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_6.png",
+        order_id : "OD170720201008",
+        progress: 100,
+        status_order: 'awaiting',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/avatar_4.png",
+            }
+        ]
+    },
+    {
+        id:10,
+        title: "Baby Feeding Bottle",
+        status: 'Completed',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_6.png",
+        order_id : "OD170720201008",
+        progress: 100,
+        status_order: 'awaiting',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/avatar_4.png",
+            }
+        ]
+    },
+    {
+        id:11,
+        title: "Baby Feeding Bottle",
+        status: 'Completed',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_6.png",
+        order_id : "OD170720201008",
+        progress: 100,
+        status_order: 'awaiting',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/avatar_4.png",
+            }
+        ]
+    },
+    {
+        id:12,
+        title: "Baby Feeding Bottle",
+        status: 'Completed',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_6.png",
+        order_id : "OD170720201008",
+        progress: 100,
+        status_order: 'awaiting',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/avatar_4.png",
+            }
+        ]
+    },
+    {
+        id:13,
+        title: "Baby Feeding Bottle",
+        status: 'Completed',
+        dateTime: 'Today at 1.18 PM',
+        img: "/img/product/product_6.png",
+        order_id : "OD170720201008",
+        progress: 100,
+        status_order: 'awaiting',
+        team: [
+            {
+                id: 1,
+                img: "/img/user/avatar_1.png",
+            },
+            {
+                id: 2,
+                img: "/img/user/avatar_2.png",
+            },
+            {
+                id: 3,
+                img: "/img/user/avatar_3.png",
+            },
+            {
+                id: 4,
+                img: "/img/user/avatar_4.png",
+            }
+        ]
+    }
+]
 export {
     menuItemsAdmin,
     dataUser,
+    ordersdata,
     members,
     products,
     notifications,
