@@ -6,6 +6,7 @@ import NavBar from './NavBar';
 import Image from 'next/image';
 import Logo from '../public/img/Logo.svg'
 import React, { useState, useEffect } from "react";
+import HelpCenter from './HelpCenter';
 import { RiTeamLine } from "react-icons/ri"
 export default function Layout({ children }) {
   const [ pageUrl, setPageUrl ] = useState('')
@@ -49,7 +50,9 @@ export default function Layout({ children }) {
                     
                     
           </nav>
-              
+              <div className='p-6'>        
+                <HelpCenter />
+              </div>
         </aside>
         <main className='flex-1'>
           <NavBar />
