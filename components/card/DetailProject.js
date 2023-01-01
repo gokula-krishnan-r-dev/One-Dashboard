@@ -8,7 +8,7 @@ const DetailProject = (props) => {
 
     return (
         <>
-            <div className="w-[450px] bg-white shadow-sm border font-play p-4">
+            <div className="bg-white shadow-sm border font-play p-4">
                 <div className="flex w-full items-center justify-between p-2 space-x-4">
                     <Image src={itemData.img} width={91} height={91} alt="product" className="w-1/4" />
                     <div className="flex items-center justify-between w-1/2 font-medium">

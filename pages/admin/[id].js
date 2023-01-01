@@ -10,9 +10,10 @@ import Delivery from '../../components/Delivery'
 import OrderRating from "../../components/OrderRating"
 import InputMessage from "../../components/InputMessage"
 import Satisfied from "../../components/Satisfied"
+import CardExtendDeliver from "../../components/card/CardExtendDeliver"
 import { BsChevronRight } from "react-icons/bs";
 
-import React from "react"
+import React, { useState } from "react"
 export const getStaticPaths = async () => {
     const paths = products.map(itemData => ({
         params: { id: itemData.id.toString() },
@@ -35,6 +36,11 @@ export const getStaticProps = async (context) => {
 
 
 const ProjectDetailAdmin = ({ itemData }) => {
+    //const [clicked, setClicked] = useState(false)
+
+    //itemData.status == 'Completed' ? setClicked(true) : setClicked(false)
+    //const [clicked, setClicked] = useState(false);
+    //console.log(itemData)
     return (
         <React.Fragment>
 
@@ -68,11 +74,18 @@ const ProjectDetailAdmin = ({ itemData }) => {
                         </div>
                     </div>
                     <div className="w-1/3 flex flex-col pl-16">
+                        {itemData.status == 'Completed' ? (
+                            <div className="p-2">
+                                <CardExtendDeliver />
+                            </div>
+                             
+                        ) : null}
+                      
                         <div className="p-2">
                             <DetailProject itemData={itemData} />
                         </div>
                         <div className="p-2">
-                            <div className="w-[450px] bg-white shadow-sm border font-play p-4 font-medium">
+                            <div className="bg-white shadow-sm border font-play p-4 font-medium">
                                 <p className="py-2">Your order is on progress.</p>
                                 <ProgressBar progressPercentage={itemData.progress} />
                             </div>
