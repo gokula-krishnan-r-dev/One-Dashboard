@@ -69,7 +69,7 @@ const Customer = () => {
                               {member.total_orders}
                             </td>
                             <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap flex justify-center items-center">
-                               {member.act}
+                               <Link href={'customers/'+ member.id} key={member.id}>{member.act}</Link>
                             </td>
                           </tr>
                         </>

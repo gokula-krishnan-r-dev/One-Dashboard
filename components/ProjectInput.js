@@ -56,7 +56,7 @@ const ProjectInput = () => {
                 </div>
                 <div className="px-4 flex justify-end items-center space-x-4">
                     <button className="bg-white w-44 border px-3 py-3">Save</button>
-                    <button className="bg-white w-44 border px-3 py-3" onClick={() => router.push('/')}>Save and Close</button>
+                    <button className="bg-white w-44 border px-3 py-3" onClick={() => router.push('/client')}>Save and Close</button>
                     <button className="bg-white w-44 border px-3 py-3 bg-blue-600 text-white">Get Quote</button>
                 </div>
             </div>
