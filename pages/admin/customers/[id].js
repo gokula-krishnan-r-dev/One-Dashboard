@@ -31,6 +31,7 @@ const DetailCustomer = () => {
                     <p className="text-gray-400 flex items-center space-x-2 py-1"><span>Customer</span> <BsChevronRight /> <span>Customers Detail</span></p>
                     <h3 className="text-3xl">Customer Detail</h3>
                 </div>
+                
             </div>
         </React.Fragment>
     )
