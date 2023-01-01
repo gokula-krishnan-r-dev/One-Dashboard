@@ -25,10 +25,9 @@ export default function Layout({ children }) {
              <Image src={Logo} alt="logo" width={158} height={60}/>
           </div>
           <nav className="mt-28">
-            
-            <ul>
+            <ul className='fixed'>
               {menuItem.map(( menu, index)  => (
-                <li className='m-2' key={index}>
+                <li className='w-72' key={index}>
                     <a className='flex items-center justify-between p-2 pl-6'>
                       <div className='flex items-center space-x-2'>
                         {menu.icon}
@@ -46,13 +45,9 @@ export default function Layout({ children }) {
                    </a>     
                 </li>
               ))}
-            </ul>
-                    
-                    
+            </ul>          
           </nav>
-              <div className='p-6'>        
-                <HelpCenter />
-              </div>
+          
         </aside>
         <main className='flex-1'>
           <NavBar />
