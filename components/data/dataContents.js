@@ -6,6 +6,8 @@ import { RiTeamLine } from "react-icons/ri"
 import { SiDatabricks } from "react-icons/si"
 import { TbUsers } from "react-icons/tb";
 import { SlSettings } from "react-icons/sl"
+import { MdEdit } from "react-icons/md";
+
 const products = [
     {
         id: 1,
@@ -329,6 +331,53 @@ const members = [
         act: <AiOutlineMore size={24} />
     },
 ]
+
+const customers = [
+    {
+        id:1,
+        name: "David Morgan",
+        country: "India",
+        email: "davidmorgan@teamwork.com",
+        img: "img/user/avatar_team.png",
+        total_orders: 150,
+        act: <MdEdit size={24} />
+    },
+    {
+        id:2,
+        name: "David Morgan",
+        country: "United States",
+        email: "davidmorgan@teamwork.com",
+        img: "img/user/avatar_team.png",
+        total_orders: 150,
+        act: <MdEdit size={24} />
+    },  {
+        id:3,
+        name: "David Morgan",
+        country: "United Kingdom",
+        email: "davidmorgan@teamwork.com",
+        img: "img/user/avatar_team.png",
+        total_orders: 150,
+        act: <MdEdit size={24} />
+    },  {
+        id:4,
+        name: "David Morgan",
+        country: "Australia",
+        email: "davidmorgan@teamwork.com",
+        img: "img/user/avatar_team.png",
+        total_orders: 150,
+        act: <MdEdit size={24} />
+    },
+    {
+        id:5,
+        name: "David Morgan",
+        country: "Germany",
+        email: "davidmorgan@teamwork.com",
+        img: "img/user/avatar_team.png",
+        total_orders: 150,
+        act: <MdEdit size={24} />
+    },
+]
+
 
 const menuItemClients = [
     {
@@ -761,6 +810,7 @@ export {
     dataUser,
     ordersdata,
     members,
+    customers,
     products,
     notifications,
     menuItemClients,

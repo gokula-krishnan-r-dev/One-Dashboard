@@ -38,7 +38,6 @@ const Team = () => {
                                     </thead>
                                     <tbody>
                                         {members.map((member, index) => {
-                                            console.log(member, index)
                                             return (
                                                 <>
                                                     <tr>
