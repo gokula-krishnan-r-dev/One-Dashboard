@@ -5,6 +5,7 @@ import { customers } from "../../../components/data/dataContents"
 import { AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
 import { picImg } from '../../../public/img/user/Avatar_team.png'
 import { BsSearch } from "react-icons/bs";
+import { MdEdit } from "react-icons/md";
 const Customer = () => {
   return (
     <React.Fragment>
@@ -56,7 +57,7 @@ const Customer = () => {
                         <>
                           <tr>
                             <td className="flex items-center space-x-2 text-sm font-light px-6 py-4 whitespace-nowrap">
-                              <Image src='/img/user/Avatar_team.png' alt="pic" width={32} height={32} />
+                              <Image src={customers.img} alt="pic" width={32} height={32} />
                               <span className="font-semibold">{member.name}</span>
                             </td>
                             <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
@@ -66,10 +67,10 @@ const Customer = () => {
                               {member.email}
                             </td>
                             <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
-                              {member.total_orders}
+                              $ {member.total_orders}
                             </td>
                             <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap flex justify-center items-center">
-                               <Link href={'customers/'+ member.id} key={member.id}>{member.act}</Link>
+                               <Link href={'customers/'+ member.id} key={member.id}><MdEdit size={24} /></Link>
                             </td>
                           </tr>
                         </>

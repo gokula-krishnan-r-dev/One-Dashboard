@@ -297,7 +297,7 @@ const members = [
         name: "David Morgan",
         country: "India",
         email: "davidmorgan@teamwork.com",
-        img: "img/user/avatar_team.png",
+        img: "img/user/Avatar_team.png",
         act: <AiOutlineMore size={24} />
     },
     {
@@ -338,43 +338,38 @@ const customers = [
         name: "David Morgan",
         country: "India",
         email: "davidmorgan@teamwork.com",
-        img: "img/user/avatar_team.png",
-        total_orders: 150,
-        act: <MdEdit size={24} />
+        img: "/user/Avatar_5.png",
+        total_orders: 150
     },
     {
         id:2,
-        name: "David Morgan",
+        name: "John Morgan",
         country: "United States",
         email: "davidmorgan@teamwork.com",
-        img: "img/user/avatar_team.png",
-        total_orders: 150,
-        act: <MdEdit size={24} />
+        img: "/img/user/Avatar_1.png",
+        total_orders: 150
     },  {
         id:3,
         name: "David Morgan",
         country: "United Kingdom",
         email: "davidmorgan@teamwork.com",
-        img: "img/user/avatar_team.png",
-        total_orders: 150,
-        act: <MdEdit size={24} />
+        img: "/img/user/Avatar_2.png",
+        total_orders: 150
     },  {
         id:4,
         name: "David Morgan",
         country: "Australia",
         email: "davidmorgan@teamwork.com",
-        img: "img/user/avatar_team.png",
-        total_orders: 150,
-        act: <MdEdit size={24} />
+        img: "/img/user/Avatar_3.png",
+        total_orders: 150
     },
     {
         id:5,
         name: "David Morgan",
         country: "Germany",
         email: "davidmorgan@teamwork.com",
-        img: "img/user/avatar_team.png",
-        total_orders: 150,
-        act: <MdEdit size={24} />
+        img: "/img/user/Avatar_4.png",
+        total_orders: 150
     },
 ]
 
