@@ -4,7 +4,7 @@ import { BsSearch, BsChevronDown } from "react-icons/bs";
 import { useRouter } from "next/router";
 import React from "react";
 //BsSearch
-export default function Home() {
+const Home = () => {
   const router = new useRouter()
   return (
     <React.Fragment>
@@ -63,3 +63,4 @@ export default function Home() {
 
   );
 }
+export default Home

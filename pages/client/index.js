@@ -1,12 +1,10 @@
-
-
 import { products } from "../../components/data/dataContents";
 import CardProject from "../../components/card/CardProject";
 import { BsSearch, BsChevronDown } from "react-icons/bs";
 import { useRouter } from "next/router";
 import React from "react";
 //BsSearch
-const AdminDashboard = () => {
+const Client = () => {
   const router = new useRouter()
   return (
     <React.Fragment>
@@ -35,8 +33,8 @@ const AdminDashboard = () => {
                     <BsChevronDown />
                   </div>
                 </div>
-                <div className="inline-block relative w-40 text-white">
-                  <select className="block appearance-none w-full bg-blue-500 border px-4 py-2.5">
+                <div className="inline-block relative w-40 text-gray-400">
+                  <select className="block appearance-none w-full bg-white border px-4 py-2.5">
                     <option>All</option>
                     <option>Option 2</option>
                   </select>
@@ -44,24 +42,12 @@ const AdminDashboard = () => {
                     <BsChevronDown />
                   </div>
                 </div>
+                <button className="bg-blue-500 text-white py-2.5 px-3" onClick={() => router.push('/client/create')}>New Project Request</button>
               </div>
             </div>
           </div>
           <div className="overflow-auto">
-            <div className="py-2 inline-block">
-              <h4 className="text-4xl text-blue-500 py-4">Active Order</h4>
-              <div className="flex flex-wrap gap-4 mt-8 items-center justify-between">
-                {products.map((product, index) => (
-                  <div key={index}>
-                    <CardProject product={product} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="overflow-auto">
-          <div className="py-2 inline-block">
-              <h4 className="text-4xl text-blue-500 py-4">Awaiting Order</h4>
+            <div className="py-2 inline-block h-[900px] overflow-y-auto">
               <div className="flex flex-wrap gap-4 mt-8 items-center justify-between">
                 {products.map((product, index) => (
                   <div key={index}>
@@ -77,5 +63,4 @@ const AdminDashboard = () => {
 
   );
 }
-export default AdminDashboard
-
+export default Client

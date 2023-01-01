@@ -343,27 +343,27 @@ const menuItemClients = [
 
 const menuItemsAdmin = [
     {
-        href: '/',
+        href: '/admin',
         title: 'Overview',
         icon : <SiDatabricks className="text-black" />
       },
       {
-        href: '/customers',
+        href: '/admin/customers',
         title: 'Customers',
         icon: <RiTeamLine className="text-black" />
       },  
       {
-        href: '/orders',
+        href: '/admin/orders',
         title: 'Orders',
         icon: <RiTeamLine className="text-black" />
       }, 
        {
-        href: '/messages',
+        href: '/admin/messages',
         title: 'Messages',
         icon: <RiTeamLine className="text-black" />
       }, 
       {
-        href: '/settings',
+        href: '/admin/settings',
         title: 'Settings',
         icon: <RiTeamLine className="text-black" />
       },

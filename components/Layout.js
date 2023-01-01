@@ -5,11 +5,17 @@ import { menuItemClients, menuItemsAdmin } from './data/dataContents';
 import NavBar from './NavBar';
 import Image from 'next/image';
 import Logo from '../public/img/Logo.svg'
+import React, { useState, useEffect } from "react";
 import { RiTeamLine } from "react-icons/ri"
 export default function Layout({ children }) {
+  const [ pageUrl, setPageUrl ] = useState('')
   const router = useRouter();
-  //const data = router.query;
-  //console.log(data)
+  useEffect(() => {
+    setPageUrl(window.location.pathname)
+  })
+
+  const menuItem = pageUrl.substr(1, 4)=='admi' ? menuItemsAdmin : menuItemClients
+ 
   return (
     <div className='min-h-screen flex flex-col'>
       <div className='flex flex-col md:flex-row flex-1'>
@@ -20,7 +26,7 @@ export default function Layout({ children }) {
           <nav className="mt-28">
             
             <ul>
-              {menuItemClients.map(( menu, index)  => (
+              {menuItem.map(( menu, index)  => (
                 <li className='m-2' key={index}>
                     <a className='flex items-center justify-between p-2 pl-6'>
                       <div className='flex items-center space-x-2'>
