@@ -43,7 +43,7 @@ const Notifications = (props) => {
         setVisibility(!visible);
     }
     return (
-        <div ref={referenceRef} onClick={handleDropdownClick} className="relative">
+        <div ref={referenceRef} onClick={handleDropdownClick} className="relative font-play">
             <div className="bg-gray-100 rounded-full p-2">
                 <GrNotification size={16} />
             </div>

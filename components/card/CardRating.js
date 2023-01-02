@@ -5,7 +5,7 @@ import { RxStarFilled } from "react-icons/rx";
 const CardRating = () => {
     return (
         <>
-            <div className="py-2 flex flex-col items-center justify-center">
+            <div className="py-2 flex flex-col items-center justify-center font-play">
                 <Image src={imgPic} alt="pic" width={60} height={60} />
                 <h5 className='text-black'>Angeline Lee</h5>
                 <p className='text-[12px] text-blue-500'>Rates 5 stars</p>

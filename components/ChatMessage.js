@@ -9,7 +9,7 @@ import { calculateOverrideValues } from "next/dist/server/font-utils";
 const ChatMessage = () => {;
     return (
         <React.Fragment>   
-            <div className="bg-[#FAFAFA] w-full flex relative" style={{minHeight: `calc(100vh - 80px)`}}>
+            <div className="bg-[#FAFAFA] w-full flex relative font-play" style={{minHeight: `calc(100vh - 80px)`}}>
                 <div className="w-1/5 bg-white border-r">
                     <div className="flex items-center justify-between">
                         <h4 className="text-3xl p-4">

@@ -4,7 +4,6 @@ const Messages = () => {
     return (
       <React.Fragment>
             <ChatMessage />
-    
       </React.Fragment>
     )
 }

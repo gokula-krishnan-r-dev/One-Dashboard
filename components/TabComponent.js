@@ -4,7 +4,7 @@ import Image from 'next/image'
 const PersonalInfo = () =>{
   return(
     <React.Fragment>
-         <div className="flex flex-col w-full">   
+         <div className="flex flex-col w-full font-play">   
                     <div className="py-4 w-1/3 border p-4 bg-white">
                         <div className="py-2 flex items-center justify-between">
                             <p className="text-black text-md">My Details</p>

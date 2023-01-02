@@ -6,7 +6,7 @@ const Requiretment = () => {
 
     return (
         <>
-        <div className='bg-white border shadow-sm p-3'>
+        <div className='bg-white border shadow-sm p-3 font-play'>
             <div className="bg-white flex flex-col w-full" onClick={() => setClicked(!clicked)}>
                 <div className="flex justify-between p-2">
                     <div className='flex space-x-2 items-center'>

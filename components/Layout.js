@@ -32,20 +32,20 @@ export default function Layout({ children }) {
 
                 <li className='w-72' key={index}>
                   <a className='flex items-center justify-between p-2 pl-6'>
-                    {menu.title == 'Orders' ? <div className='flex items-center space-x-2 space mt-3' onClick={() => setShow(!currentShow)}> {/*setSettings(!currentSetting) */}
+                    {menu.title == 'Orders' ? <div className='flex items-center space-x-2 space mt-3 font-play' onClick={() => setShow(!currentShow)}> {/*setSettings(!currentSetting) */}
                       {menu.icon}
                       <Link href={menu.href}>
                         {menu.title}
                       </Link>
                     </div> : menu.title == 'Settings' ?
-                      <div className='flex items-center space-x-2 space mt-3' onClick={() => setSettings(!currentSetting)}> {/*setSettings(!currentSetting) */}
+                      <div className='flex items-center space-x-2 space mt-3 font-play' onClick={() => setSettings(!currentSetting)}> {/*setSettings(!currentSetting) */}
                         {menu.icon}
                         <Link href={menu.href}>
                           {menu.title}
                         </Link>
                       </div> :
 
-                      <div className='flex items-center space-x-2 space mt-3'>
+                      <div className='flex items-center space-x-2 space mt-3 font-play'>
                         {menu.icon}
                         <Link href={menu.href}>
                           {menu.title}
@@ -60,12 +60,12 @@ export default function Layout({ children }) {
                       .
                     </div>
                   </a>
-                  {menu.title == 'Orders' && currentShow ? <ul className='pl-12 pt-2 text-sm'>
+                  {menu.title == 'Orders' && currentShow ? <ul className='pl-12 pt-2 text-sm font-play'>
                     <li className='text-gray-400 py-1'>All Type</li>
                     <li className='text-gray-400 py-1'>Active</li>
                     <li className='text-gray-400 py-1'>Complete</li>
                     <li className='text-gray-400 py-1'>Cancel</li>
-                  </ul> : menu.title == 'Settings' && currentSetting ? <ul className='pl-12 pt-2 text-sm'>
+                  </ul> : menu.title == 'Settings' && currentSetting ? <ul className='pl-12 pt-2 text-sm font-play'>
                     <li className='text-gray-400 py-1'>Personal Informations</li>
                     <li className='text-gray-400 py-1'>Accounts</li>
                     <li className='text-gray-400 py-1'>Emails</li>
