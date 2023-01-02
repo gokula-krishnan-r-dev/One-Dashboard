@@ -78,12 +78,9 @@ const Order = () => {
                                $ {order.amount}
                             </td>
                             <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap flex justify-center items-center">
-                            <div
-                      className={`px-2 py-1.5 font-normal rounded-2xl ${order.status === 'Completed' ?  'text-green-500 bg-green-50' : order.status ==='Pending Payment' ? 'text-orange-400 bg-orange-100': order.status === 'In Repair' ? 'text-red-400 bg-red-100' : 'text-gray-400 bg-gray-200'
-                        }`}
-                        >
-                          <Link href={'/admin/'+ order.id} key={order.id}> {order.status}</Link>
-                      </div>
+                              <div className={`px-2 py-1.5 font-normal rounded-2xl ${order.status === 'Completed' ?  'text-green-500 bg-green-50' : order.status ==='Pending Payment' ? 'text-orange-400 bg-orange-100': order.status === 'In Repair' ? 'text-red-400 bg-red-100' : 'text-gray-400 bg-gray-200' }`}>
+                                <Link href={'/admin/'+ order.id} key={order.id}> {order.status}</Link>
+                              </div>
                             </td>
                           </tr>
                         </>
