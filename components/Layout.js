@@ -73,6 +73,9 @@ export default function Layout({ children }) {
 
             </ul>
           </nav>
+          <div className='p-4 fixed w-[280px] bottom-0'>
+            <HelpCenter />
+          </div>
 
         </aside>
         <main className='flex-1'>
