@@ -339,7 +339,10 @@ const customers = [
         country: "India",
         email: "davidmorgan@teamwork.com",
         img: "/img/user/Avatar_6.png",
-        total_orders: 150
+        total_orders: 150,
+        street : '1234 State St',
+        city: "Mumbai",
+        zipcode: '652323'
     },
     {
         id:2,
@@ -347,29 +350,41 @@ const customers = [
         country: "United States",
         email: "davidmorgan@teamwork.com",
         img: "/img/user/Avatar_1.png",
-        total_orders: 150
+        total_orders: 150,
+        street: '1234 State St',
+        city: "New Yook",
+        zipcode: "387643"
     },  {
         id:3,
-        name: "David Morgan",
+        name: "Chris Morgan",
         country: "United Kingdom",
         email: "davidmorgan@teamwork.com",
         img: "/img/user/Avatar_2.png",
-        total_orders: 150
+        total_orders: 150,
+        street: '1234 State St',
+        city: "Liverpool",
+        zipcode: "387643"
     },  {
         id:4,
-        name: "David Morgan",
+        name: "Antonie Morgan",
         country: "Australia",
         email: "davidmorgan@teamwork.com",
         img: "/img/user/Avatar_3.png",
-        total_orders: 150
+        total_orders: 150,
+        street: '1234 State St',
+        city: "Sydney",
+        zipcode: "387643"
     },
     {
         id:5,
-        name: "David Morgan",
+        name: "Cristian Morgan",
         country: "Germany",
         email: "davidmorgan@teamwork.com",
         img: "/img/user/Avatar_4.png",
-        total_orders: 150
+        total_orders: 150,
+        street: '1234 State St',
+        city: "Hamburg",
+        zipcode: "387643"
     },
 ]
 

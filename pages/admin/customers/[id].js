@@ -2,6 +2,7 @@ import { customers } from "../../../components/data/dataContents";
 import { BsChevronRight } from "react-icons/bs";
 import Image from "next/image";
 import React, { useState } from "react"
+import Link from "next/link";
 export const getStaticPaths = async () => {
     const paths = customers.map(itemData => ({
         params: { id: itemData.id.toString() },
@@ -29,7 +30,7 @@ const DetailCustomer = ({ itemData }) => {
 
             <div className="p-4 pt-4 bg-[#FAFAFA] h-full font-play">
                 <div className="w-full py-4">
-                    <p className="text-gray-400 flex items-center space-x-2 py-1"><span>Customer Detail</span> <BsChevronRight /> <span>Customers Detail</span></p>
+                    <p className="text-gray-400 flex items-center space-x-2 py-1"><a><Link href='/admin/customers'>Customers</Link></a> <BsChevronRight /> <span>Customers Detail</span></p>
                     <h3 className="text-3xl">Customers Detail</h3>
                 </div>
                 <div className="w-full py-4 bg-white">
@@ -94,11 +95,26 @@ const DetailCustomer = ({ itemData }) => {
                         </div>
                     </div>
 
-                    <div className="py-4">
+                    <div className="py-4 w-2/5">
                         <div className="p-6">
                             <p className="text-blue-500 text-xl">
                                         Billing Address
                                  </p>
+                            <div className="flex space-x-2 py-2">
+                                <input type="text" className="border p-2 basis-1/2" value={itemData.name} />
+                                <input type="text" className="border p-2 basis-1/2" value={itemData.name} />
+                            </div>
+                            <div className="py-2">
+                                <input type="text" className="border p-2 w-full" value={itemData.street} />
+                            </div>
+                            <div className="py-2 flex space-x-2">
+
+                            <input type="text" className="border p-2 basis-1/3" value={itemData.city} />
+
+                            <input type="text" className="border p-2 basis-1/3" value={itemData.country} />
+
+                            <input type="text" className="border p-2 basis-1/3" value={itemData.zipcode} />
+                            </div>
                         </div>
                     </div>
                 </div>
