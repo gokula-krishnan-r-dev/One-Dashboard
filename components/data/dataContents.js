@@ -408,7 +408,7 @@ const menuItemsAdmin = [
     {
         href: '/admin',
         title: 'Overview',
-        icon : <SiDatabricks className="text-black" />
+        icon : <SiDatabricks className="text-black" />,
       },
       {
         href: '/admin/customers',
@@ -418,25 +418,7 @@ const menuItemsAdmin = [
       {
         href: '/admin/orders',
         title: 'Orders',
-        icon: <CiShop className="text-black" />,
-        linkchild: [
-            {
-                id: 1,
-                title: 'All type',
-            },
-            {
-                id: 2,
-                title: 'Active',
-            },
-            {
-                id: 3,
-                title: 'Complete',
-            },
-            {
-                id: 4,
-                title: 'Cancel'
-            }
-        ]
+        icon: <CiShop className="text-black" />
       }, 
        {
         href: '/admin/messages',
