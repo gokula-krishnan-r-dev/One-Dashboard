@@ -414,9 +414,27 @@ const menuItemsAdmin = [
         icon: <TbUsers className="text-black" />
       },  
       {
-        href: '/admin/orders',
+        href: '#',
         title: 'Orders',
-        icon: <RiTeamLine className="text-black" />
+        icon: <RiTeamLine className="text-black" />,
+        linkchild: [
+            {
+                id: 1,
+                title: 'All type',
+            },
+            {
+                id: 2,
+                title: 'Active',
+            },
+            {
+                id: 3,
+                title: 'Complete',
+            },
+            {
+                id: 4,
+                title: 'Cancel'
+            }
+        ]
       }, 
        {
         href: '/admin/messages',
@@ -709,7 +727,7 @@ const ordersdata = [
         dateTime: 'Today at 1.18 PM',
         img: "/img/product/product_6.png",
         order_id : "OD170720201008",
-        progress: 100,
+        progress: 70,
         status_order: 'awaiting',
         team: [
             {

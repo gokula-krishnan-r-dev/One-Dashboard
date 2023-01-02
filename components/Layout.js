@@ -29,7 +29,7 @@ export default function Layout({ children }) {
               {menuItem.map(( menu, index)  => (
                 <li className='w-72' key={index}>
                     <a className='flex items-center justify-between p-2 pl-6'>
-                      <div className='flex items-center space-x-2'>
+                      <div className='flex items-center space-x-2 space mt-3'>
                         {menu.icon}
                         <Link href={menu.href}>
                             {menu.title}
