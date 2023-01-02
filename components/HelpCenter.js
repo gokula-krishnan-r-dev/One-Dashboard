@@ -5,7 +5,7 @@ import { BsQuestionLg } from "react-icons/bs";
 const HelpCenter = () => {
     return (
         <React.Fragment>
-            <div className="max-w-sm relative bg-blue-50 relative">
+            <div className="max-w-sm relative bg-blue-50 relative font-play">
                 <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-white p-3 rounded border">
                     <BsQuestionLg size={28} className="text-white bg-blue-500 rounded-full p-1" />
                 </div>
