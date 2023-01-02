@@ -32,12 +32,19 @@ export default function Layout({ children }) {
 
                 <li className='w-72' key={index}>
                   <a className='flex items-center justify-between p-2 pl-6'>                        
-                    {menu.title == 'Orders' || menu.title == 'Settings' ? <div className='flex items-center space-x-2 space mt-3' onClick={() => setShow(!currentShow)}> {/*setSettings(!currentSetting) */}
+                    {menu.title == 'Orders' ? <div className='flex items-center space-x-2 space mt-3' onClick={() => setShow(!currentShow)}> {/*setSettings(!currentSetting) */}
                       {menu.icon}
                       <Link href={menu.href}>
                         {menu.title}
                       </Link>
-                    </div> :
+                    </div> :  menu.title == 'Settings' ?
+                    <div className='flex items-center space-x-2 space mt-3' onClick={() => setSettings(!currentSetting)}> {/*setSettings(!currentSetting) */}
+                    {menu.icon}
+                    <Link href={menu.href}>
+                      {menu.title}
+                    </Link>
+                  </div> :
+
                       <div className='flex items-center space-x-2 space mt-3'>
                         {menu.icon}
                         <Link href={menu.href}>
@@ -58,7 +65,7 @@ export default function Layout({ children }) {
                     <li className='text-gray-400 py-1'>Active</li>
                     <li className='text-gray-400 py-1'>Complete</li>
                     <li className='text-gray-400 py-1'>Cancel</li>
-                  </ul> : menu.title == 'Settings' && !currentShow ? <ul className='pl-12 pt-2 text-sm'>
+                  </ul> : menu.title == 'Settings' && currentSetting ? <ul className='pl-12 pt-2 text-sm'>
                     <li className='text-gray-400 py-1'>Personal Informations</li>
                     <li className='text-gray-400 py-1'>Accounts</li>
                     <li className='text-gray-400 py-1'>Emails</li>
