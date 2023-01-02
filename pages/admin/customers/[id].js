@@ -27,20 +27,79 @@ const DetailCustomer = ({ itemData }) => {
     return (
         <React.Fragment>
 
-            <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
-                 <div className="w-full py-4">
+            <div className="p-4 pt-4 bg-[#FAFAFA] h-full font-play">
+                <div className="w-full py-4">
                     <p className="text-gray-400 flex items-center space-x-2 py-1"><span>Customer Detail</span> <BsChevronRight /> <span>Customers Detail</span></p>
                     <h3 className="text-3xl">Customers Detail</h3>
                 </div>
                 <div className="w-full py-4 bg-white">
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-2 p-2">
                         <Image src={itemData.img} alt="pic" width={115} height={115} />
-                       <div>
+                        <div className="block">
                             <p className="text-xl text-black">
-                                    Angeline Lee
+                                {itemData.name}
                             </p>
                             <p className="text-[12px] text-gray-400">Last seen 32 minutes ago</p>
-                       </div>
+                        </div>
+                    </div>
+                    <div className="flex w-2/3 justify-between">
+                        <div className="p-4">
+                            <div className="p-2">
+                                <p className="text-blue-500 text-xl">
+                                    CustomerID
+                                </p>
+                                <p className="text-2xl text-black py-2">
+                                    CS15072021001
+                                </p>
+                            </div>
+                            <div className="p-2">
+                                <p className="text-blue-500 text-xl">
+                                    Email Address
+                                </p>
+                                <p className="text-2xl text-black py-2">
+                                    {itemData.email}
+                                </p>
+                            </div>
+                            <div className="p-2">
+                                <p className="text-blue-500 text-xl">
+                                    Phone Number
+                                </p>
+                                <p className="text-2xl text-black py-2">
+                                    +63-819-001-9187
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="p-4">
+                            <div className="py-2">
+                                <p className="text-blue-500 text-xl">
+                                    Total Value Orders
+                                </p>
+                                <p className="text-2xl text-black py-2">
+                                    {itemData.tal_orders}
+                                </p>
+                            </div>
+                            <div className="py-2">
+                                <p className="text-blue-500 text-xl">
+                                    Country
+                                </p>
+                                <p className="text-2xl text-black py-2">
+                                    {itemData.country}
+                                </p>
+                            </div>
+
+                            <div className="py-2">
+                                <button className="p-3 px-4 text-white bg-blue-500">Manage Teams</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="py-4">
+                        <div className="p-6">
+                            <p className="text-blue-500 text-xl">
+                                        Billing Address
+                                 </p>
+                        </div>
                     </div>
                 </div>
             </div>

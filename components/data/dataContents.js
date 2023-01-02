@@ -338,7 +338,7 @@ const customers = [
         name: "David Morgan",
         country: "India",
         email: "davidmorgan@teamwork.com",
-        img: "/user/Avatar_5.png",
+        img: "/img/user/Avatar_6.png",
         total_orders: 150
     },
     {

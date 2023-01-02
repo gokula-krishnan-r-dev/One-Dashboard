@@ -14,7 +14,7 @@ const Customer = () => {
           <div className="overflow-x-auto font-play">
             <p className="text-gray-400">Overview</p>
             <div className="py-2 inline-block min-w-full flex justify-between items-center">
-              <h3 className="text-4xl py-4">Customers</h3>
+              <a className="text-4xl py-4"><Link href='/customers'>Customers</Link></a>
               <div className="flex items-center space-x-3">
                 <div className="relative text-gray-600 focus-within:text-gray-400">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
@@ -57,7 +57,7 @@ const Customer = () => {
                         <>
                           <tr>
                             <td className="flex items-center space-x-2 text-sm font-light px-6 py-4 whitespace-nowrap">
-                              <Image src={customers.img} alt="pic" width={32} height={32} />
+                              <Image src={member.img} alt="pic" width={32} height={32} />
                               <span className="font-semibold">{member.name}</span>
                             </td>
                             <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
