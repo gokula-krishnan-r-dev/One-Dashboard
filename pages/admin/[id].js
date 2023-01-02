@@ -74,7 +74,7 @@ const ProjectDetailAdmin = ({ itemData }) => {
                         </div>
                     </div>
                     <div className="w-1/3 flex flex-col pl-16">
-                        {itemData.status == 'Completed' ? (
+                        {itemData.status != 'Completed' ? (
                             <div className="p-2">
                                 <CardExtendDeliver />
                             </div>
