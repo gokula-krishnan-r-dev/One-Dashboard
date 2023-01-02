@@ -7,6 +7,8 @@ import { SiDatabricks } from "react-icons/si"
 import { TbUsers } from "react-icons/tb";
 import { SlSettings } from "react-icons/sl"
 import { MdEdit } from "react-icons/md";
+import { CiShop } from "react-icons/ci";
+
 
 const products = [
     {
@@ -416,7 +418,7 @@ const menuItemsAdmin = [
       {
         href: '/admin/orders',
         title: 'Orders',
-        icon: <RiTeamLine className="text-black" />,
+        icon: <CiShop className="text-black" />,
         linkchild: [
             {
                 id: 1,
