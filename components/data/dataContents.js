@@ -414,7 +414,7 @@ const menuItemsAdmin = [
         icon: <TbUsers className="text-black" />
       },  
       {
-        href: '#',
+        href: '/admin/orders',
         title: 'Orders',
         icon: <RiTeamLine className="text-black" />,
         linkchild: [
@@ -477,6 +477,8 @@ const ordersdata = [
         order_id : "OD170720201001",
         progress: 15,
         status_order: 'active',
+        delivery_date: '07 - 11 - 2021',
+        amount: 30,
         team: [
             {
                 id: 1,
@@ -505,6 +507,8 @@ const ordersdata = [
         order_id : "OD170720201002",
         progress: 60,
         status_order: 'active',
+        delivery_date: '07 - 11 - 2021',
+        amount: 40,
         team: [
             {
                 id: 1,
@@ -533,6 +537,8 @@ const ordersdata = [
         order_id : "OD170720201003",
         progress: 45,
         status_order: 'active',
+        delivery_date: '07 - 11 - 2021',
+        amount: 60,
         team: [
             {
                 id: 1,
@@ -561,6 +567,8 @@ const ordersdata = [
         order_id : "OD170720201004",
         progress: 45,
         status_order: 'active',
+        delivery_date: '07 - 11 - 2021',
+        amount: 70,
         team: [
             {
                 id: 1,
@@ -589,6 +597,8 @@ const ordersdata = [
         order_id : "OD170720201005",
         progress: 0,
         status_order: 'active',
+        delivery_date: '07 - 11 - 2021',
+        amount: 80,
         team: [
             {
                 id: 1,
@@ -618,6 +628,8 @@ const ordersdata = [
         order_id : "OD170720201006",
         progress: 90,
         status_order: 'active',
+        delivery_date: '07 - 11 - 2021',
+        amount: 90,
         team: [
             {
                 id: 1,
@@ -646,6 +658,8 @@ const ordersdata = [
         order_id : "OD170720201007",
         progress: 100,
         status_order: 'awaiting',
+        delivery_date: '07 - 11 - 2021',
+        amount: 60,
         team: [
             {
                 id: 1,
@@ -673,6 +687,9 @@ const ordersdata = [
         img: "/img/product/product_6.png",
         order_id : "OD170720201008",
         progress: 100,
+        status_order: 'awaiting',
+        delivery_date: '07 - 11 - 2021',
+        amount: 60,
         team: [
             {
                 id: 1,
@@ -701,6 +718,8 @@ const ordersdata = [
         order_id : "OD170720201008",
         progress: 100,
         status_order: 'awaiting',
+        delivery_date: '07 - 11 - 2021',
+        amount: 80,
         team: [
             {
                 id: 1,
@@ -729,6 +748,8 @@ const ordersdata = [
         order_id : "OD170720201008",
         progress: 70,
         status_order: 'awaiting',
+        delivery_date: '07 - 11 - 2021',
+        amount: 90,
         team: [
             {
                 id: 1,
@@ -757,6 +778,8 @@ const ordersdata = [
         order_id : "OD170720201008",
         progress: 100,
         status_order: 'awaiting',
+        delivery_date: '07 - 11 - 2021',
+        amount: 56,
         team: [
             {
                 id: 1,
@@ -785,6 +808,8 @@ const ordersdata = [
         order_id : "OD170720201008",
         progress: 100,
         status_order: 'awaiting',
+        delivery_date: '07 - 11 - 2021',
+        amount: 39,
         team: [
             {
                 id: 1,
@@ -813,6 +838,8 @@ const ordersdata = [
         order_id : "OD170720201008",
         progress: 100,
         status_order: 'awaiting',
+        delivery_date: '07 - 11 - 2021',
+        amount: 60,
         team: [
             {
                 id: 1,

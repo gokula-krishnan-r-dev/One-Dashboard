@@ -10,6 +10,7 @@ import HelpCenter from './HelpCenter';
 import { RiTeamLine } from "react-icons/ri"
 export default function Layout({ children }) {
   const [ pageUrl, setPageUrl ] = useState('')
+  const [currentShow, setShow] = useState(false)
   const router = useRouter();
   useEffect(() => {
     setPageUrl(window.location.pathname)
@@ -27,7 +28,7 @@ export default function Layout({ children }) {
           <nav className="mt-28">
             <ul className='fixed'>
               {menuItem.map(( menu, index)  => (
-                <li className='w-72' key={index}>
+                <li className='w-72' key={index} >
                     <a className='flex items-center justify-between p-2 pl-6'>
                       <div className='flex items-center space-x-2 space mt-3'>
                         {menu.icon}
@@ -42,6 +43,7 @@ export default function Layout({ children }) {
                       >
                         .
                       </div>
+                      
                    </a>     
                 </li>
               ))}
