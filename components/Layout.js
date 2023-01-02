@@ -31,19 +31,19 @@ export default function Layout({ children }) {
               {menuItem.map((menu, index) => (
 
                 <li className='w-72' key={index}>
-                  <a className='flex items-center justify-between p-2 pl-6'>                        
+                  <a className='flex items-center justify-between p-2 pl-6'>
                     {menu.title == 'Orders' ? <div className='flex items-center space-x-2 space mt-3' onClick={() => setShow(!currentShow)}> {/*setSettings(!currentSetting) */}
                       {menu.icon}
                       <Link href={menu.href}>
                         {menu.title}
                       </Link>
-                    </div> :  menu.title == 'Settings' ?
-                    <div className='flex items-center space-x-2 space mt-3' onClick={() => setSettings(!currentSetting)}> {/*setSettings(!currentSetting) */}
-                    {menu.icon}
-                    <Link href={menu.href}>
-                      {menu.title}
-                    </Link>
-                  </div> :
+                    </div> : menu.title == 'Settings' ?
+                      <div className='flex items-center space-x-2 space mt-3' onClick={() => setSettings(!currentSetting)}> {/*setSettings(!currentSetting) */}
+                        {menu.icon}
+                        <Link href={menu.href}>
+                          {menu.title}
+                        </Link>
+                      </div> :
 
                       <div className='flex items-center space-x-2 space mt-3'>
                         {menu.icon}

@@ -2,13 +2,17 @@ import { products } from "../../components/data/dataContents";
 import CardProject from "../../components/card/CardProject";
 import { BsSearch, BsChevronDown } from "react-icons/bs";
 import { useRouter } from "next/router";
+import { SiGooglechat } from "react-icons/si";
 import React from "react";
 //BsSearch
 const Client = () => {
   const router = new useRouter()
   return (
     <React.Fragment>
-      <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
+      <div className="p-4 pt-4 bg-[#FAFAFA] h-full relative">
+        <div className='p-4 fixed  bottom-2 right-2 bg-blue-600 rounded-full'>
+           <SiGooglechat className="text-white" size={32} />
+        </div>
         <div className="flex flex-col w-full">
           <div className="overflow-x-auto font-play">
             <p className="text-gray-400">Overview</p>
