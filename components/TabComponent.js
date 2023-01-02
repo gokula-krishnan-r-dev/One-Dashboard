@@ -118,7 +118,7 @@ const TabComponent = () => {
   return (
     <>
       
-      <div className="flex items-center space-x-6 py-4 text-black">
+      <div className="flex items-center space-x-6 py-4 text-gray-500 font-play text-lg font-medium">
         <p onClick={handleTab1} 
         className={activeTab === "tab1" ? "active text-black border-b-2 border-gray-400 px-2 py-2" : ""} 
         >
