@@ -33,22 +33,22 @@ const Order = () => {
                 <table className="min-w-full">
                   <thead>
                     <tr>
-                      <th scope="col" className="text-md font-medium text-back font-bold px-6 py-4 text-left">
-                        Name
+                      <th scope="col" className="text-xl font-medium text-back font-bold px-6 py-4 text-left">
+                      Customer Name
                       </th>
-                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
                         Order Id
                       </th>
-                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
                         Project Name
                       </th>
-                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
                         Delivery Date
                       </th>
-                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
                         Amount
                       </th>
-                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left flex justify-center items-center">
+                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left flex justify-center items-center">
                         Status
                       </th>
                     </tr>
@@ -61,24 +61,24 @@ const Order = () => {
                         
                           <tr>
                             
-                            <td className="flex items-center space-x-2 text-sm font-light px-6 py-4 whitespace-nowrap">
-                              <Image src='/img/user/Avatar_4.png' alt="pic" width={32} height={32} />
-                              <span className="font-semibold text-black">Angeline Lee</span>
+                            <td className="flex items-center space-x-2  px-6 py-4 whitespace-nowrap">
+                              <Image src='/img/user/Avatar_4.png' alt="pic" width={50} height={50} />
+                              <span className="font-semibold text-black text-base font-semibold">Angeline Lee</span>
                             </td>
-                            <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
                               {order.order_id}
                             </td>
-                            <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
                               {order.title}
                             </td>
-                            <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
                                {order.delivery_date}
                             </td>
-                            <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
                                $ {order.amount}
                             </td>
-                            <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap flex justify-center items-center">
-                              <div className={`px-2 py-1.5 font-normal rounded-2xl ${order.status === 'Completed' ?  'text-green-500 bg-green-50' : order.status ==='Pending Payment' ? 'text-orange-400 bg-orange-100': order.status === 'In Repair' ? 'text-red-400 bg-red-100' : 'text-gray-400 bg-gray-200' }`}>
+                            <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap flex justify-center items-center">
+                              <div className={`p-1 px-2 py-1.5 font-normal rounded-2xl text-[12px] ${order.status === 'Completed' ?  'text-green-500 bg-green-50' : order.status ==='Pending Payment' ? 'text-orange-400 bg-orange-100': order.status === 'In Repair' ? 'text-red-400 bg-red-100' : 'text-gray-400 bg-gray-200' }`}>
                                 <Link href={'/admin/'+ order.id} key={order.id}> {order.status}</Link>
                               </div>
                             </td>
