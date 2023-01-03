@@ -16,7 +16,7 @@ const CardProject = (props) => {
             </div>
             <div className="flex justify-between items-center py-2">
                 <div>
-                <h4 className="text-black text-xl font-semibold">{product.title}</h4>
+                <h4 className="text-black text-xl font-medium">{product.title}</h4>
                     <p className="py-2 text-[#13131380]">{product.dateTime}</p>
                 </div>
                 <Image src={product.img}  width={91} height={91} alt="product" />
