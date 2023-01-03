@@ -26,25 +26,31 @@ const ChatMessage = () => {;
                             </span>
                             <input type="search" name="q" className="w-full py-3 border text-sm text-white pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search..." autoComplete="off" />
                         </div>
-                        <div className="w-full flex space-x-2 pt-4 ">
-                            <Image src='/img/user/Avatar_2.png' alt="pic" width={40} height={40} />
+                        <div className="w-full flex space-x-2 pt-4 bg-gray-50 p-1 mt-2">
+                            <div className="relative">
+                                 <Image src='/img/user/Avatar_2.png' alt="pic" width={40} height={40} />
+                                 <div className="w-2 h-2 bg-green-500 absolute rounded-full right-0 bottom-1"></div>
+                            </div>
                             <div className="block ">
                                 <div className="flex items-center justify-between">
-                                    <p className="text-sm">Angelina Lee</p>
+                                    <p className="text-base">Angelina Lee</p>
                                     <span className="text-[10px] text-gray-400">10 min ago</span>
                                 </div>
-                                <p className="text-[12px] truncate text-gray-40">Lorem ipsum dolor sit amet, consectetur .</p>
+                                <p className="text-[12px] truncate text-gray-400">Lorem ipsum dolor sit amet, consectetur .</p>
                             </div>
 
                         </div>
-                        <div className="w-full flex space-x-2 pt-4 ">
-                            <Image src='/img/user/Avatar_2.png' alt="pic" width={40} height={40} />
+                        <div className="w-full flex space-x-2 pt-4 p-1">
+                        <div className="relative">
+                                 <Image src='/img/user/Avatar_4.png' alt="pic" width={40} height={40} />
+                                 <div className="w-2 h-2 bg-green-500 absolute rounded-full right-0 bottom-1"></div>
+                            </div>
                             <div className="block ">
                                 <div className="flex items-center justify-between">
-                                    <p className="text-sm">Angelina Lee</p>
+                                    <p className="text-base">John Doe Mark</p>
                                     <span className="text-[10px] text-gray-400">10 min ago</span>
                                 </div>
-                                <p className="text-[12px] truncate text-gray-40">Lorem ipsum dolor sit amet, consectetur .</p>
+                                <p className="text-[12px] truncate text-gray-400">Lorem ipsum dolor sit amet, consectetur .</p>
                             </div>
 
                         </div>
@@ -54,10 +60,13 @@ const ChatMessage = () => {;
                 <div className="w-5/6 bg-white relative">
                     <div className="w-full h-16 border-b flex items-center justify-between px-4">
                         <div className="flex space-x-2">
-                            <Image src='/img/user/Avatar_2.png' alt="pic" width={40} height={40} />
+                        <div className="relative">
+                                 <Image src='/img/user/Avatar_2.png' alt="pic" width={40} height={40} />
+                                 <div className="w-2 h-2 bg-green-500 absolute rounded-full right-0 bottom-1"></div>
+                            </div>
                             <div className="block">
-                                <p>Angelina Lee</p>
-                                <p className="text-[12px] text-gray-400">Online</p>
+                                <p className="text-base font-normal">Angelina Lee</p>
+                                <p className="text-[12px] font-normal text-gray-400">Online</p>
                             </div>
                         </div>
                         <div className="p-2">
