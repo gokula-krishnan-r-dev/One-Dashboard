@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Popup from "reactjs-popup";
 import Image from "next/image";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineCamera } from "react-icons/ai";
 import { BsChevronDown } from "react-icons/bs";
 import { FiLogOut } from "react-icons/fi";
 import ImgAvatar from '../public/img/user/Avatar.png'
@@ -49,7 +49,13 @@ const DropdownUser = () => {
                             <AiOutlineClose  size={16} onClick={closeModal}/>
                         </div>
                         <div className="py-2 flex items-center justify-center">
-                            <Image src={PicImg} width={86} height={86} alt="pic" />
+                            <div className='relative'>
+                              <div className='absolute bg-white shadow-md rounded-full p-1 -bottom-2 -right-2'>
+                                <AiOutlineCamera size={32} className="bg-blue-500 text-white rounded-full p-1" />
+                              </div>
+                               <Image src={PicImg} width={86} height={86} alt="pic" />
+                            </div>
+                            
                         </div>
                         <div className="py-2 space-x-4 flex justify-between">
                             <div className="basis-1/2">
@@ -60,7 +66,7 @@ const DropdownUser = () => {
                                 </label>
                                 <div className="relative">
                                     <input
-                                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                                        className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                         id="firstname"
                                         type="text"
                                         placeholder="Enter your first name"
@@ -76,7 +82,7 @@ const DropdownUser = () => {
                                 </label>
                                 <div className="relative">
                                     <input
-                                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                                        className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                         id="lastname"
                                         type="text"
                                         placeholder="Enter your last name"
@@ -92,7 +98,7 @@ const DropdownUser = () => {
                                 Email
                             </label>
                             <input
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                 id="email"
                                 type="email"
                                 placeholder="Enter Your email"
@@ -106,7 +112,7 @@ const DropdownUser = () => {
                                 Phone Number
                             </label>
                             <input
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                 id="phone"
                                 type="text"
                                 placeholder="Enter Your Phone Number"
@@ -132,7 +138,7 @@ const DropdownUser = () => {
                             <div className="basis-1/2">
                                 <div className="relative">
                                     <input
-                                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                                        className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                         id="firstnameaddress"
                                         type="text"
                                         placeholder="Enter your first name"
@@ -143,7 +149,7 @@ const DropdownUser = () => {
                             <div className="basis-1/2">
                                 <div className="relative">
                                     <input
-                                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                                        className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                         id="lastnameaddress"
                                         type="text"
                                         placeholder="Enter your last name"
@@ -153,7 +159,7 @@ const DropdownUser = () => {
                         </div>
                         <div className="py-2">
                             <input
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                 id="company"
                                 type="text"
                                 placeholder="Company Name Optional"
@@ -161,7 +167,7 @@ const DropdownUser = () => {
                         </div>
                         <div className="py-2">
                             <input
-                                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                                className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                 id="address"
                                 type="text"
                                 placeholder="Address"
@@ -171,7 +177,7 @@ const DropdownUser = () => {
                             <div className="basis-1/3">
                                 <div className="relative">
                                     <input
-                                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                                        className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                         id="ciry"
                                         type="text"
                                         placeholder="City"
@@ -180,7 +186,7 @@ const DropdownUser = () => {
                                 </div>
                             </div>
                             <div className="basis-1/3 relative">
-                                <select className="block appearance-none w-full bg-white border text-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                <select className="appearance-none w-full bg-white border text-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
                                     <option>State</option>
                                     <option>Option 2</option>
                                     <option>Option 3</option>
@@ -192,7 +198,7 @@ const DropdownUser = () => {
                             <div className="basis-1/3">
                                 <div className="relative">
                                     <input
-                                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                                        className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                         id="zipcode"
                                         type="text"
                                         placeholder="Zip Code"
