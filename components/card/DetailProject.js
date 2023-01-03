@@ -13,7 +13,7 @@ const DetailProject = (props) => {
                     <Image src={itemData.img} width={91} height={91} alt="product" className="w-1/4" />
                     <div className="flex items-center justify-between w-1/2 font-medium">
                         <div className="full">
-                            <p className="text-black py-2 text-[#131313] text-md">{itemData.title}</p>
+                            <p className="text-black py-2 font-semibold text-md">{itemData.title}</p>
                             <div className="w-36 bg-[#F9C152] py-2 text-[12px] text-white text-center rounded-full">{itemData.status}</div>
                         </div>
                     </div>

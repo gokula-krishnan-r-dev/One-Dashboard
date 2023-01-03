@@ -24,7 +24,7 @@ const CardOrder = (props) => {
             </div>
             <div className="flex justify-between items-center py-2">
                 <div>
-                    <h4 className="text-black">{product.title}</h4>
+                    <h4 className="text-black text-xl font-semibold">{product.title}</h4>
                     <p className="py-2 text-gray-400">{product.dateTime}</p>
                 </div>
                 <Image src={product.img}  width={91} height={91} alt="product" />

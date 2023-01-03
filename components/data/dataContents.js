@@ -19,7 +19,7 @@ const products = [
         dateTime: 'Today at 1.18 PM',
         img: "/img/product/product_1.png",
         order_id : "OD170720201001",
-        progress: 15,
+        progress: 25,
         team: [
             {
                 id: 1,
