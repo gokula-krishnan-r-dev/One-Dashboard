@@ -8,6 +8,8 @@ import { TbUsers } from "react-icons/tb";
 import { SlSettings } from "react-icons/sl"
 import { MdEdit } from "react-icons/md";
 import { CiShop } from "react-icons/ci";
+import { US,IN, DE, ID, PH, AU, GB } from 'country-flag-icons/react/3x2'
+
 
 
 const products = [
@@ -338,7 +340,11 @@ const customers = [
     {
         id:1,
         name: "David Morgan",
-        country: "India",
+        country: {
+            name: "india",
+            flag: <IN  className="w-6 h-auto"/>
+        },
+        
         email: "davidmorgan@teamwork.com",
         img: "/img/user/Avatar_6.png",
         total_orders: 150,
@@ -346,12 +352,16 @@ const customers = [
         city: "Mumbai",
         zipcode: '652323',
         order_id: 'CS15072021001',
+
     },
     {
         id:2,
         name: "John Morgan",
-        country: "United States",
-        email: "davidmorgan@teamwork.com",
+        country: {
+            name: "United States",
+            flag: <US  className="w-6 h-auto"/>
+        },
+        email: "johnmorgan@teamwork.com",
         img: "/img/user/Avatar_1.png",
         total_orders: 150,
         street: '1234 State St',
@@ -361,7 +371,10 @@ const customers = [
     },  {
         id:3,
         name: "Chris Morgan",
-        country: "United Kingdom",
+        country: {
+            name: "United Kingdom",
+            flag: <GB className="w-6 h-auto"/>
+        },
         email: "davidmorgan@teamwork.com",
         img: "/img/user/Avatar_2.png",
         total_orders: 150,
@@ -372,7 +385,10 @@ const customers = [
     },  {
         id:4,
         name: "Antonie Morgan",
-        country: "Australia",
+        country: {
+            name: "Australia",
+            flag: <AU className="w-6 h-auto" />
+        },
         email: "davidmorgan@teamwork.com",
         img: "/img/user/Avatar_3.png",
         total_orders: 150,
@@ -384,7 +400,10 @@ const customers = [
     {
         id:5,
         name: "Cristian Morgan",
-        country: "Germany",
+        country: {
+            name: "Germany",
+            flag: <DE className="w-6 h-auto"/>
+        },
         email: "davidmorgan@teamwork.com",
         img: "/img/user/Avatar_4.png",
         total_orders: 150,

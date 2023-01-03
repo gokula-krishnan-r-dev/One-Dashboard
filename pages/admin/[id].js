@@ -29,7 +29,7 @@ export const getStaticProps = async (context) => {
     const data = products.filter(p => p.id.toString() === id)
     return {
         props: {
-            itemData: data[0],
+            itemData: JSON.parse(JSON.stringify(data[0])),
         },
     }
 }

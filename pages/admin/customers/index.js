@@ -33,22 +33,22 @@ const Customer = () => {
                 <table className="min-w-full">
                   <thead>
                     <tr>
-                      <th scope="col" className="text-md font-medium text-back font-bold px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-back font-bold px-6 py-4 text-left">
                         Name
                       </th>
-                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
                        Customer ID
                       </th>
-                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
                         Country
                       </th>
-                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
                         Email
                       </th>
-                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
                         Total Orders
                       </th>
-                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left flex justify-center items-center">
+                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left flex justify-center items-center">
                         Status
                       </th>
                     </tr>
@@ -67,7 +67,7 @@ const Customer = () => {
                               {member.order_id}
                             </td>
                             <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
-                              {member.country}
+                              {member.country.name}
                             </td>
                             <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
                               {member.email}
