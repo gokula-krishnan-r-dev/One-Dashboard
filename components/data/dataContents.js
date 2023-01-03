@@ -344,7 +344,8 @@ const customers = [
         total_orders: 150,
         street : '1234 State St',
         city: "Mumbai",
-        zipcode: '652323'
+        zipcode: '652323',
+        order_id: 'CS15072021001',
     },
     {
         id:2,
@@ -355,7 +356,8 @@ const customers = [
         total_orders: 150,
         street: '1234 State St',
         city: "New Yook",
-        zipcode: "387643"
+        zipcode: "387643",
+        order_id: 'CS15072021002',
     },  {
         id:3,
         name: "Chris Morgan",
@@ -365,7 +367,8 @@ const customers = [
         total_orders: 150,
         street: '1234 State St',
         city: "Liverpool",
-        zipcode: "387643"
+        zipcode: "387643",
+        order_id: 'CS15072021004',
     },  {
         id:4,
         name: "Antonie Morgan",
@@ -375,7 +378,8 @@ const customers = [
         total_orders: 150,
         street: '1234 State St',
         city: "Sydney",
-        zipcode: "387643"
+        zipcode: "387643",
+        order_id: 'CS15072021006',
     },
     {
         id:5,
@@ -386,7 +390,8 @@ const customers = [
         total_orders: 150,
         street: '1234 State St',
         city: "Hamburg",
-        zipcode: "387643"
+        zipcode: "387643",
+        order_id: 'RS15072021009',
     },
 ]
 

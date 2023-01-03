@@ -12,9 +12,9 @@ const Customer = () => {
       <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
         <div className="flex flex-col w-full">
           <div className="overflow-x-auto font-play">
-            <p className="text-gray-400">Overview</p>
+            <p className="text-gray-400 text-base">Overview</p>
             <div className="py-2 inline-block min-w-full flex justify-between items-center">
-              <a className="text-4xl py-4"><Link href='/customers'>Customers</Link></a>
+              <a className="text-3xl py-4 font-semibold"><Link href='/customers'>Customers</Link></a>
               <div className="flex items-center space-x-3">
                 <div className="relative text-gray-600 focus-within:text-gray-400">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
@@ -37,6 +37,9 @@ const Customer = () => {
                         Name
                       </th>
                       <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                       Customer ID
+                      </th>
+                      <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
                         Country
                       </th>
                       <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
@@ -57,19 +60,22 @@ const Customer = () => {
                         <>
                           <tr>
                             <td className="flex items-center space-x-2 text-sm font-light px-6 py-4 whitespace-nowrap">
-                              <Image src={member.img} alt="pic" width={32} height={32} />
-                              <span className="font-semibold">{member.name}</span>
+                              <Image src={member.img} alt="pic" width={50} height={50} />
+                              <span className="font-semibold text-base font-bold">{member.name}</span>
                             </td>
-                            <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
+                              {member.order_id}
+                            </td>
+                            <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
                               {member.country}
                             </td>
-                            <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
                               {member.email}
                             </td>
-                            <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
                               $ {member.total_orders}
                             </td>
-                            <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap flex justify-center items-center">
+                            <td className="text-base text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap flex justify-center items-center">
                                <Link href={'customers/'+ member.id} key={member.id}><MdEdit size={24} /></Link>
                             </td>
                           </tr>
