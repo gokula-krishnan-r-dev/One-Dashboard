@@ -87,7 +87,7 @@ export default function Layout({ children }) {
           </div>
 
         </aside>
-        <main className='flex-1'>
+        <main className='flex-1 bg-[#FAFAFA]'>
           <NavBar />
           {children}
         </main>
