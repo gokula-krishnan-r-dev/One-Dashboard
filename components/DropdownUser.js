@@ -124,7 +124,7 @@ const DropdownUser = () => {
                         <div className="py-2">
 
                             <div className="inline-block relative w-full">
-                                <select className="block appearance-none w-full bg-white text-gray-400 border hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                <select className="block appearance-none w-full bg-white text-gray-400 border hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline">
                                     <option>Select Country</option>
                                     <option>Option 2</option>
                                     <option>Option 3</option>
