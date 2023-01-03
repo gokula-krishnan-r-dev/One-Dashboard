@@ -14,7 +14,7 @@ const Team = () => {
                 <div className="flex flex-col w-full bg-white shadow-sm p-2">
                       <p className="text-gray-400">Team</p>
                     <div className="overflow-x-auto py-2 flex items-center justify-between">    
-                        <h2 className="text-3xl">Team Member(4)</h2>
+                        <h2 className="text-3xl font-semibold">Team Member(4)</h2>
                         <button className="px-4 py-3 bg-blue-500 text-white flex items-center space-x-2" onClick={() => setOpen(o => !o)}><AiOutlinePlus size={24} /><span>Add Member</span></button>    
                     </div>
                     <div className="overflow-x-auto p-2">
@@ -23,16 +23,16 @@ const Team = () => {
                                 <table className="min-w-full">
                                     <thead>
                                         <tr>
-                                            <th scope="col" className="text-md font-medium text-back font-bold px-6 py-4 text-left">
+                                            <th scope="col" className="text-lg font-bold text-back font-bold px-6 py-4 text-left">
                                                 Name
                                             </th>
-                                            <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                                            <th scope="col" className="text-lg font-bold text-gray-900 px-6 py-4 text-left">
                                                 Country
                                             </th>
-                                            <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left">
+                                            <th scope="col" className="text-lg font-bold text-gray-900 px-6 py-4 text-left">
                                                 Email
                                             </th>
-                                            <th scope="col" className="text-md font-medium text-gray-900 px-6 py-4 text-left flex justify-center items-center">
+                                            <th scope="col" className="text-lg font-bold text-gray-900 px-6 py-4 text-left flex justify-center items-center">
                                                 Action
                                             </th>
                                         </tr>
@@ -42,17 +42,17 @@ const Team = () => {
                                             return (
                                                 <>
                                                     <tr>
-                                                        <td className="flex items-center space-x-2 text-sm font-light px-6 py-4 whitespace-nowrap">
+                                                        <td className="flex items-center space-x-2 text-base px-6 py-4 whitespace-nowrap">
                                                             <Image src='/img/user/Avatar_team.png' alt="pic" width={32} height={32} />
-                                                            <span className="font-semibold">{member.name}</span>
+                                                            <span className="font-bold">{member.name}</span>
                                                         </td>
-                                                        <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
+                                                        <td className="text-base text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap">
                                                             {member.country}
                                                         </td>
-                                                        <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap">
+                                                        <td className="text-base text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap">
                                                             {member.email}
                                                         </td>
-                                                        <td className="text-sm text-gray-500 font-medium font-light px-6 py-4 whitespace-nowrap flex justify-center items-center">
+                                                        <td className="text-base text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap flex justify-center items-center">
                                                             {member.act}
                                                         </td>
                                                     </tr>
