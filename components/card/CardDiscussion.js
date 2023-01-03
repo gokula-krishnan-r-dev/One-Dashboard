@@ -41,9 +41,9 @@ const CardDisscussion = () => {
                                     <Image src={discuss.image} alt="pic" width={60} height={60} />
                                 </div>
                                 <div className="block py-2">
-                                    <h4 className="text-black text-md">{discuss.name}</h4>
-                                    <p className="text-sm text-black py-1 font-normal max-w-2xl">{discuss.comment}.</p>
-                                    <p className="text-gray-400 text-[12px] py-2">{discuss.dateTime}</p>
+                                    <h4 className="text-black text-xl font-medium">{discuss.name}</h4>
+                                    <p className="text-base text-black py-1 font-normal max-w-2xl">{discuss.comment}.</p>
+                                    <p className="text-gray-400 text-sm font-normal py-2">{discuss.dateTime}</p>
                                 </div>
                             </div>
                         </>
