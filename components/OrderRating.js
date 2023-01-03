@@ -11,7 +11,7 @@ const OrderRating = () => {
                 <div className="flex justify-between p-2">
                     <div className='flex space-x-2 items-center'>
                         <div className='w-[2px] h-full bg-blue-500'></div>
-                        <p className="text-black text-sm">Order Rating</p>
+                        <p className="text-black text-base font-semibold">Order Rating</p>
                     </div>
                     <span className="text-black">{clicked === false ? <BsChevronDown /> : <BsChevronUp />}</span>
                 </div>

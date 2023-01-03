@@ -37,8 +37,15 @@ const AdminDashboard = () => {
                 </div>
                 <div className="inline-block relative w-40 text-white">
                   <select className="block appearance-none w-full bg-blue-500 border px-4 py-2.5">
-                    <option>All</option>
-                    <option>Option 2</option>
+                    <option className="text-red-500">All</option>
+                    <option>Draft</option>
+                    <option>Pending Review</option>
+                    <option>Pending Quote</option>
+                    <option>Pending Payment</option>
+                    <option>In Production</option>
+                    <option>In Repair</option>
+                    <option>Delivered</option>
+                    <option>Completed</option>
                   </select>
                   <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                     <BsChevronDown className="text-white font-medium" />
