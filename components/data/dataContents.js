@@ -20,6 +20,11 @@ const products = [
         img: "/img/product/product_1.png",
         order_id : "OD170720201001",
         progress: 25,
+        users: {
+            id: 1,
+            name: "Angelina Lee",
+            img: "/img/user/Avatar_1.png"
+        },
         team: [
             {
                 id: 1,
@@ -36,7 +41,11 @@ const products = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
-            }
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -47,6 +56,11 @@ const products = [
         img: "/img/product/product_2.png",
         order_id : "OD170720201002",
         progress: 60,
+        users: {
+            id: 2,
+            name: "John Lee",
+            img: "/img/user/Avatar_3.png"
+        },
         team: [
             {
                 id: 1,
@@ -63,6 +77,10 @@ const products = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
             },
         ]
     },
@@ -74,6 +92,11 @@ const products = [
         img: "/img/product/product_3.png",
         order_id : "OD170720201003",
         progress: 45,
+        users: {
+            id: 3,
+            name: "Leonardo Lee",
+            img: "/img/user/Avatar_4.png"
+        },
         team: [
             {
                 id: 1,
@@ -90,7 +113,11 @@ const products = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
-            }
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -101,6 +128,11 @@ const products = [
         img: "/img/product/product_3.png",
         order_id : "OD170720201004",
         progress: 45,
+        users: {
+            id: 6,
+            name: "Cindy Adams",
+            img: "/img/user/Avatar_1.png"
+        },
         team: [
             {
                 id: 1,
@@ -117,7 +149,11 @@ const products = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
-            }
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -128,6 +164,11 @@ const products = [
         img: "/img/product/product_7.png",
         order_id : "OD170720201005",
         progress: 0,
+        users: {
+            id: 11,
+            name: "Barack Silver",
+            img: "/img/user/Avatar_5.png"
+        },
         team: [
             {
                 id: 1,
@@ -144,7 +185,11 @@ const products = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
-            }
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
 
     },
@@ -156,6 +201,11 @@ const products = [
         img: "/img/product/product_6.png",
         order_id : "OD170720201006",
         progress: 90,
+        users: {
+            id: 1,
+            name: "Angelina Lee",
+            img: "/img/user/Avatar_1.png"
+        },
         team: [
             {
                 id: 1,
@@ -172,7 +222,11 @@ const products = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
-            }
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -183,6 +237,11 @@ const products = [
         img: "/img/product/product_6.png",
         order_id : "OD170720201007",
         progress: 100,
+        users: {
+            id: 16,
+            name: "Antonie Lee",
+            img: "/img/user/Avatar_1.png"
+        },
         team: [
             {
                 id: 1,
@@ -190,16 +249,20 @@ const products = [
             },
             {
                 id: 2,
-                img: "/img/user/avatar_2.png",
+                img: "/img/user/Avatar_2.png",
             },
             {
                 id: 3,
-                img: "/img/user/avatar_3.png",
+                img: "/img/user/Avatar_3.png",
             },
             {
                 id: 4,
-                img: "/img/user/avatar_4.png",
-            }
+                img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -210,23 +273,32 @@ const products = [
         img: "/img/product/product_6.png",
         order_id : "OD170720201008",
         progress: 100,
+        users: {
+            id: 10,
+            name: "Christian Lee",
+            img: "/img/user/Avatar_1.png"
+        },
         team: [
             {
                 id: 1,
-                img: "/img/user/avatar_1.png",
+                img: "/img/user/Avatar_1.png",
             },
             {
                 id: 2,
-                img: "/img/user/avatar_2.png",
+                img: "/img/user/Avatar_2.png",
             },
             {
                 id: 3,
-                img: "/img/user/avatar_3.png",
+                img: "/img/user/Avatar_3.png",
             },
             {
                 id: 4,
-                img: "/img/user/avatar_4.png",
-            }
+                img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -237,22 +309,31 @@ const products = [
         img: "/img/product/product_6.png",
         order_id : "OD170720201008",
         progress: 100,
+        users: {
+            id: 8,
+            name: "Mario Gomez",
+            img: "/img/user/Avatar_1.png"
+        },
         team: [
             {
                 id: 1,
-                img: "/img/user/avatar_1.png",
+                img: "/img/user/Avatar_1.png",
             },
             {
                 id: 2,
-                img: "/img/user/avatar_2.png",
+                img: "/img/user/Avatar_2.png",
             },
             {
                 id: 3,
-                img: "/img/user/avatar_3.png",
+                img: "/img/user/Avatar_3.png",
             },
             {
                 id: 4,
-                img: "/img/user/avatar_4.png",
+                img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
             }
         ]
     },
