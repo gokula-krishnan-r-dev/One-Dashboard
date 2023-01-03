@@ -485,7 +485,12 @@ const ordersdata = [
         progress: 100,
         status_order: 'active',
         delivery_date: '07 - 11 - 2021',
-        amount: 30,
+        amount: 35,
+        users: {
+            id: 1,
+            name: "Angelina Lee",
+            img: "/img/user/Avatar_1.png"
+        },
         team: [
             {
                 id: 1,
@@ -516,6 +521,11 @@ const ordersdata = [
         status_order: 'active',
         delivery_date: '07 - 11 - 2021',
         amount: 40,
+        users: {
+            id: 2,
+            name: "John Doe",
+            img: "/img/user/Avatar_4.png"
+        },
         team: [
             {
                 id: 1,
@@ -546,6 +556,11 @@ const ordersdata = [
         status_order: 'active',
         delivery_date: '07 - 11 - 2021',
         amount: 60,
+        users: {
+            id: 11,
+            name: "Jack Lee",
+            img: "/img/user/Avatar_2.png"
+        },
         team: [
             {
                 id: 1,
@@ -576,6 +591,11 @@ const ordersdata = [
         status_order: 'active',
         delivery_date: '07 - 11 - 2021',
         amount: 70,
+        users: {
+            id: 8,
+            name: "Amir Khan",
+            img: "/img/user/Avatar_6.png"
+        },
         team: [
             {
                 id: 1,
@@ -606,6 +626,11 @@ const ordersdata = [
         status_order: 'active',
         delivery_date: '07 - 11 - 2021',
         amount: 80,
+        users: {
+            id: 1,
+            name: "Michael Mayers",
+            img: "/img/user/Avatar_1.png"
+        },
         team: [
             {
                 id: 1,
@@ -637,6 +662,11 @@ const ordersdata = [
         status_order: 'active',
         delivery_date: '07 - 11 - 2021',
         amount: 90,
+        users: {
+            id: 1,
+            name: "Angelina Lee",
+            img: "/img/user/Avatar_1.png"
+        },
         team: [
             {
                 id: 1,
@@ -667,6 +697,11 @@ const ordersdata = [
         status_order: 'awaiting',
         delivery_date: '07 - 11 - 2021',
         amount: 60,
+        users: {
+            id: 9,
+            name: "Joe Nathan",
+            img: "/img/user/Avatar_5.png"
+        },
         team: [
             {
                 id: 1,
@@ -697,6 +732,10 @@ const ordersdata = [
         status_order: 'Draft',
         delivery_date: '07 - 11 - 2021',
         amount: 60,
+        users: {
+            id: 10,
+            name: "Christina Lee"
+        },
         team: [
             {
                 id: 1,
@@ -727,6 +766,11 @@ const ordersdata = [
         status_order: 'awaiting',
         delivery_date: '07 - 11 - 2021',
         amount: 80,
+        users: {
+            id: 1,
+            name: "Angelina Lee",
+            img: "/img/user/Avatar_4.png"
+        },
         team: [
             {
                 id: 1,
@@ -757,6 +801,11 @@ const ordersdata = [
         status_order: 'awaiting',
         delivery_date: '07 - 11 - 2021',
         amount: 90,
+        users: {
+            id: 13,
+            name: "Angelina Cindy",
+            img: "/img/user/Avatar_4.png"
+        },
         team: [
             {
                 id: 1,
@@ -787,6 +836,11 @@ const ordersdata = [
         status_order: 'awaiting',
         delivery_date: '07 - 11 - 2021',
         amount: 56,
+        users: {
+            id: 1,
+            name: "Angelina Lee",
+            img: "/img/user/Avatar_3.png"
+        },
         team: [
             {
                 id: 1,
@@ -817,6 +871,11 @@ const ordersdata = [
         status_order: 'awaiting',
         delivery_date: '07 - 11 - 2021',
         amount: 39,
+        users: {
+            id: 15,
+            name: "Antonie Lee",
+            img: "/img/user/Avatar_2.png"
+        },
         team: [
             {
                 id: 1,
@@ -847,6 +906,11 @@ const ordersdata = [
         status_order: 'awaiting',
         delivery_date: '07 - 11 - 2021',
         amount: 60,
+        users: {
+            id: 21,
+            name: "John Bily",
+            img: "/img/user/Avatar_1.png"
+        },
         team: [
             {
                 id: 1,

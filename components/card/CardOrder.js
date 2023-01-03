@@ -11,15 +11,15 @@ const CardOrder = (props) => {
         <div className="2xl:w-[392px] xl:w-[320px] w-[300px] shadow-sm p-2 bg-white font-play">
             <div className="flex justify-between py-2">
                 <div className="flex space-x-2 items-center">
-                    <Image src='/img/user/Avatar_3.png' alt="pic" width={40} height={40} />
+                    <Image src={product.users.img} alt="pic" width={40} height={40} />
                     <div>
-                        <p>Angelina Lee</p>
-                        <p className="text-gray-400 text-[12px]">Last seen 32 minutes ago</p>
+                        <p className="text-sm font-medium">{product.users.name}</p>
+                        <p className="text-gray-300 text-[12px] font-normal">Last seen 32 minutes ago</p>
                     </div>
                 </div>
                 <div className="flex space-x-2 items-center"> 
                     <GrNotification />
-                    <div className="text-black font-semibold">$30</div>
+                    <div className="text-black font-semibold">$ {product.amount}</div>
                 </div>
             </div>
             <div className="flex justify-between items-center py-2">
