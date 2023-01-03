@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import backgoroundImg from "../public/img/background.svg";
+import backgoroundImg from "../public/img/bg.svg";
 import poster from "../public/img/poster.svg";
 import logoimg from "../public/img/Logo.svg";
 import { BiShow } from "react-icons/bi";
@@ -138,13 +138,7 @@ const Signup = () => {
                         objectFit="cover"
                         alt="backgorund"
                     />
-                    <Image
-                        src={poster}
-                        width={700}
-                        height={700}
-                        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                        alt="bgpic"
-                    />
+                  
                 </div>
             </div>
         </>
