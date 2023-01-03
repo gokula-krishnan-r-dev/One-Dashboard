@@ -11,7 +11,6 @@ import { CiShop } from "react-icons/ci";
 import { US,IN, DE, ID, PH, AU, GB } from 'country-flag-icons/react/3x2'
 
 
-
 const products = [
     {
         id: 1,
@@ -479,11 +478,11 @@ const ordersdata = [
     {
         id: 1,
         title: "Alpha UHS-VU Shoes",
-        status: 'Pending Review',
+        status: 'Completed',
         dateTime: 'Today at 1.18 PM',
         img: "/img/product/product_1.png",
         order_id : "OD170720201001",
-        progress: 15,
+        progress: 100,
         status_order: 'active',
         delivery_date: '07 - 11 - 2021',
         amount: 30,

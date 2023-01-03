@@ -37,6 +37,7 @@ export const getStaticProps = async (context) => {
 
 
 const ProjectDetailAdmin = ({ itemData }) => {
+    
     return (
         <React.Fragment>
 
@@ -65,6 +66,7 @@ const ProjectDetailAdmin = ({ itemData }) => {
                         <div className="py-2">
                             <Satisfied />
                         </div>
+                        
                         <div className="py-2">
                             <OrderRating />
                         </div>
