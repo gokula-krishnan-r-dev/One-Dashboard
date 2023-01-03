@@ -507,7 +507,11 @@ const ordersdata = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
-            }
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -543,6 +547,10 @@ const ordersdata = [
                 id: 4,
                 img: "/img/user/Avatar_4.png",
             },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -577,7 +585,11 @@ const ordersdata = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
-            }
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -612,7 +624,11 @@ const ordersdata = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
-            }
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -647,9 +663,12 @@ const ordersdata = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
-            }
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
-
     },
     {
         id: 6,
@@ -683,7 +702,11 @@ const ordersdata = [
             {
                 id: 4,
                 img: "/img/user/Avatar_4.png",
-            }
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -709,16 +732,20 @@ const ordersdata = [
             },
             {
                 id: 2,
-                img: "/img/user/avatar_2.png",
+                img: "/img/user/Avatar_2.png",
             },
             {
                 id: 3,
-                img: "/img/user/avatar_3.png",
+                img: "/img/user/Avatar_3.png",
             },
             {
                 id: 4,
-                img: "/img/user/avatar_4.png",
-            }
+                img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -739,20 +766,24 @@ const ordersdata = [
         team: [
             {
                 id: 1,
-                img: "/img/user/avatar_1.png",
+                img: "/img/user/Avatar_1.png",
             },
             {
                 id: 2,
-                img: "/img/user/avatar_2.png",
+                img: "/img/user/Avatar_2.png",
             },
             {
                 id: 3,
-                img: "/img/user/avatar_3.png",
+                img: "/img/user/Avatar_3.png",
             },
             {
                 id: 4,
-                img: "/img/user/avatar_4.png",
-            }
+                img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -774,20 +805,24 @@ const ordersdata = [
         team: [
             {
                 id: 1,
-                img: "/img/user/avatar_1.png",
+                img: "/img/user/Avatar_1.png",
             },
             {
                 id: 2,
-                img: "/img/user/avatar_2.png",
+                img: "/img/user/Avatar_2.png",
             },
             {
                 id: 3,
-                img: "/img/user/avatar_3.png",
+                img: "/img/user/Avatar_3.png",
             },
             {
                 id: 4,
-                img: "/img/user/avatar_4.png",
-            }
+                img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -809,20 +844,24 @@ const ordersdata = [
         team: [
             {
                 id: 1,
-                img: "/img/user/avatar_1.png",
+                img: "/img/user/Avatar_1.png",
             },
             {
                 id: 2,
-                img: "/img/user/avatar_2.png",
+                img: "/img/user/Avatar_2.png",
             },
             {
                 id: 3,
-                img: "/img/user/avatar_3.png",
+                img: "/img/user/Avatar_3.png",
             },
             {
                 id: 4,
-                img: "/img/user/avatar_4.png",
-            }
+                img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -844,20 +883,24 @@ const ordersdata = [
         team: [
             {
                 id: 1,
-                img: "/img/user/avatar_1.png",
+                img: "/img/user/Avatar_1.png",
             },
             {
                 id: 2,
-                img: "/img/user/avatar_2.png",
+                img: "/img/user/Avatar_2.png",
             },
             {
                 id: 3,
-                img: "/img/user/avatar_3.png",
+                img: "/img/user/Avatar_3.png",
             },
             {
                 id: 4,
-                img: "/img/user/avatar_4.png",
-            }
+                img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -879,20 +922,24 @@ const ordersdata = [
         team: [
             {
                 id: 1,
-                img: "/img/user/avatar_1.png",
+                img: "/img/user/Avatar_1.png",
             },
             {
                 id: 2,
-                img: "/img/user/avatar_2.png",
+                img: "/img/user/Avatar_2.png",
             },
             {
                 id: 3,
-                img: "/img/user/avatar_3.png",
+                img: "/img/user/Avatar_3.png",
             },
             {
                 id: 4,
-                img: "/img/user/avatar_4.png",
-            }
+                img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     },
     {
@@ -914,20 +961,24 @@ const ordersdata = [
         team: [
             {
                 id: 1,
-                img: "/img/user/avatar_1.png",
+                img: "/img/user/Avatar_1.png",
             },
             {
                 id: 2,
-                img: "/img/user/avatar_2.png",
+                img: "/img/user/Avatar_2.png",
             },
             {
                 id: 3,
-                img: "/img/user/avatar_3.png",
+                img: "/img/user/Avatar_3.png",
             },
             {
                 id: 4,
-                img: "/img/user/avatar_4.png",
-            }
+                img: "/img/user/Avatar_4.png",
+            },
+            {
+                id: 5,
+                img: "/img/user/add_now.png",
+            },
         ]
     }
 ]
