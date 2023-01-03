@@ -12,8 +12,8 @@ const CardDelivery = () => {
                         <Image src={imgPic} alt="pic" width={60} height={60} />
                     </div>
                     <div className="block">
-                        <h4 className="text-black text-md">3D Content Studio</h4>
-                        <p className="text-sm text-black py-1 font-normal max-w-sm">Thanks again for your oder! Your delivery is enclosed.Thanks again and have a great day :).</p>
+                        <h4 className="text-black text-xl font-medium">3D Content Studio</h4>
+                        <p className="text-base text-black py-1 font-normal max-w-sm">Thanks again for your oder! Your delivery is enclosed.Thanks again and have a great day :).</p>
                     </div>
                 </div>
                 <SiHackthebox size={70} className="text-blue-500" />
@@ -22,11 +22,11 @@ const CardDelivery = () => {
             <div className="max-w-[330px] rounded overflow-hidden shadow-lg">
                 <Image className="w-full" src={PicAtach} alt="Pic" />
                 <div className="px-2 py-2 flex items-center justify-between">
-                    <p className='text-black'>3D Model.jpg <span className='text-gray-400'>(24MB)</span></p>
+                    <p className='text-black font-semibold text-sm'>3D Model.jpg <span className='text-gray-400'>(24MB)</span></p>
                     <BsDownload size={24} className="text-blue-500" />
                 </div>
             </div>
-            <p className='text-[12px] text-gray-400 p-2'>22:50  August 1, 2021</p>
+            <p className='text-sm mt-2 font-medium text-gray-400 p-2'>22:50  August 1, 2021</p>
         </div>
     )
 }
