@@ -25,7 +25,7 @@ const DetailProject = (props) => {
                 <div className="flex flex-col w-full text-sm font-medium">
                    <ul className="flex w-full justify-between p-2">
                         <li className="text-[#131313]">Order By</li>
-                        <li className="text-blue-500 text-blue-500">Angeline Lee</li>
+                        <li className="text-blue-500 text-blue-500">{itemData.users.name}</li>
                    </ul>
                    <ul className="flex w-full justify-between p-2">
                         <li className="text-[#131313]">Delivery Date</li>
