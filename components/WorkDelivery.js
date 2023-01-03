@@ -10,14 +10,16 @@ import ReactStars from "react-rating-stars-component";
 
 const WorkDelivery = () => {
     const [open, setOpen] = useState(false)
+    const [openOffer, setOpenOffer] = useState(false)
     const closeModal = () => setOpen(false)
+    const closeModalTwo = () => setOpenOffer(false)
     const [clicked, setClicked] = useState(false);
     return (
         <React.Fragment>
             <div className='bg-white border shadow-sm p-3 flex flex-col items-center font-play'>
                 <div className='flex space-x-4'>
-                    <button className='bg-blue-500 text-white py-3 w-56 px-4' onClick={() => setOpen(o => !o)}>Deliver Now</button>
-                    <button className='text-blue-500 border border-blue-500 bg-white py-3 w-56 px-4'>Create an Offer</button>
+                    <button className='bg-blue-500 text-white py-3 w-56 px-4' onClick={() => setOpen(!open)}>Deliver Now</button>
+                    <button className='text-blue-500 border border-blue-500 bg-white py-3 w-56 px-4' onClick={() => setOpenOffer(!openOffer)} >Create an Offer</button>
                 </div>
             </div>
 
@@ -60,6 +62,7 @@ const WorkDelivery = () => {
                 </div>
             </Popup>
 
+          
         </React.Fragment>
     )
 
