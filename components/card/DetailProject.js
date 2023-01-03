@@ -14,7 +14,10 @@ const DetailProject = (props) => {
                     <div className="flex items-center justify-between w-1/2 font-medium">
                         <div className="full">
                             <p className="text-black py-2 font-semibold text-base">{itemData.title}</p>
-                            <div className="w-36 bg-[#F9C152] py-2 text-[12px] text-white text-center rounded-full">{itemData.status}</div>
+                           
+                            <div  className={`w-36 py-2 text-[12px] text-white text-center rounded-full ${itemData.status == 'Completed' ? "bg-green-500" : "bg-[#F9C152]"}`}>
+                                {itemData.status}
+                            </div>
                         </div>
                     </div>
                     <Image src={imgStatus} width={60} height={60} alt="product" className="w-1/4" />

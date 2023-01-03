@@ -1,4 +1,4 @@
-import { products, dataUser } from "../../components/data/dataContents"
+import { ordersdata, dataUser } from "../../components/data/dataContents"
 import DetailProject from "../../components/card/DetailProject"
 import ProgressBar from "../../components/ProgressBar"
 import ListTeam from "../../components/ListTeam"
@@ -16,7 +16,7 @@ import { BsChevronRight } from "react-icons/bs";
 
 import React, { useState } from "react"
 export const getStaticPaths = async () => {
-    const paths = products.map(itemData => ({
+    const paths = ordersdata.map(itemData => ({
         params: { id: itemData.id.toString() },
     }))
     return {
@@ -27,7 +27,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const id = context.params.id
-    const data = products.filter(p => p.id.toString() === id)
+    const data = ordersdata.filter(p => p.id.toString() === id)
     return {
         props: {
             itemData: JSON.parse(JSON.stringify(data[0])),
