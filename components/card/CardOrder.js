@@ -8,7 +8,7 @@ import Link from "next/link";
 const CardOrder = (props) => {
     const { product } = props
     return (
-        <div className="w-[392px] shadow-sm p-2 bg-white font-play">
+        <div className="2xl:w-[392px] xl:w-[320px] w-[300px] shadow-sm p-2 bg-white font-play">
             <div className="flex justify-between py-2">
                 <div className="flex space-x-2 items-center">
                     <Image src='/img/user/Avatar_3.png' alt="pic" width={40} height={40} />
