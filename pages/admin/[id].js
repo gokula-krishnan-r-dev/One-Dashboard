@@ -11,6 +11,7 @@ import OrderRating from "../../components/OrderRating"
 import InputMessage from "../../components/InputMessage"
 import Satisfied from "../../components/Satisfied"
 import CardExtendDeliver from "../../components/card/CardExtendDeliver"
+import WorkDelivery from "../../components/WorkDelivery"
 import { BsChevronRight } from "react-icons/bs";
 
 import React, { useState } from "react"
@@ -36,11 +37,6 @@ export const getStaticProps = async (context) => {
 
 
 const ProjectDetailAdmin = ({ itemData }) => {
-    //const [clicked, setClicked] = useState(false)
-
-    //itemData.status == 'Completed' ? setClicked(true) : setClicked(false)
-    //const [clicked, setClicked] = useState(false);
-    //console.log(itemData)
     return (
         <React.Fragment>
 
@@ -62,6 +58,9 @@ const ProjectDetailAdmin = ({ itemData }) => {
                         </div>
                         <div className="py-2">
                             <Delivery />
+                        </div>
+                        <div className="py-2">
+                            <WorkDelivery />
                         </div>
                         <div className="py-2">
                             <Satisfied />

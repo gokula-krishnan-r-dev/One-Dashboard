@@ -9,7 +9,7 @@ const InputMessage = () => {
     const [clicked, setClicked] = useState(true);
 
     return (
-        <>
+        <React.Fragment>
             <div className='bg-white border shadow-sm p-3 font-play'>
                 <div className="bg-white flex flex-col w-full" onClick={() => setClicked(!clicked)}>
                     <div className="flex justify-between p-2">
@@ -32,12 +32,12 @@ const InputMessage = () => {
                                     <div className="flex items-center pl-0 space-x-1 sm:pl-2">
                                         <span className="text-gray-400">0 / 2500</span>
                                         <button type="button" className="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-                                            <RiEmotionHappyLine size={20}/>
+                                            <RiEmotionHappyLine size={20} />
                                             <span className="sr-only">Attach file</span>
                                         </button>
 
                                         <button type="button" className="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-                                            <ImAttachment  size={20}/>
+                                            <ImAttachment size={20} />
                                             <span className="sr-only">Attach file</span>
                                         </button>
                                         <button type="button" className="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
@@ -56,7 +56,7 @@ const InputMessage = () => {
                 ) : null}
             </div>
 
-        </>
+        </React.Fragment>
     )
 
 }

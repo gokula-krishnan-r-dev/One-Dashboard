@@ -6,7 +6,7 @@ const Delivery = () => {
     const [clicked, setClicked] = useState(false);
 
     return (
-        <>
+        <React.Fragment>
             <div className='bg-white border shadow-sm p-3 font-play'>
                 <div className="bg-white flex flex-col w-full" onClick={() => setClicked(!clicked)}>
                     <div className="flex justify-between p-2">
@@ -22,7 +22,7 @@ const Delivery = () => {
 
                 ) : null}
             </div>
-        </>
+        </React.Fragment>
     )
 
 }
