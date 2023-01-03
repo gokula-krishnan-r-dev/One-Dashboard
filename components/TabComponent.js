@@ -7,13 +7,13 @@ const PersonalInfo = () =>{
          <div className="flex flex-col w-full font-play">   
                     <div className="py-4 w-1/3 border p-4 bg-white">
                         <div className="py-2 flex items-center justify-between">
-                            <p className="text-black text-md">My Details</p>
-                            <div className="flex space-x-2">
+                            <p className="text-black text-xl font-medium">My Details</p>
+                            <div className="flex space-x-2 font-normal">
                                 <button className="py-2 text-blue-500 p-2 border px-2 text-sm">Cancel</button>
                                 <button className="py-2 text-white bg-blue-500 p-2 border px-4 text-sm">Save</button>
                             </div>
                         </div>
-                        <div className="py-4 w-full flex items-center justify-between ">
+                        <div className="py-4 w-full flex items-center justify-between text-base font-normal">
                             <div className="w-1/2">
                                 <p className="text-black py-2.5">First Name</p>
                                 <input type="text" className="border p-2" value='John' />
@@ -23,12 +23,12 @@ const PersonalInfo = () =>{
                                 <input type="text" className="border p-2" value='Steady' />
                             </div>
                         </div>
-                        <div className="py-2">
+                        <div className="py-2 text-base font-normal">
                             <p className="text-black py-2.5">Email</p>
                             <input type="email" className="border p-2 w-full" value='johnsteady@gmail.com' />
                         </div>
                         <div className="py-2">
-                            <p className="py-2">Profile Picture</p>
+                            <p className="py-2 text-base font-normal">Profile Picture</p>
                             <div className="flex items-center space-x-4">
                                 <Image src='/img/user/Avatar_3.png' width={79} height={70} alt="pic" />
                                 <div className="w-1/2">
