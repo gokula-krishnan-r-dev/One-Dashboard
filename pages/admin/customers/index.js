@@ -33,22 +33,22 @@ const Customer = () => {
                 <table className="min-w-full">
                   <thead>
                     <tr>
-                      <th scope="col" className="text-xl font-medium text-back font-bold px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-back font-bold py-4 text-left">
                         Name
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-left">
                        Customer ID
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-left">
                         Country
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-left">
                         Email
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-center">
                         Total Orders
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left flex justify-center items-center">
+                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-center">
                         Status
                       </th>
                     </tr>
@@ -69,13 +69,13 @@ const Customer = () => {
                             <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap">
                               {member.country.name}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 text-left">
                               {member.email}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap text-center">
                               $ {member.total_orders}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap flex justify-center items-center">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap flex justify-center">
                                <Link href={'customers/'+ member.id} key={member.id}><MdEdit size={24} /></Link>
                             </td>
                           </tr>

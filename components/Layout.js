@@ -22,7 +22,7 @@ export default function Layout({ children }) {
   return (
     <div className='min-h-screen flex flex-col'>
       <div className='flex flex-col md:flex-row flex-1'>
-        <aside className='border-r w-full md:w-64'>
+        <aside className='hidden lg:block sm:w-64 border-r w-full'>
           <div className="pt-6 pl-8 fixed">
             <Image src={Logo} alt="logo" width={158} height={60} />
           </div>

@@ -57,7 +57,7 @@ const AdminDashboard = () => {
           <div className="overflow-auto">
             <div className="py-2 inline-block">
               <h4 className="text-3xl font-semibold text-blue-500 py-4">Active Order</h4>
-              <div className="flex flex-wrap gap-4 mt-8 items-center">
+              <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
                 
                 {ordersdata.map((product, index) => (
                   product.status_order == 'active' && (
@@ -72,7 +72,7 @@ const AdminDashboard = () => {
           <div className="overflow-auto">
           <div className="py-2 inline-block">
               <h4 className="text-3xl font-semibold text-blue-500 py-4">Awaiting Order</h4>
-              <div className="flex flex-wrap gap-4 mt-8 items-center">
+              <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
               {ordersdata.map((product, index) => (
                   product.status_order == 'awaiting' && (
                   <div key={index}>
