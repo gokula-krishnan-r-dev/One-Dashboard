@@ -10,6 +10,7 @@ import Delivery from '../../components/Delivery'
 import OrderRating from "../../components/OrderRating"
 import InputMessage from "../../components/InputMessage"
 import { BsChevronRight } from "react-icons/bs";
+import CardExtendDeliver from "../../components/card/CardExtendDeliver"
 
 import React from "react"
 export const getStaticPaths = async () => {
@@ -37,13 +38,13 @@ const ProjectDetail = ({ itemData }) => {
     return (
         <React.Fragment>
 
-            <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
+<div className="p-4 pt-4 bg-[#FAFAFA] min-h-full">
                 <div className="w-full py-4">
                     <p className="text-gray-400 flex items-center space-x-2 py-1"><span>Order</span> <BsChevronRight /> <span>#{itemData.order_id}</span></p>
                     <h3 className="text-3xl">Project Name 1</h3>
                 </div>
-                <div className="flex w-full space-x-2">
-                    <div className="w-2/3">
+                <div className="flex flex-wrap lg:flex-nowrap w-full space-x-2">
+                    <div className="lg:w-2/3 w-full">
                         <div className="py-2">
                             <Requiretment />
                         </div>
@@ -56,16 +57,27 @@ const ProjectDetail = ({ itemData }) => {
                         <div className="py-2">
                             <Delivery />
                         </div>
+                        
+                      
+                        
+                        
                         <div className="py-2">
                             <InputMessage />
                         </div>
                     </div>
-                    <div className="w-1/3 flex flex-col pl-16">
-                        <div className="p-2">
+                    <div className="lg:w-1/3 w-full flex flex-col pl-0 2xl:pl-16">
+                        {itemData.status != 'Completed' ? (
+                            <div className="py-2">
+                                <CardExtendDeliver />
+                            </div>
+                             
+                        ) : null}
+                      
+                        <div className="py-2">
                             <DetailProject itemData={itemData} />
                         </div>
-                        <div className="p-2">
-                            <div className="w-[450px] bg-white shadow-sm border font-play p-4 font-medium">
+                        <div className="py-2">
+                            <div className="bg-white shadow-sm border font-play p-4 font-medium">
                                 <p className="py-2">Your order is on progress.</p>
                                 <ProgressBar progressPercentage={itemData.progress} />
                             </div>

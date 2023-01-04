@@ -10,7 +10,6 @@ const NavBar = () => {
                 <div className='flex items-center space-x-4 px-4'>
                     <span className='font-play font-medium text-embo'>Price</span>
                  
-                    
                     <Notifications color="white" />
                     <DropdownUser /> 
                     

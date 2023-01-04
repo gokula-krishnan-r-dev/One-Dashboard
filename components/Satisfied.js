@@ -15,7 +15,7 @@ const Satisfied = () => {
             <div className='bg-white border shadow-sm p-3 flex flex-col items-center font-play'>
                <h3 className='text-xl text-black text-center py-4'>Are you satisfied with me delivery ?</h3>
                <div className='flex space-x-4'>
-                    <button className='bg-blue-500 text-white py-3 lg:w-56 px-4'  onClick={() => setOpen(o => !o)}>Yes</button>
+                    <button className='bg-blue-500 text-white py-3 md:w-56 px-4'  onClick={() => setOpen(o => !o)}>Yes</button>
                     <button className='text-blue-500 border border-blue-500 bg-white py-3 lg:w-56 px-4'>I still need something</button>
                </div>
                <p className='text-blue-500 text-center py-8'>Order will be automatically marked complete after 3 days</p>

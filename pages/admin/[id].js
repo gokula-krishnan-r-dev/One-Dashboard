@@ -91,7 +91,9 @@ const ProjectDetailAdmin = ({ itemData }) => {
                                 <ProgressBar progressPercentage={itemData.progress} />
                             </div>
                         </div>
-                        
+                        <div className="py-2">
+                             <ListTeam team={itemData.team} /> 
+                        </div>
                     </div>
                 </div>
             </div>

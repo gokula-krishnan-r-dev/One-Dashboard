@@ -29,7 +29,7 @@ const DropdownUser = () => {
                         </div>
                          <Image src={ImgAvatar} width={32} height={32} className="rounded-full" alt="avatar" />
                     </div>
-                    <span> Angelina Lee</span>
+                    <span className='md:block hidden'> Angelina Lee</span>
                     <BsChevronDown size={18} />
                     
                 </div>
