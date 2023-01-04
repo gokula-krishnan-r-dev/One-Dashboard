@@ -15,7 +15,7 @@ const Login = () => {
         <>
             <div className="h-screen md:flex">
                 <div className="flex flex-col md:w-1/3 py-10 items-center bg-white">
-                    <div className="w-10/12 font-play mt-20 p-4">
+                    <div className="w-10/12 font-play p-4">
                         <Image src={logoimg} width={280} height={108} className="mx-auto" alt="logo" />
                         <form className="bg-teal-white">
                             <h3 className="text-2xl font-bold text-black text-center mb-7 py-6">
