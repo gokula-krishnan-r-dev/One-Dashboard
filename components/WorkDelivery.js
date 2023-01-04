@@ -18,8 +18,8 @@ const WorkDelivery = () => {
         <React.Fragment>
             <div className='bg-white border shadow-sm p-3 flex flex-col items-center font-play'>
                 <div className='flex space-x-4'>
-                    <button className='bg-blue-500 text-white py-3 w-56 px-4' onClick={() => setOpen(!open)}>Deliver Now</button>
-                    <button className='text-blue-500 border border-blue-500 bg-white py-3 w-56 px-4' onClick={() => setOpenOffer(!openOffer)} >Create an Offer</button>
+                    <button className='bg-blue-500 text-white py-3 lg:w-56 px-4' onClick={() => setOpen(!open)}>Deliver Now</button>
+                    <button className='text-blue-500 border border-blue-500 bg-white py-3 lg:w-56 px-4' onClick={() => setOpenOffer(!openOffer)} >Create an Offer</button>
                 </div>
             </div>
 

@@ -61,23 +61,23 @@ const Order = () => {
                         
                           <tr>
                             
-                            <td className="flex items-center space-x-2  px-6 py-4 whitespace-nowrap">
+                            <td className="flex items-center space-x-2 px-6 py-4">
                               <Image src='/img/user/Avatar_4.png' alt="pic" width={50} height={50} />
                               <span className="font-semibold text-black text-base font-semibold">Angeline Lee</span>
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 px-6">
                               {order.order_id}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 px-6 ">
                               {order.title}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 px-6">
                                {order.delivery_date}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light py-4">
                                $ {order.amount}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap flex justify-center items-center">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 flex justify-center items-center">
                               <div className={`p-1 px-2 py-1.5 font-normal rounded-2xl text-[12px] ${order.status === 'Completed' ?  'text-green-500 bg-green-50' : order.status ==='Pending Payment' ? 'text-orange-400 bg-orange-100': order.status === 'In Repair' ? 'text-red-400 bg-red-100' : 'text-gray-400 bg-gray-200' }`}>
                                 <Link href={'/admin/'+ order.id} key={order.id}> {order.status}</Link>
                               </div>

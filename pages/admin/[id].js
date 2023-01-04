@@ -41,7 +41,7 @@ const ProjectDetailAdmin = ({ itemData }) => {
     return (
         <React.Fragment>
 
-            <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
+            <div className="p-4 pt-4 bg-[#FAFAFA] min-h-full">
                 <div className="w-full py-4">
                     <p className="text-gray-400 flex items-center space-x-2 py-1"><span>Order</span> <BsChevronRight /> <span>#{itemData.order_id}</span></p>
                     <h3 className="text-3xl">Project Name 1</h3>
@@ -91,9 +91,7 @@ const ProjectDetailAdmin = ({ itemData }) => {
                                 <ProgressBar progressPercentage={itemData.progress} />
                             </div>
                         </div>
-                        <div className="py-2">
-                             <ListTeam team={itemData.team} /> 
-                        </div>
+                        
                     </div>
                 </div>
             </div>
