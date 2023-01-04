@@ -47,7 +47,7 @@ const Notifications = (props) => {
             <div className="bg-gray-100 rounded-full p-2">
                 <GrNotification size={16} />
             </div>
-            <div className="max-w-md absolute -right-24 top-8 bg-white" ref={popperRef} {...attributes.popper}>
+            <div className="max-w-sm absolute -right-24 top-8 bg-white" ref={popperRef} {...attributes.popper}>
                 <DropdownContainer className="shadow-sm flex flex-col" style={styles.offset} visible={visible}>
                     <div className="w-full flex space-x-2 items-center py-6 p-2 border-b ">
                         <GrNotification size={28} />

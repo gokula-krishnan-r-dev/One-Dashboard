@@ -8,7 +8,8 @@ import Link from "next/link";
 const CardOrder = (props) => {
     const { product } = props
     return (
-        <div className="2xl:w-[392px] xl:w-[320px] w-[350px] shadow-sm p-2 bg-white font-play">
+        <div className="2xl:w-[392px] xl:w-[320px] w-[370px] shadow-sm p-2 bg-white font-play">
+            
             <div className="flex justify-between py-2">
                 <div className="flex space-x-2 items-center">
                     <Image src={product.users.img} alt="pic" width={40} height={40} />

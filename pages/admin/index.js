@@ -12,7 +12,7 @@ const AdminDashboard = () => {
     <React.Fragment>
       <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
         <div className="flex flex-col w-full">
-          <div className="overflow-x-auto font-play">
+          <div className="font-play">
             <p className="text-gray-400 text-base">Overview</p>
             <div className="py-2 inline-block min-w-full md:flex md:justify-between md:items-center">
               <h3 className="text-3xl font-semibold">Orders</h3>
@@ -26,7 +26,7 @@ const AdminDashboard = () => {
                   <input type="text" placeholder="search" className="pl-10 py-2.5 w-full" />
                 </div>
                 <div className="w-full md:w-44 border relative mt-2">
-                  <select className="block appearance-none w-full bg-white border px-4 py-2.5">
+                  <select className="block appearance-none w-full bg-white px-4 py-2.5">
                     <option>This Week</option>
                     <option>Option 2</option>
                     <option>Option 3</option>
@@ -36,7 +36,7 @@ const AdminDashboard = () => {
                   </div>
                 </div>
                 <div className="w-full md:w-44 border relative mt-2">
-                  <select className="block appearance-none w-full bg-blue-500 border px-4 py-2.5">
+                  <select className="block appearance-none w-full px-4 py-2.5">
                     <option className="text-red-500">All</option>
                     <option>Draft</option>
                     <option>Pending Review</option>
@@ -54,34 +54,66 @@ const AdminDashboard = () => {
               </div>
             </div>
           </div>
+          
+          <div className="w-full">
+              <h4 className="text-3xl font-semibold text-blue-500 py-4">Active Order</h4>
+              <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
+
+                {ordersdata.map((product, index) => (
+                  product.status_order == 'active' && (
+                    <div key={index}>
+                      <CardOrder product={product} />
+                    </div>
+                  )))}
+
+              </div>
+          </div>
+          <div className="w-full">
+              <h4 className="text-3xl font-semibold text-blue-500 py-4">Awaiting</h4>
+              <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
+
+                {ordersdata.map((product, index) => (
+                  product.status_order == 'awaiting' && (
+                    <div key={index}>
+                      <CardOrder product={product} />
+                    </div>
+                  )))}
+
+              </div>
+          </div>
+
+          {/*
           <div className="overflow-auto">
-<div className="py-2 inline-block">
-  <h4 className="text-3xl font-semibold text-blue-500 py-4">Active Order</h4>
-  <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
-    
-    {ordersdata.map((product, index) => (
-      product.status_order == 'active' && (
-      <div key={index}>
-        <CardOrder product={product} />
-      </div>
-    )))}
-    
-  </div>
-</div>
-</div>
-<div className="overflow-auto">
-<div className="py-2 inline-block">
-  <h4 className="text-3xl font-semibold text-blue-500 py-4">Awaiting Order</h4>
-  <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
-  {ordersdata.map((product, index) => (
-      product.status_order == 'awaiting' && (
-      <div key={index}>
-        <CardOrder product={product} />
-      </div>
-    )))}
-  </div>
-</div>
-</div>
+            <div className="py-2 inline-block">
+              <h4 className="text-3xl font-semibold text-blue-500 py-4">Active Order</h4>
+              <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
+
+                {ordersdata.map((product, index) => (
+                  product.status_order == 'active' && (
+                    <div key={index}>
+                      <CardOrder product={product} />
+                    </div>
+                  )))}
+
+              </div>
+            </div>
+          </div>
+            */}
+          {/*
+          <div className="overflow-auto">
+            <div className="py-2 inline-block">
+              <h4 className="text-3xl font-semibold text-blue-500 py-4">Awaiting Order</h4>
+              <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
+                {ordersdata.map((product, index) => (
+                  product.status_order == 'awaiting' && (
+                    <div key={index}>
+                      <CardOrder product={product} />
+                    </div>
+                  )))}
+              </div>
+            </div>
+          </div>
+            */}
         </div>
       </div>
     </React.Fragment>
