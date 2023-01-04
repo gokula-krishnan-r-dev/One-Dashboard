@@ -30,7 +30,7 @@ export default function Layout({ children }) {
             <Image src={Logo} alt="logo" width={128} height={30} />
         </div>
         {/*{`flex ${router.asPath === menu.href && 'text-gray-900'}`}> */}
-        <aside className={`lg:block sm:w-64 border-r w-full ${showSide ? 'fixed bg-white h-full z-10' : 'hidden'}`}>
+        <aside className={`lg:block sm:w-64 border-r w-full ${showSide ? 'fixed bg-white h-full w-64 z-10' : 'hidden'}`}>
           <nav>
             <div className="pt-2 pl-8 fixed">
               <Image src={Logo} alt="logo" width={158} height={60} />
