@@ -76,16 +76,16 @@ const ProjectDetailAdmin = ({ itemData }) => {
                     </div>
                     <div className="lg:w-1/3 w-full flex flex-col pl-0 2xl:pl-16">
                         {itemData.status != 'Completed' ? (
-                            <div className="p-2">
+                            <div className="py-2">
                                 <CardExtendDeliver />
                             </div>
                              
                         ) : null}
                       
-                        <div className="p-2">
+                        <div className="py-2">
                             <DetailProject itemData={itemData} />
                         </div>
-                        <div className="p-2">
+                        <div className="py-2">
                             <div className="bg-white shadow-sm border font-play p-4 font-medium">
                                 <p className="py-2">Your order is on progress.</p>
                                 <ProgressBar progressPercentage={itemData.progress} />
