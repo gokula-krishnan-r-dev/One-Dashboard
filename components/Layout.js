@@ -8,10 +8,13 @@ import Logo from '../public/img/Logo.svg'
 import React, { useState, useEffect } from "react";
 import HelpCenter from './HelpCenter';
 import { RiTeamLine } from "react-icons/ri"
+import { BiMenuAltLeft } from "react-icons/bi"
 export default function Layout({ children }) {
   const [pageUrl, setPageUrl] = useState('')
   const [currentShow, setShow] = useState(false)
   const [currentSetting, setSettings] = useState(false)
+  const [showSide, setShowSide] = useState(false)
+
   const router = useRouter();
   useEffect(() => {
     setPageUrl(window.location.pathname)
@@ -22,12 +25,17 @@ export default function Layout({ children }) {
   return (
     <div className='min-h-screen flex flex-col'>
       <div className='flex flex-col md:flex-row flex-1'>
-        <aside className='hidden lg:block sm:w-64 border-r w-full'>
-          <div className="pt-6 pl-8 fixed">
-            <Image src={Logo} alt="logo" width={158} height={60} />
-          </div>
-          <nav className="mt-28">
-            <ul className='fixed'>
+       <div className='text-black left-2 flex items-center fixed top-6 z-20 lg:hidden' onClick={() => setShowSide(!showSide)}>
+            <BiMenuAltLeft size={32} />
+            <Image src={Logo} alt="logo" width={128} height={30} />
+        </div>
+        {/*{`flex ${router.asPath === menu.href && 'text-gray-900'}`}> */}
+        <aside className={`lg:block sm:w-64 border-r w-full ${showSide ? 'fixed bg-white h-full z-10' : 'hidden'}`}>
+          <nav>
+            <div className="pt-2 pl-8 fixed">
+              <Image src={Logo} alt="logo" width={158} height={60} />
+            </div>
+            <ul className='fixed mt-24'>
               {menuItem.map((menu, index) => (
                 
                 <li className='w-64' key={index}>

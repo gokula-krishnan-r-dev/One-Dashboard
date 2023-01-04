@@ -46,8 +46,8 @@ const ProjectDetailAdmin = ({ itemData }) => {
                     <p className="text-gray-400 flex items-center space-x-2 py-1"><span>Order</span> <BsChevronRight /> <span>#{itemData.order_id}</span></p>
                     <h3 className="text-3xl">Project Name 1</h3>
                 </div>
-                <div className="flex w-full space-x-2">
-                    <div className="w-2/3">
+                <div className="flex flex-wrap lg:flex-nowrap w-full space-x-2">
+                    <div className="lg:w-2/3 w-full">
                         <div className="py-2">
                             <Requiretment />
                         </div>
@@ -74,7 +74,7 @@ const ProjectDetailAdmin = ({ itemData }) => {
                             <InputMessage />
                         </div>
                     </div>
-                    <div className="w-1/3 flex flex-col pl-0 2xl:pl-16">
+                    <div className="lg:w-1/3 w-full flex flex-col pl-0 2xl:pl-16">
                         {itemData.status != 'Completed' ? (
                             <div className="p-2">
                                 <CardExtendDeliver />
