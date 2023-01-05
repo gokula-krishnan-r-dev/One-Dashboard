@@ -9,6 +9,7 @@ import React, { useState, useEffect } from "react";
 import HelpCenter from './HelpCenter';
 import { RiTeamLine } from "react-icons/ri"
 import { BiMenuAltLeft } from "react-icons/bi"
+import { BsQuestionLg } from "react-icons/bs";
 export default function Layout({ children }) {
   const [pageUrl, setPageUrl] = useState('')
   const [currentShow, setShow] = useState(false)
@@ -91,7 +92,11 @@ export default function Layout({ children }) {
           </nav>
           
           <div className='p-8 fixed bottom-0'>
+                <HelpCenter />
+
+            {/*
             <HelpCenter />
+            */}
           </div>
 
         </aside>
