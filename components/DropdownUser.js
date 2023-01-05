@@ -45,7 +45,7 @@ const DropdownUser = () => {
                     contentStyle={{ padding: '0px', border: 'none' }}
                     arrow={false}
                 >
-                    <div className="w-60 fixed bg-white shadow-md right-0 mt-12 flex flex-col px-6">
+                    <div className="w-60 fixed bg-white shadow-md top-6 right-0 mt-12 flex flex-col px-6">
                         <li className='border-b p-2 border-gray-300 py-2.5 flex items-center space-x-2' onClick={openModal}><FaRegUserCircle size={22} className="text-gray-400" /><a className='md:text-base text-sm text-gray-400'> My Profile</a></li>
                         <li className='p-2 py-2.5 flex items-center space-x-2'><FiLogOut size={22}  className="text-gray-400" /> <span className='md:text-base text-sm text-gray-400'>Log out</span></li>
                     </div>
