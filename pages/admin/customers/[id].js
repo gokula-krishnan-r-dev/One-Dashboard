@@ -39,56 +39,55 @@ const DetailCustomer = ({ itemData }) => {
                 </div>
                 <div className="w-full py-4 bg-white mt-2">
                     <div className="flex items-center space-x-2 p-2">
-                        <Image src={itemData.img} alt="pic" width={115} height={115} />
+                        <Image src={itemData.img} alt="pic" width={115} height={115} className="p-2" />
                         <div className="block">
-                            <p className="text-2xl text-black font-semibold">
+                            <p className="md:text-2xl text-xl text-black font-semibold">
                                 {itemData.name}
                             </p>
                             <p className="text-[12px] text-gray-400">Last seen 32 minutes ago</p>
                         </div>
                     </div>
-                    <div className="flex w-2/3 justify-between">
-                        <div className="p-4">
+                    <div className="md:flex md::w-2/3 w-4/5 md:justify-between block">
+                        <div className="p-4 md:text-xl text-base">
                             <div className="p-2">
-                                <p className="text-blue-500 text-xl">
+                                <p className="text-blue-500">
                                     CustomerID
                                 </p>
-                                <p className="text-2xl text-black py-2 font-semibold">
+                                <p className="md:text-2xl text-lg text-black py-2 font-semibold">
                                     CS15072021001
                                 </p>
                             </div>
                             <div className="p-2">
-                                <p className="text-blue-500 text-xl">
+                                <p className="text-blue-500">
                                     Email Address
                                 </p>
-                                <p className="text-2xl text-black py-2 font-semibold">
+                                <p className="md:text-2xl text-lg text-black py-2 font-semibold">
                                     {itemData.email}
                                 </p>
                             </div>
                             <div className="p-2">
-                                <p className="text-blue-500 text-xl ">
+                                <p className="text-blue-500 ">
                                     Phone Number
                                 </p>
-                                <p className="text-2xl text-black py-2 font-semibold">
+                                <p className="md:text-2xl text-lg text-black py-2 font-semibold">
                                     +63-819-001-9187
                                 </p>
                             </div>
                         </div>
-
-                        <div className="p-4">
-                            <div className="py-2">
-                                <p className="text-blue-500 text-xl">
+                        <div className="p-4 md:text-xl text-base">
+                            <div className="p-2">
+                                <p className="text-blue-500">
                                     Total Value Orders
                                 </p>
-                                <p className="text-2xl text-black py-2 font-semibold">
+                                <p className="md:text-2xl text-lg text-black py-2 font-semibold">
                                     ${itemData.total_orders}
                                 </p>
                             </div>
-                            <div className="py-2">
-                                <p className="text-blue-500 text-xl">
+                            <div className="p-2">
+                                <p className="text-blue-500">
                                     Country
                                 </p>
-                                <p className="text-2xl text-black py-2 font-semibold">
+                                <p className="md:text-2xl text-lg text-black py-2 font-semibold">
 
                                     {itemData.country.name}
 
@@ -96,34 +95,33 @@ const DetailCustomer = ({ itemData }) => {
                                 </p>
                             </div>
 
-                            <div className="py-2">
+                            <div className="p-2">
                                 <button className="p-3 px-4 text-white bg-blue-500">Manage Teams</button>
                             </div>
                         </div>
                     </div>
-
-                    <div className="py-4 w-2/5">
+                    <div className="py-4 lg:w-2/5 w-9/12">
                         <div className="p-6">
-                            <p className="text-blue-500 text-xl">
+                            <p className="text-blue-500 md:text-xl text-lg">
                                 Billing Address
                             </p>
-                            <div className="flex space-x-2 py-2 text-xl font-semibold">
-                                <input type="text" className="border p-2 basis-1/2" value={itemData.name} />
-                                <input type="text" className="border p-2 basis-1/2" value={itemData.name} />
+                            <div className="md:flex md:gap-2 py-2 text-xl font-semibold">
+                                <input type="text" className="border p-2 md:basis-1/2 w-full mt-2" value="David" />
+                                <input type="text" className="border p-2 md:basis-1/2 w-full mt-2" value="Morgan" />
                             </div>
                             <div className="py-2 text-xl font-semibold">
                                 <input type="text" className="border p-2 w-full" value={itemData.street} />
                             </div>
-                            <div className="py-2 flex space-x-2 text-xl font-semibold w-full">
-
-                                <input type="text" className="border p-2 w-1/3" value={itemData.city} />
-
-                                <input type="text" className="border p-2 w-1/3" value={itemData.country.name} />
-
-                                <input type="text" className="border p-2 w-1/3" value={itemData.zipcode} />
+                            <div className="md:flex gap-2 md:items-center py-2 text-xl font-semibold">
+                                <input type="text" className="border p-2 md:basis-1/3 mt-2 w-full" value={itemData.city} />
+                                <input type="text" className="border p-2 md:basis-1/3 mt-2 w-full" value={itemData.country.name} />
+                                <input type="text" className="border p-2 md:basis-1/3 mt-2 w-full" value={itemData.zipcode} />
                             </div>
+                          
+                           {/* */}
                         </div>
                     </div>
+
                 </div>
             </div>
 
