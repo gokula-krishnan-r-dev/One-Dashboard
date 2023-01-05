@@ -15,7 +15,7 @@ const AdminDashboard = () => {
           <div className="font-play">
             <p className="text-gray-400 text-base">Overview</p>
             <div className="py-2 inline-block min-w-full md:flex md:justify-between md:items-center">
-              <h3 className="text-3xl font-semibold">Orders</h3>
+              <h3 className="md:text-3xl text-xl font-semibold">Orders</h3>
               <div className="flex items-center flex-wrap md:space-x-2">
                 <div className="w-full md:w-44 border relative mt-2">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
@@ -56,7 +56,7 @@ const AdminDashboard = () => {
           </div>
           
           <div className="w-full">
-              <h4 className="text-3xl font-semibold text-blue-500 py-4">Active Order</h4>
+              <h4 className="md:text-3xl text-xl font-semibold text-blue-500 py-4">Active Order</h4>
               <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
 
                 {ordersdata.map((product, index) => (
@@ -69,7 +69,7 @@ const AdminDashboard = () => {
               </div>
           </div>
           <div className="w-full">
-              <h4 className="text-3xl font-semibold text-blue-500 py-4">Awaiting</h4>
+              <h4 className="md:text-3xl text-xl font-semibold text-blue-500 py-4">Awaiting</h4>
               <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
 
                 {ordersdata.map((product, index) => (

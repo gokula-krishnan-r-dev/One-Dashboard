@@ -35,7 +35,7 @@ const DetailCustomer = ({ itemData }) => {
             <div className="p-4 pt-4 bg-[#FAFAFA] h-full font-play">
                 <div className="w-full py-4">
                     <p className="text-gray-400 text-base flex items-center space-x-2 py-1"><a><Link href='/admin/customers'>Customers</Link></a> <BsChevronRight /> <span className="text-base">Customers Detail</span></p>
-                    <h3 className="text-3xl font-semibold py-1">Customers Detail</h3>
+                    <h3 className="md:text-3xl text-xl font-semibold py-1">Customers Detail</h3>
                 </div>
                 <div className="w-full py-4 bg-white mt-2">
                     <div className="flex items-center space-x-2 p-2">
@@ -47,7 +47,7 @@ const DetailCustomer = ({ itemData }) => {
                             <p className="text-[12px] text-gray-400">Last seen 32 minutes ago</p>
                         </div>
                     </div>
-                    <div className="md:flex md::w-2/3 w-4/5 md:justify-between block">
+                    <div className="md:flex md:w-2/3 w-4/5 md:justify-between block">
                         <div className="p-4 md:text-xl text-base">
                             <div className="p-2">
                                 <p className="text-blue-500">
@@ -104,7 +104,7 @@ const DetailCustomer = ({ itemData }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="py-4 lg:w-2/5 w-9/12">
+                    <div className="py-4 lg:w-2/5 sm:w-9/12 w-full">
                         <div className="p-6">
                             <p className="text-blue-500 md:text-xl text-lg">
                                 Billing Address

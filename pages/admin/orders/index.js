@@ -11,9 +11,9 @@ const Order = () => {
     <React.Fragment>
       <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
         <div className="flex flex-col w-full">
-            <p className="text-gray-400">Overview</p>
+            <p className="text-gray-400">Orders</p>
             <div className="py-2 inline-block min-w-full md:flex md:justify-between md:items-center">
-              <a className="text-4xl py-4"><Link href='/customers'>Customers</Link></a>
+              <a className="md:text-3xl text-xl py-4"><Link href='/customers'>All Type</Link></a>
               <div className="w-full md:w-44 border relative mt-2">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                     <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
