@@ -22,13 +22,13 @@ const Satisfied = () => {
             </div>
 
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-                <div className='w-[750px] border bg-white shadow-sm flex flex-col items-center justify-center p-4 font-play'>
+                <div className='md:w-[750px] w-[350px] border bg-white shadow-sm flex flex-col items-center justify-center p-4 font-play'>
                     <p className='text-2xl text-black text-center py-2'>Please rate your Experince</p>
                     <div className='py-2'>
                         <ReactStars 
                             count={5}
                             onChange={ratingChanged}
-                            value={2.5}
+                            value={1.5}
                             size={41}
                             isHalf={true}
                             emptyIcon={<BsStar size={30} className="bg-blue-500 text-blue-500" />}
@@ -37,8 +37,8 @@ const Satisfied = () => {
                             activeColor="#FFC100"
                         />
                     </div>
-                    <input type="text" placeholder='Share your fedbeck here' className='border py-3 w-2/3 p-2' />
-                    <button className='bg-blue-500 text-white py-3 w-2/3 mt-8'>Share Feedback</button>
+                    <input type="text" placeholder='Share your fedbeck here' className='border py-3 md:w-2/3 w-full p-2' />
+                    <button className='bg-blue-500 text-white py-3 md:w-2/3 w-full mt-8'>Share Feedback</button>
                 </div>
             </Popup>
 

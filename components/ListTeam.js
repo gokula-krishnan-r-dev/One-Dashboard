@@ -4,7 +4,7 @@ const ListTeam = (props) => {
     const { team } = props
     return (
         <React.Fragment>
-            <div className="lg:w-[450px] font-play py-2 font-medium">
+            <div className="font-play py-2 font-medium">
                 <div className="p-2 flex -space-x-3 pl-8">
                     {team.map((t, index) => {
                         return (

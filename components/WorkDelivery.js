@@ -24,7 +24,7 @@ const WorkDelivery = () => {
             </div>
 
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-                <div className='w-[678px]  bg-white shadow-md flex flex-col items-center p-6 font-play'>
+                <div className='md:w-[678px] w-[350px] bg-white shadow-md flex flex-col items-center p-6 font-play'>
                     <div className='w-full flex justify-between pb-4'>
                         <p className='text-black text-xl font-semibold'>Deliver your work</p>
                         <AiOutlineClose size={24} onClick={closeModal} />
