@@ -22,25 +22,35 @@ const DropdownUser = () => {
     }
     return (
         <React.Fragment>
-                <div className='text-black font-medium font-play py-2 flex items-center space-x-2' onClick={() => setClicked(!clicked)}>
-                    <div className='relative'>
-                        <div className="w-4 h-4 bg-red-600 flex items-center justify-center absolute rounded-full text-white text-[10px] -right-1 -top-1 z-20">
-                          1
-                        </div>
-                         <Image src={ImgAvatar} width={32} height={32} className="rounded-full" alt="avatar" />
-                    </div>
-                    <span className='md:block hidden'> Angelina Lee</span>
-                    <BsChevronDown size={18} />
-                    
-                </div>
-                {clicked ? (
-                    <ul className='bg-white p-2 mt-32 absolute right-4 w-60 text-sm font-semibold text-gray-400'>
-                        <li className='border-b border-gray-300 py-2.5 flex items-center space-x-2' onClick={openModal}><FaRegUserCircle size={22} /><a> My Profile</a></li>
-                        <li className='border-b border-gray-300 py-2.5 flex items-center space-x-2'><FiLogOut size={22} /> <span>Log out</span></li>
-                    </ul>
-                ) : null}
-            
+            <div className="menu">
+                <Popup
+                    trigger={
+                        <div className='text-black font-medium font-play py-2 flex items-center space-x-2'>
+                            <div className='relative'>
+                                <div className="w-4 h-4 bg-red-600 flex items-center justify-center absolute rounded-full text-white text-[10px] -right-1 -top-1 z-20">
+                                    1
+                                </div>
+                                <Image src={ImgAvatar} width={32} height={32} className="rounded-full" alt="avatar" />
+                            </div>
+                            <span className='md:block hidden'> Angelina Lee</span>
+                            <BsChevronDown size={18} />
 
+                        </div>
+                    }
+                    position="center top"
+                    on="hover"
+                    closeOnDocumentClick
+                    mouseLeaveDelay={300}
+                    mouseEnterDelay={0}
+                    contentStyle={{ padding: '0px', border: 'none' }}
+                    arrow={false}
+                >
+                    <div className="w-60 fixed bg-white shadow-md right-0 mt-12 flex flex-col px-6">
+                        <li className='border-b p-2 border-gray-300 py-2.5 flex items-center space-x-2' onClick={openModal}><FaRegUserCircle size={22} className="text-gray-400" /><a className='md:text-base text-sm text-gray-400'> My Profile</a></li>
+                        <li className='p-2 py-2.5 flex items-center space-x-2'><FiLogOut size={22}  className="text-gray-400" /> <span className='md:text-base text-sm text-gray-400'>Log out</span></li>
+                    </div>
+                </Popup>
+            </div>
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>
                 <div className="max-w-2xl mx-auto bg-white shadow-md font-play">
                     <div className="py-2 flex flex-col sm:px-6 lg:px-8">
