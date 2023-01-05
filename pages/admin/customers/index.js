@@ -12,7 +12,7 @@ const Customer = () => {
       <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
         <div className="flex flex-col w-full">
           <div className="overflow-x-auto font-play">
-            <p className="text-gray-400 text-base">Overview</p>
+            <p className="text-gray-400 md:text-base text-sm">Overview</p>
             <div className="py-2 inline-block min-w-full md:flex md:justify-between md:items-center">
               <a className="md:text-3xl text-xl py-4 font-semibold"><Link href='/customers'>Customers</Link></a>
               <div className="flex items-center space-x-3">

@@ -13,7 +13,7 @@ const AdminDashboard = () => {
       <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
         <div className="flex flex-col w-full">
           <div className="font-play">
-            <p className="text-gray-400 text-base">Overview</p>
+            <p className="text-gray-400 md:text-base text-sm">Overview</p>
             <div className="py-2 inline-block min-w-full md:flex md:justify-between md:items-center">
               <h3 className="md:text-3xl text-xl font-semibold">Orders</h3>
               <div className="flex items-center flex-wrap md:space-x-2">
@@ -36,7 +36,7 @@ const AdminDashboard = () => {
                   </div>
                 </div>
                 <div className="w-full md:w-44 border relative mt-2">
-                  <select className="block appearance-none w-full px-4 py-2.5">
+                  <select className="block appearance-none w-full px-4 py-2.5 bg-blue-500 text-white">
                     <option className="text-red-500">All</option>
                     <option>Draft</option>
                     <option>Pending Review</option>

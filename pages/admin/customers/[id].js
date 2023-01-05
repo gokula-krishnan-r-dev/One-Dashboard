@@ -34,7 +34,7 @@ const DetailCustomer = ({ itemData }) => {
 
             <div className="p-4 pt-4 bg-[#FAFAFA] h-full font-play">
                 <div className="w-full py-4">
-                    <p className="text-gray-400 text-base flex items-center space-x-2 py-1"><a><Link href='/admin/customers'>Customers</Link></a> <BsChevronRight /> <span className="text-base">Customers Detail</span></p>
+                    <p className="text-gray-400 md:text-base text-sm flex items-center space-x-2 py-1"><a><Link href='/admin/customers'>Customers</Link></a> <BsChevronRight /> <span>Customers Detail</span></p>
                     <h3 className="md:text-3xl text-xl font-semibold py-1">Customers Detail</h3>
                 </div>
                 <div className="w-full py-4 bg-white mt-2">
