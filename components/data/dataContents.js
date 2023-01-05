@@ -422,7 +422,7 @@ const customers = [
         name: "David Morgan",
         country: {
             name: "india",
-            flag: <IN  className="w-6 h-auto"/>
+            flag: "IN"
         },
         
         email: "davidmorgan@teamwork.com",
@@ -439,9 +439,9 @@ const customers = [
         name: "John Morgan",
         country: {
             name: "United States",
-            flag: <US  className="w-6 h-auto"/>
+            flag: "US"
         },
-        email: "johnmorgan@teamwork.com",
+        email: "johnlmmorgan@teamwork.com",
         img: "/img/user/Avatar_1.png",
         total_orders: 150,
         street: '1234 State St',
@@ -453,9 +453,9 @@ const customers = [
         name: "Chris Morgan",
         country: {
             name: "United Kingdom",
-            flag: <GB className="w-6 h-auto"/>
+            flag: "GB"
         },
-        email: "davidmorgan@teamwork.com",
+        email: "christmorgan@teamwork.com",
         img: "/img/user/Avatar_2.png",
         total_orders: 150,
         street: '1234 State St',
@@ -467,9 +467,9 @@ const customers = [
         name: "Antonie Morgan",
         country: {
             name: "Australia",
-            flag: <AU className="w-6 h-auto" />
+            flag: "AU"
         },
-        email: "davidmorgan@teamwork.com",
+        email: "antonmorgan@teamwork.com",
         img: "/img/user/Avatar_3.png",
         total_orders: 150,
         street: '1234 State St',
@@ -482,9 +482,9 @@ const customers = [
         name: "Cristian Morgan",
         country: {
             name: "Germany",
-            flag: <DE className="w-6 h-auto"/>
+            flag: "DE"
         },
-        email: "davidmorgan@teamwork.com",
+        email: "cristiamorgan@teamwork.com",
         img: "/img/user/Avatar_4.png",
         total_orders: 150,
         street: '1234 State St',
@@ -492,6 +492,21 @@ const customers = [
         zipcode: "387643",
         order_id: 'RS15072021009',
     },
+    {
+        id:6,
+        name: "Jacob Gabriel",
+        country: {
+            name: "Philippines",
+            flag: "PH"
+        },
+        email: "jacobgabrielm@teamwork.com",
+        img: "/img/user/Avatar_2.png",
+        total_orders: 150,
+        street: '1234 State St',
+        city: "Hamburg",
+        zipcode: "387643",
+        order_id: 'RS15072021009',
+    }
 ]
 
 

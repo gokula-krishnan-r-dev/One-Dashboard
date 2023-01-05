@@ -84,15 +84,19 @@ const DetailCustomer = ({ itemData }) => {
                                 </p>
                             </div>
                             <div className="p-2">
-                                <p className="text-blue-500">
-                                    Country
-                                </p>
-                                <p className="md:text-2xl text-lg text-black py-2 font-semibold">
+                                    <p className="text-blue-500">
+                                        Country
+                                    </p>
+                                <div className="flex space-x-2 items-center">
+                                    <p className="md:text-2xl text-lg text-black py-2 font-semibold">
 
-                                    {itemData.country.name}
+                                        {itemData.country.name}
 
 
-                                </p>
+                                    </p>
+                                    { itemData.country.flag == 'IN' ? <IN className="w-8 h-auto" /> : itemData.country.flag =='US' ? <US className="w-8 h-auto" /> : itemData.country.flag == 'UK' ? <UK className="w-8 h-auto" />: itemData.country.flag == 'DE' ? <DE className="w-8 h-auto" />: itemData.country.flag == 'PH' ? <PH className="w-8 h-auto" /> : <AU className="w-8 h-auto" /> }
+                                    
+                                </div>
                             </div>
 
                             <div className="p-2">
