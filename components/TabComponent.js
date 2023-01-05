@@ -31,7 +31,7 @@ const PersonalInfo = () => {
                     <p className="py-2 text-base font-normal">Profile Picture</p>
                     <div className="flex items-center space-x-4">
                         <Image src='/img/user/Avatar_3.png' width={79} height={70} alt="pic" />
-                         <div className="border flex text-sm">
+                         <div className="border flex sm:text-sm text-[12px]">
                             <input type="text" className="w-full p-3" placeholder="No file selected" />
                             <button className="bg-blue-500 text-white w-32">Choose File</button>
                          </div>

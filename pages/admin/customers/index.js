@@ -13,16 +13,16 @@ const Customer = () => {
         <div className="flex flex-col w-full">
           <div className="overflow-x-auto font-play">
             <p className="text-gray-400 text-base">Overview</p>
-            <div className="py-2 inline-block min-w-full flex justify-between items-center">
+            <div className="py-2 inline-block min-w-full md:flex md:justify-between md:items-center">
               <a className="text-3xl py-4 font-semibold"><Link href='/customers'>Customers</Link></a>
               <div className="flex items-center space-x-3">
-                <div className="relative text-gray-600 focus-within:text-gray-400">
+              <div className="w-full md:w-44 border relative mt-2">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                     <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
                       <BsSearch />
                     </button>
                   </span>
-                  <input type="search" name="q" className="py-3 border text-sm text-white pl-10 focus:outline-none focus:bg-white focus:text-gray-900" placeholder="Search..." autoComplete="off" />
+                  <input type="text" placeholder="search" className="pl-10 py-2.5 w-full" />
                 </div>
               </div>
             </div>
@@ -33,22 +33,22 @@ const Customer = () => {
                 <table className="min-w-full">
                   <thead>
                     <tr>
-                      <th scope="col" className="text-xl font-medium text-back font-bold py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-back font-bold py-4 text-left px-4">
                         Name
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-left px-4">
                        Customer ID
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-left px-4">
                         Country
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-left">
+                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-left px-4">
                         Email
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-center">
+                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-center px-4">
                         Total Orders
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-center">
+                      <th scope="col" className="text-xl font-medium text-gray-900 py-4 text-center px-4">
                         Status
                       </th>
                     </tr>
@@ -59,23 +59,23 @@ const Customer = () => {
                       return (
                         <>
                           <tr>
-                            <td className="flex items-center space-x-2 text-sm font-light py-4 whitespace-nowrap">
+                            <td className="md:flex md:items-center md:gap-2 text-sm font-light py-4 px-4">
                               <Image src={member.img} alt="pic" width={50} height={50} />
                               <span className="font-semibold text-base font-bold">{member.name}</span>
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 px-4">
                               {member.order_id}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 px-4">
                               {member.country.name}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 text-left">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 text-left px-4">
                               {member.email}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap text-center">
+                            <td className="text-base text-gray-500 font-medium font-light py-4  text-center px-4">
                               $ {member.total_orders}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 whitespace-nowrap flex justify-center">
+                            <td className="text-base text-gray-500 font-medium font-light py-4 flex justify-center px-4">
                                <Link href={'customers/'+ member.id} key={member.id}><MdEdit size={24} /></Link>
                             </td>
                           </tr>
