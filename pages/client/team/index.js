@@ -14,7 +14,7 @@ const Team = () => {
                 <div className="flex flex-col w-full bg-white shadow-sm p-2">
                       <p className="text-gray-400">Team</p>
                     <div className="overflow-x-auto py-2 flex items-center justify-between">    
-                        <h2 className="text-3xl font-semibold">Team Member(4)</h2>
+                        <h2 className="md:text-3xl text-xl font-semibold">Team Member(4)</h2>
                         <button className="px-4 py-3 bg-blue-500 text-white flex items-center space-x-2" onClick={() => setOpen(o => !o)}><AiOutlinePlus size={24} /><span>Add Member</span></button>    
                     </div>
                     <div className="overflow-x-auto p-2">
@@ -68,7 +68,7 @@ const Team = () => {
                 </div>
             </div>
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-                <div className="w-[600px] shadow-md p-4 bg-white z-50">
+                <div className="md:w-[600px] shadow-md p-4 bg-white z-50">
                     <div className="flex items-center justify-between w-full">
                         <span className="text-md text-black">Add Members</span>
                         <a className="close" onClick={closeModal}>
