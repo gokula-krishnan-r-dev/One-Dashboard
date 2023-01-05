@@ -31,7 +31,7 @@ const PersonalInfo = () => {
                     <p className="py-2 text-base font-normal">Profile Picture</p>
                     <div className="flex items-center space-x-4">
                         <Image src='/img/user/Avatar_3.png' width={79} height={70} alt="pic" />
-                       
+                         
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@ const TabComponent = () => {
                     Stripe
                 </p>
             </div>
-            <div className='md:w-2/3 w-full mt-2'>
+            <div className='lg:w-2/3 w-full mt-2'>
                 {activeTab === "tab1" ? <PersonalInfo /> : activeTab === "tab2" ? <Account /> : activeTab === "tab4" ? <SecuritySetting /> : activeTab === "tab5" ? <SettingNotification /> : activeTab === "tab6" ? <SettingStripe /> : <EmailSetting />}
             </div>
 
