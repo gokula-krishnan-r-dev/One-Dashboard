@@ -4,7 +4,7 @@ import Image from 'next/image'
 const PersonalInfo = () => {
     return (
         <React.Fragment>
-            <div className="flex flex-col md:w-1/2 w-full font-play">
+            <div className="flex flex-col md:w-1/2 w-full font-play bg-white shadow-sm p-4">
 
                 <div className="py-2 flex items-center justify-between">
                     <p className="text-black text-xl font-medium">My Details</p>
@@ -31,7 +31,10 @@ const PersonalInfo = () => {
                     <p className="py-2 text-base font-normal">Profile Picture</p>
                     <div className="flex items-center space-x-4">
                         <Image src='/img/user/Avatar_3.png' width={79} height={70} alt="pic" />
-                         
+                         <div className="border flex text-sm">
+                            <input type="text" className="w-full p-3" placeholder="No file selected" />
+                            <button className="bg-blue-500 text-white w-32">Choose File</button>
+                         </div>
                     </div>
                 </div>
             </div>
