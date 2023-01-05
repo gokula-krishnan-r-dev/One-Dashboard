@@ -152,7 +152,7 @@ const TabComponent = () => {
                     Stripe
                 </p>
             </div>
-            <div className='lg:w-2/3 w-full mt-2'>
+            <div className='2xl:w-2/3 w-full mt-2'>
                 {activeTab === "tab1" ? <PersonalInfo /> : activeTab === "tab2" ? <Account /> : activeTab === "tab4" ? <SecuritySetting /> : activeTab === "tab5" ? <SettingNotification /> : activeTab === "tab6" ? <SettingStripe /> : <EmailSetting />}
             </div>
 
