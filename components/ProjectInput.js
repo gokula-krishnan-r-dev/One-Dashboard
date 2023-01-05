@@ -36,12 +36,13 @@ const ProjectInput = () => {
                 </div>
             </div>
             <div className="sadow-sm border mt-4 bg-white py-4">
-                <div className="p-4 flex justify-between">
-                    <div className="basis-3/4">
+                <div className="p-4 block md:flex md:justify-between gap-2">
+                    <div className="md:basis-3/4 w-full">
                         <textarea className="w-full px-3 text-gray-700 border py-2 mb-2 focus:outline-none" rows="4" placeholder="Notes (Brief description of your project)" />
                         <textarea className="w-full px-3 text-gray-700 border py-2 mt-2 focus:outline-none" rows="4" placeholder="Reference Links" />
                     </div>
-                    <div>
+                    
+                    <div className="md:mt-0 mt-3">
                         <label className="flex flex-col justify-center items-center w-full h-full border-2 border-gray-300 border-dashed bg-blue-100">
                               <div className="max-w-[400px] flex flex-col items-center justify-center text-blue-600">
                                 <GrDocumentUpload size={36} />
@@ -53,11 +54,12 @@ const ProjectInput = () => {
                               <input type="file" className="opacity-0" />
                         </label>
                     </div>
+                    
                 </div>
-                <div className="px-4 flex justify-end items-center space-x-4">
-                    <button className="bg-white w-44 border px-3 py-3">Save</button>
-                    <button className="bg-white w-44 border px-3 py-3" onClick={() => router.push('/client')}>Save and Close</button>
-                    <button className="bg-white w-44 border px-3 py-3 bg-blue-600 text-white">Get Quote</button>
+                <div className="px-4 flex md:justify-end justify-between items-center space-x-4">
+                    <button className="bg-white md:w-44 border px-3 py-3">Save</button>
+                    <button className="bg-white md:w-44 border px-3 py-3" onClick={() => router.push('/client')}>Save and Close</button>
+                    <button className="bg-white md:w-44 border px-3 py-3 bg-blue-600 text-white">Get Quote</button>
                 </div>
             </div>
         </React.Fragment>

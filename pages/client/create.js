@@ -8,10 +8,10 @@ const NewProject = () => {
                 <div className="flex flex-col w-full">
                     <div className="overflow-x-auto font-play">
                         <div className="flex space-x-2">      
-                            <p className="text-gray-400 flex items-center space-x-2 py-1"><span>Order</span> <BsChevronRight /> <span>New Project</span></p>
+                            <p className="text-gray-400 flex items-center space-x-2 py-1"><span className="md:text-base text-sm">Order</span> <BsChevronRight /> <span className="md:text-base text-sm">New Project</span></p>
                         </div>
                         <div className="py-2 inline-block min-w-full flex justify-between items-center">
-                            <h3 className="text-4xl">Order Detail</h3>
+                            <h3 className="md:text-3xl text-xl">Order Detail</h3>
 
                         </div>
                     </div>
