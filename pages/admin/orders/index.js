@@ -28,23 +28,23 @@ const Order = () => {
               <div className="overflow-hidden">
                 <table className="min-w-full">
                   <thead>
-                    <tr>
-                      <th scope="col" className="text-xl font-medium text-back font-bold px-6 py-4 text-left">
+                    <tr className="md:text-xl text-sm">
+                      <th scope="col" className="font-medium text-back font-bold px-6 py-4 text-left whitespace-nowrap">
                       Customer Name
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="font-medium text-gray-900 px-6 py-4 text-left whitespace-nowrap">
                         Order Id
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="font-medium text-gray-900 px-6 py-4 text-left whitespace-nowrap">
                         Project Name
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="font-medium text-gray-900 px-6 py-4 text-left whitespace-nowrap">
                         Delivery Date
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left">
+                      <th scope="col" className="font-medium text-gray-900 px-6 py-4 text-left whitespace-nowrap">
                         Amount
                       </th>
-                      <th scope="col" className="text-xl font-medium text-gray-900 px-6 py-4 text-left flex justify-center items-center">
+                      <th scope="col" className="font-medium text-gray-900 px-6 py-4 text-left flex justify-center items-center">
                         Status
                       </th>
                     </tr>
@@ -55,26 +55,26 @@ const Order = () => {
                       return (
                         <>
                         
-                          <tr>
+                          <tr className="md:text-base text-sm">
                             
                             <td className="flex items-center space-x-2 px-6 py-4">
                               <Image src='/img/user/Avatar_4.png' alt="pic" width={50} height={50} />
-                              <span className="font-semibold text-black text-base font-semibold">Angeline Lee</span>
+                              <span className="font-semibold text-black font-semibold">Angeline Lee</span>
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 px-6">
+                            <td className="text-gray-500 font-medium font-light py-4 px-6">
                               {order.order_id}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 px-6 ">
+                            <td className="text-gray-500 font-medium font-light py-4 px-6 ">
                               {order.title}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 px-6">
+                            <td className="text-gray-500 font-medium font-light py-4 px-6">
                                {order.delivery_date}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4">
+                            <td className="text-gray-500 font-medium font-light py-4 px-6">
                                $ {order.amount}
                             </td>
-                            <td className="text-base text-gray-500 font-medium font-light py-4 flex justify-center items-center">
-                              <div className={`p-1 px-2 py-1.5 font-normal rounded-2xl text-[12px] ${order.status === 'Completed' ?  'text-green-500 bg-green-50' : order.status ==='Pending Payment' ? 'text-orange-400 bg-orange-100': order.status === 'In Repair' ? 'text-red-400 bg-red-100' : 'text-gray-400 bg-gray-200' }`}>
+                            <td className="text-gray-500 font-medium font-light py-4 flex justify-center items-center">
+                              <div className={`p-1 px-2 py-1.5 text-center font-normal rounded-2xl text-[12px] ${order.status === 'Completed' ?  'text-green-500 bg-green-50' : order.status ==='Pending Payment' ? 'text-orange-400 bg-orange-100': order.status === 'In Repair' ? 'text-red-400 bg-red-100' : 'text-gray-400 bg-gray-200' }`}>
                                 <Link href={'/admin/'+ order.id} key={order.id}> {order.status}</Link>
                               </div>
                             </td>

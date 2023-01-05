@@ -112,7 +112,7 @@ const TabComponent = () => {
     return (
         <React.Fragment>
 
-            <div className="flex flex-wrap items-center md:w-2/3 gap-4 text-gray-500 font-play text-lg font-medium">
+            <div className="flex flex-wrap items-center md:w-2/3 gap-4 text-gray-500 font-play md:text-lg text-base font-medium">
                 <p onClick={handleTab1}
                     className={activeTab === "tab1" ? "active text-black border-b-2 border-gray-400 py-2" : ""}
                 >

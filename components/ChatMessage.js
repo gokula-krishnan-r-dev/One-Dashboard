@@ -10,7 +10,7 @@ const ChatMessage = () => {;
     return (
         <React.Fragment>   
             <div className="bg-[#FAFAFA] w-full flex relative font-play" style={{minHeight: `calc(100vh - 80px)`}}>
-                <div className="w-1/5 bg-white border-r">
+                <div className="sm:w-1/5 w-1/3 bg-white border-r">
                     <div className="flex items-center justify-between">
                         <h4 className="text-3xl p-4">
                             Messages
@@ -31,7 +31,7 @@ const ChatMessage = () => {;
                                  <Image src='/img/user/Avatar_2.png' alt="pic" width={40} height={40} />
                                  <div className="w-2 h-2 bg-green-500 absolute rounded-full right-0 bottom-1"></div>
                             </div>
-                            <div className="block ">
+                            <div className="sm:block hidden ">
                                 <div className="flex items-center justify-between">
                                     <p className="text-base">Angelina Lee</p>
                                     <span className="text-[10px] text-gray-400">10 min ago</span>
@@ -41,11 +41,11 @@ const ChatMessage = () => {;
 
                         </div>
                         <div className="w-full flex space-x-2 pt-4 p-1">
-                        <div className="relative">
+                            <div className="relative">
                                  <Image src='/img/user/Avatar_4.png' alt="pic" width={40} height={40} />
                                  <div className="w-2 h-2 bg-green-500 absolute rounded-full right-0 bottom-1"></div>
                             </div>
-                            <div className="block ">
+                            <div className="sm:block hidden ">
                                 <div className="flex items-center justify-between">
                                     <p className="text-base">John Doe Mark</p>
                                     <span className="text-[10px] text-gray-400">10 min ago</span>
@@ -57,7 +57,7 @@ const ChatMessage = () => {;
                     </div>
 
                 </div>
-                <div className="w-5/6 bg-white relative">
+                <div className="sm:w-5/6 w-2/3 bg-white relative">
                     <div className="w-full h-16 border-b flex items-center justify-between px-4">
                         <div className="flex space-x-2">
                         <div className="relative">
