@@ -14,7 +14,7 @@ const Login = () => {
     return (
         <>
             <div className="h-screen md:flex">
-                <div className="flex flex-col md:w-1/3 py-10 items-center bg-white">
+                <div className="flex flex-col lg:w-1/3 w-full py-10 items-center bg-white">
                     <div className="w-10/12 font-play p-4">
                         <Image src={logoimg} width={280} height={108} className="mx-auto" alt="logo" />
                         <form className="bg-teal-white">
@@ -84,7 +84,7 @@ const Login = () => {
                         </form>
                     </div>
                 </div>
-                <div className="relative overflow-hidden md:flex w-2/3  relative">
+                <div className="relative overflow-hidden lg:flex lg:w-2/3 ">
                     <Image
                         src={backgoroundImg}
                         layout="fill"
