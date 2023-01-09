@@ -8,7 +8,7 @@ import { TbUsers } from "react-icons/tb";
 import { SlSettings } from "react-icons/sl"
 import { MdEdit } from "react-icons/md";
 import { CiShop } from "react-icons/ci";
-import { US,IN, DE, ID, PH, AU, GB } from 'country-flag-icons/react/3x2'
+//import { US,IN, DE, ID, PH, AU, GB } from 'country-flag-icons/react/3x2'
 
 
 const products = [
@@ -532,22 +532,68 @@ const menuItemsAdmin = [
       {
         href: '/admin/customers',
         title: 'Customers',
-        icon: <TbUsers className="text-black" />
+        icon: <TbUsers className="text-black" />,
       },  
       {
         href: '/admin/orders',
         title: 'Orders',
-        icon: <CiShop className="text-black" />
+        icon: <CiShop className="text-black" />,
+        subNav: [
+            {
+              title: 'All Type',
+              path: '/messages/message1',
+            },
+            {
+              title: 'Active',
+              path: '/messages/message2',
+            },
+            {
+                title: 'Complete',
+                path: '/messages/message2',
+            },
+            {
+                title: 'Cancel',
+                path: '/messages/message2',
+            }
+        ]
       }, 
        {
         href: '/admin/messages',
         title: 'Messages',
-        icon: <BiMessageSquareDetail className="text-black" />
+        icon: <BiMessageSquareDetail className="text-black" />,
+        
       }, 
       {
         href: '/admin/settings',
         title: 'Settings',
-        icon: <SlSettings className="text-black" />
+        icon: <SlSettings className="text-black" />,
+        subNav: [
+            {
+              title: 'Personal Inormations',
+              path: '/messages/message1',
+            },
+            {
+              title: 'Accounts',
+              path: '/messages/message2',
+            },
+            {
+                title: 'Emails',
+                path: '/messages/message2',
+            },
+            {
+                title: 'Security',
+                path: '/messages/message2',
+            },
+            {
+                title: 'Notifications',
+                path: '/messages/message2',
+            },
+            {
+             
+                title: 'Stripe',
+                path: '/messages/message2',   
+            }
+        ]
       },
     
 ]
@@ -566,7 +612,7 @@ const dataUser = [
     },
     {
         id: 4,
-        img: "img/user/avatar_4.png",
+        img: "img/user/avatar_4.png"
     }
 ]
 

@@ -33,17 +33,11 @@ const InputMessage = () => {
                                         <span className="text-gray-400">0 / 2500</span>
                                         <button type="button" className="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
                                             <RiEmotionHappyLine size={20} />
-                                            <span className="sr-only">Attach file</span>
-                                        </button>
-
-                                        <button type="button" className="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
-                                            <ImAttachment size={20} />
-                                            <span className="sr-only">Attach file</span>
                                         </button>
                                         <button type="button" className="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600">
                                             <SlEnergy size={20} />
-                                            <span className="sr-only">Upload image</span>
                                         </button>
+
                                     </div>
                                 </div>
                             </div>

@@ -10,8 +10,8 @@ const AdminDashboard = () => {
   const router = new useRouter()
   return (
     <React.Fragment>
-      <div className="p-4 pt-4 bg-[#FAFAFA] h-full">
-        <div className="flex flex-col w-full">
+      <div className="p-4 pt-4 bg-[#FAFAFA] h-[calc(100vh-80px)]">
+        <div className="flex flex-col w-full h-full">
           <div className="font-play">
             <p className="text-gray-400 md:text-base text-sm">Overview</p>
             <div className="py-2 inline-block min-w-full md:flex md:justify-between md:items-center">
@@ -54,8 +54,8 @@ const AdminDashboard = () => {
               </div>
             </div>
           </div>
-          
-          <div className="w-full">
+          <div className="h-full overflow-y-auto">
+          <div className="w-full ">
               <h4 className="md:text-3xl text-xl font-semibold text-blue-500 py-4">Active Order</h4>
               <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start justify-center">
 
@@ -81,39 +81,9 @@ const AdminDashboard = () => {
 
               </div>
           </div>
-
-          {/*
-          <div className="overflow-auto">
-            <div className="py-2 inline-block">
-              <h4 className="text-3xl font-semibold text-blue-500 py-4">Active Order</h4>
-              <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
-
-                {ordersdata.map((product, index) => (
-                  product.status_order == 'active' && (
-                    <div key={index}>
-                      <CardOrder product={product} />
-                    </div>
-                  )))}
-
-              </div>
-            </div>
           </div>
-            */}
-          {/*
-          <div className="overflow-auto">
-            <div className="py-2 inline-block">
-              <h4 className="text-3xl font-semibold text-blue-500 py-4">Awaiting Order</h4>
-              <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start sm:justify-center">
-                {ordersdata.map((product, index) => (
-                  product.status_order == 'awaiting' && (
-                    <div key={index}>
-                      <CardOrder product={product} />
-                    </div>
-                  )))}
-              </div>
-            </div>
-          </div>
-            */}
+        
+
         </div>
       </div>
     </React.Fragment>
