@@ -4,13 +4,13 @@ const DetailInvoice = () => {
     return (
         <>
             <div className="text-white text-gray-400 p-2 font-play">
-                <div className="flex justify-between">
-                    <div className="py-2">
+                <div className="md:flex md:justify-between block">
+                    <div className="md:py-2 w-full">
                         <h4 className="text-lg font-bold text-blue-500 font-semibold">3D Content Studio</h4>
                         <h4 className="text-lg font-normal text-gray-700">1234 State St <br/> New Delhi, India, 1234 </h4>
                     </div>
-                    <div className="block font-bold">
-                        <h3 className="text-2xl text-blue-600 text-right py-1">Invoice
+                    <div className="md:block font-bold w-full">
+                        <h3 className="text-2xl text-blue-600 md:text-right py-1">Invoice
                         </h3>
                         <h3 className="text-2xl text-blue-600">#OD170720201002
                         </h3>

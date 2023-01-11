@@ -19,10 +19,10 @@ const SideBar = () => {
         [router.pathname]
     );
     const wrapperClasses = classNames(
-        "h-screen px-4 pt-8 pb-4 bg-light flex justify-between flex-col bg-pink-500",
+        "h-screen px-4 pt-8 pb-4 bg-light flex justify-between flex-col bg-teal-500",
         {
             ["w-64"]: !toggleCollapse,
-            ["w-20"]: toggleCollapse,
+            ["w-4"]: toggleCollapse,
         }
     );
 

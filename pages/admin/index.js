@@ -16,8 +16,8 @@ const AdminDashboard = () => {
             <p className="text-gray-400 md:text-base text-sm">Overview</p>
             <div className="py-2 inline-block min-w-full md:flex md:justify-between md:items-center">
               <h3 className="md:text-3xl text-xl font-semibold">Orders</h3>
-              <div className="flex items-center flex-wrap md:space-x-2">
-                <div className="w-full md:w-44 border relative mt-2">
+              <div className="flex items-center flex-wrap gap-2">
+                <div className="w-28 md:w-44 border relative mt-2">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                     <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
                       <BsSearch />
@@ -25,7 +25,7 @@ const AdminDashboard = () => {
                   </span>
                   <input type="text" placeholder="search" className="pl-10 py-2.5 w-full" />
                 </div>
-                <div className="w-full md:w-44 border relative mt-2">
+                <div className="w-[120px] md:w-44 border relative mt-2">
                   <select className="block appearance-none w-full bg-white px-4 py-2.5">
                     <option>This Week</option>
                     <option>Option 2</option>
@@ -35,7 +35,7 @@ const AdminDashboard = () => {
                     <BsChevronDown />
                   </div>
                 </div>
-                <div className="w-full md:w-44 border relative mt-2">
+                <div className="w-28 md:w-44 border relative mt-2">
                   <select className="block appearance-none w-full px-4 py-2.5 bg-blue-500 text-white">
                     <option className="text-red-500">All</option>
                     <option>Draft</option>
