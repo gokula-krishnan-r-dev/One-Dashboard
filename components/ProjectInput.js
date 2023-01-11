@@ -56,10 +56,10 @@ const ProjectInput = () => {
                     </div>
                     
                 </div>
-                <div className="px-4 flex md:justify-end justify-between items-center space-x-4">
-                    <button className="bg-white md:w-44 border px-3 py-3">Save</button>
-                    <button className="bg-white md:w-44 border px-3 py-3" onClick={() => router.push('/client')}>Save and Close</button>
-                    <button className="bg-white md:w-44 border px-3 py-3 bg-blue-600 text-white">Get Quote</button>
+                <div className="px-4 flex flex-wrap md:justify-end justify-between items-center gap-4">
+                    <button className="bg-white md:w-44 w-36 border px-3 py-3">Save</button>
+                    <button className="bg-white md:w-44 w-36 border px-3 py-3" onClick={() => router.push('/client')}>Save and Close</button>
+                    <button className="bg-white md:w-44 w-full border px-3 py-3 bg-blue-500 text-white">Get Quote</button>
                 </div>
             </div>
         </React.Fragment>

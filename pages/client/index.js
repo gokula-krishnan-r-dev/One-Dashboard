@@ -9,7 +9,7 @@ const Client = () => {
   const router = new useRouter()
   return (
     <React.Fragment>
-      <div className="p-4 pt-4 bg-[#FAFAFA] relative">
+      <div className="p-4 pt-4 bg-[#FAFAFA] h-[calc(100vh-80px)] overflow-y-auto ">
         <div className='p-4 fixed  bottom-2 right-2 bg-blue-600 rounded-full'>
            <SiGooglechat className="text-white" size={32} />
         </div>
@@ -18,8 +18,8 @@ const Client = () => {
             <p className="text-gray-400">Overview</p>
             <div className="py-2 block min-w-full md:flex md:justify-between md:items-center md:gap-2 flex-wrap">
               <h3 className="md:text-3xl text-xl">My Projects</h3>
-              <div className="md:flex md:items-center md:flex-wrap md:gap-2 block">
-                <div className="w-full md:w-44 border relative mt-2">
+              <div className="flex items-center flex-wrap gap-2">
+                <div className="w-full md:w-44 sm:block hidden border relative mt-2">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                     <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
                       <BsSearch />
@@ -27,7 +27,7 @@ const Client = () => {
                   </span>
                   <input type="text" placeholder="search" className="pl-10 py-2.5 w-full" />
                 </div>
-                <div className="w-full md:w-44 border relative mt-2">
+                <div className="w-1/2 md:w-44 border relative mt-2">
                   <select className="block appearance-none w-full bg-white px-4 py-2.5">
                     <option>This Week</option>
                     <option>Option 2</option>
@@ -37,7 +37,7 @@ const Client = () => {
                     <BsChevronDown />
                   </div>
                 </div>
-                <div className="w-full md:w-44 border relative mt-2">
+                <div className="w-auto md:w-44 border relative mt-2">
                   <select className="block appearance-none w-full px-4 py-2.5 bg-blue-500 text-white">
                     <option className="text-red-500">All</option>
                     <option>Draft</option>
@@ -53,13 +53,13 @@ const Client = () => {
                     <BsChevronDown className="text-white font-medium" />
                   </div>
                 </div>
-                <div className="w-full md:w-60 mt-2">
+                <div className="w-full hidden sm:block md:w-60 mt-2">
                   <button className="bg-blue-500 text-white py-2.5 w-full" onClick={() => router.push('/client/create')}>New Project Request</button>
                 </div>
               </div>
             </div>
           </div>
-          <div className="overflow-auto">
+          <div className="h-full">
               <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start justify-center">
                 {products.map((product, index) => (
                   <div key={index}>

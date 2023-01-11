@@ -87,7 +87,6 @@ const AdminDashboard = () => {
         </div>
       </div>
     </React.Fragment>
-
   );
 }
 export default AdminDashboard
