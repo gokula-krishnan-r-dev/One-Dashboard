@@ -5,19 +5,42 @@ import poster from "../public/img/poster.svg";
 import logoimg from "../public/img/Logo.svg";
 import { BiShow } from "react-icons/bi";
 import { FcGoogle } from "react-icons/fc";
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as Yup from 'yup';
 import Link from "next/link";
 const Login = () => {
     const [passwordShown, setPasswordShown] = useState(false);
     const tooglePssword = () => {
         setPasswordShown(!passwordShown)
     }
+    const validationSchema = Yup.object().shape({
+        email: Yup.string()
+            .required('Email is required')
+            .email('Email is invalid'),
+        password: Yup.string()
+            .required('Password is required')
+    });
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors }
+    } = useForm({
+        resolver: yupResolver(validationSchema)
+    });
+
+    const onSubmit = data => {
+        console.log(JSON.stringify(data, null, 2));
+    };
+
     return (
         <>
             <div className="h-screen md:flex">
                 <div className="flex flex-col lg:w-1/3 w-full py-10 items-center bg-white">
                     <div className="w-10/12 font-play p-4">
                         <Image src={logoimg} width={280} height={108} className="mx-auto" alt="logo" />
-                        <form className="bg-teal-white">
+                        <form className="bg-teal-white" onSubmit={handleSubmit(onSubmit)}>
                             <h3 className="text-2xl font-bold text-black text-center mb-7 py-6">
                                 Hi, Welcome Back
                             </h3>
@@ -29,12 +52,18 @@ const Login = () => {
                                 >
                                     Email
                                 </label>
+
+
                                 <input
-                                    className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+
                                     id="email"
                                     type="email"
                                     placeholder="Enter Your email"
+                                    {...register('email')}
+                                    className={`shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300 ${errors.email ? 'is-invalid' : ''}`}
                                 />
+
+                                <p className="text-red-500 text-[12px]">{errors.email?.message}</p>
                             </div>
                             <div className="py-2">
                                 <label
@@ -45,14 +74,19 @@ const Login = () => {
                                 </label>
                                 <div className="relative">
                                     <input
-                                        className="shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+
                                         id="password"
                                         type={passwordShown ? "text" : "password"}
                                         placeholder="Enter your password"
+                                        {...register('password')}
+                                        className={`shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300 ${errors.password ? 'is-invalid' : ''}`}
                                     />
+
                                     <div className="absolute right-1 top-3 flex items-center">
-                                        <BiShow size={24} className="text-gray-200" onClick={tooglePssword}/>        
+                                        <BiShow size={24} className="text-gray-200" onClick={tooglePssword} />
                                     </div>
+                                    <p className="text-red-500 text-[12px] absolute -bottom-2">{errors.password?.message}</p>
+
                                 </div>
                             </div>
 
@@ -91,7 +125,7 @@ const Login = () => {
                         objectFit="cover"
                         alt="backgorund"
                     />
-                   
+
                 </div>
             </div>
         </>
