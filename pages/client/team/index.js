@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { members } from "../../../components/data/dataContents"
-import { AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
+import { AiOutlinePlus, AiOutlineClose, AiOutlineMore } from "react-icons/ai";
 import { picImg } from '../../../public/img/user/Avatar_team.png'
 import Popup from "reactjs-popup";
 import React, { useState } from "react";
@@ -10,15 +10,15 @@ const Team = () => {
    
     return (
         <React.Fragment>
-            <div className="flex gap-4 p-4 pt-4 bg-[#FAFAFA] font-play ">
+            <div className="flex gap-4 p-4 pt-4 bg-[#FAFAFA] font-play h-[calc(100vh-80px)] overflow-y-auto">
                 <div className="flex flex-col w-full bg-white shadow-sm p-2">
                       <p className="text-gray-400">Team</p>
-                    <div className="overflow-x-auto py-2 flex items-center justify-between">    
+                    <div className="overflow-x-auto py-2 sm:flex sm:items-center sm:justify-between">    
                         <h2 className="md:text-3xl text-xl font-semibold">Team Member(4)</h2>
-                        <button className="px-4 py-3 bg-blue-500 text-white flex items-center space-x-2" onClick={() => setOpen(o => !o)}><AiOutlinePlus size={24} /><span>Add Member</span></button>    
+                        <button className="px-4 py-3 bg-blue-500 text-white flex items-center space-x-2 sm:mt-0 mt-4" onClick={() => setOpen(o => !o)}><AiOutlinePlus size={24} /><span>Add Member</span></button>    
                     </div>
                     <div className="overflow-x-auto p-2">
-                        <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                        <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8 hidden md:block">
                             <div className="overflow-hidden">
                                 <table className="min-w-full">
                                     <thead>
@@ -64,7 +64,24 @@ const Team = () => {
                                 </table>
                             </div>
                         </div>
+                        <div className="sm:hidden block">                
+                        {members.map((member, index) => {
+                            return (
+                                <div className="py-2 flex gap-2 border mt-2 mb-2 p-2 relative">
+                        
+                                    <Image width={62} height={62} alt="pic" src='/img/user/Avatar_5.png' />
+                                    <div>
+                                        <p className="text-base text-black">{member.name}</p>
+                                        <p className="text-sm text-gray-400">{member.email}</p>
+                                        <p className="text-sm text-gray-400">{member.country}</p>
+                                    </div>
+                                    <AiOutlineMore size={24} className="absolute right-2" />
+                               </div>
+                            )
+                        })}
+                        </div>
                     </div>
+                    
                 </div>
             </div>
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>
