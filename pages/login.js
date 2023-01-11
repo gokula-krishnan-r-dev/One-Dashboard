@@ -60,7 +60,7 @@ const Login = () => {
                                     type="email"
                                     placeholder="Enter Your email"
                                     {...register('email')}
-                                    className={`shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300 ${errors.email ? 'is-invalid' : ''}`}
+                                    className={`shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300 ${errors.email ? 'is-invalid' : ''}`}
                                 />
 
                                 <p className="text-red-500 text-[12px]">{errors.email?.message}</p>
@@ -79,7 +79,7 @@ const Login = () => {
                                         type={passwordShown ? "text" : "password"}
                                         placeholder="Enter your password"
                                         {...register('password')}
-                                        className={`shadow appearance-none border rounded w-full py-3 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300 ${errors.password ? 'is-invalid' : ''}`}
+                                        className={`shadow-sm appearance-none border rounded w-full py-3 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300 ${errors.password ? 'is-invalid' : ''}`}
                                     />
 
                                     <div className="absolute right-1 top-3 flex items-center">
