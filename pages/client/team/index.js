@@ -18,7 +18,7 @@ const Team = () => {
                         <button className="px-4 py-3 bg-blue-500 text-white flex items-center space-x-2 sm:mt-0 mt-4" onClick={() => setOpen(o => !o)}><AiOutlinePlus size={24} /><span>Add Member</span></button>    
                     </div>
                     <div className="overflow-x-auto p-2">
-                        <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8 hidden md:block">
+                        <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8 hidden lg:block">
                             <div className="overflow-hidden">
                                 <table className="min-w-full">
                                     <thead>
@@ -64,13 +64,13 @@ const Team = () => {
                                 </table>
                             </div>
                         </div>
-                        <div className="sm:hidden block">                
+                        <div className="lg:hidden block">                
                         {members.map((member, index) => {
                             return (
                                 <div className="py-2 flex gap-2 border mt-2 mb-2 p-2 relative">
                         
-                                    <Image width={62} height={62} alt="pic" src='/img/user/Avatar_5.png' />
-                                    <div>
+                                    <Image width={70} height={70} alt="pic" src='/img/user/Avatar_5.png' />
+                                    <div className="py-1.5">
                                         <p className="text-base text-black">{member.name}</p>
                                         <p className="text-sm text-gray-400">{member.email}</p>
                                         <p className="text-sm text-gray-400">{member.country}</p>
