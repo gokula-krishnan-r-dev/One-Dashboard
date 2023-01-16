@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import ListNotifications from "./card/ListNotifications";
 import { GrNotification } from "react-icons/gr";
+import { AiOutlineClose } from "react-icons/ai"
 import { notifications } from "./data/dataContents"
 const Notifications = (props) => {
     const [visible, setVisibility] = useState(false);
@@ -47,11 +48,14 @@ const Notifications = (props) => {
             <div className="bg-gray-100 rounded-full p-2">
                 <GrNotification size={16} />
             </div>
-            <div className="max-w-sm absolute -right-24 top-8 bg-white" ref={popperRef} {...attributes.popper}>
+            <div className="w-[370px] absolute -right-20 top-16 bg-white" ref={popperRef} {...attributes.popper}>
                 <DropdownContainer className="shadow-sm flex flex-col" style={styles.offset} visible={visible}>
-                    <div className="w-full flex space-x-2 items-center py-6 p-2 border-b ">
-                        <GrNotification size={28} />
-                        <span>Notification</span>
+                    <div className="w-full flex space-x-2 items-center justify-between py-6 p-2 border-b ">
+                        <div className="flex space-x-2">
+                            <GrNotification size={28} />
+                            <span>Notification</span>
+                        </div>
+                        <AiOutlineClose size={28} className="text-gray-400" />
                     </div>
                     {notifications.map((notifications, index) => (
                         <div key={index}>
