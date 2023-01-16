@@ -89,14 +89,14 @@ const Asside = () => {
                             <Image width={158} height={60} alt="loog" src={LogoIcon} />
                         </span>
                     </div>
-                    
+                    {/*
                         <button
                             className={collapseIconClasses}
                             onClick={handleSidebarToggle}
                         >          
                          <CollapsIcon />
                         </button>
-                
+                    */}
                 </div>
 
                 <div className="flex flex-col items-start mt-6">
