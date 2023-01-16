@@ -27,7 +27,34 @@ const Customer = () => {
               </div>
             </div>
           </div>
-          <div className="overflow-x-auto p-2 border bg-white">
+
+          <div className="w-full lg:hidden block">
+            {customers.map((member, index) => {
+              return (
+                <div className="bg-white border mb-2 p-4">
+                  <div className="flex gap-2 justify-between items-center mt-1 mb-1">
+                    <div className="flex space-x-2">
+                       <Image src='/img/user/Avatar_4.png' alt="pic" width={40} height={40} />
+                       <div>
+                      Angeline Lee
+                      <p className="text-gray-400 text-sm">{member.order_id}</p>
+                    </div>
+                    </div>
+                    
+                    <div>
+                      <p className="text-gray-400">$ {member.total_orders}</p>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-lg"> {member.country.name}</p>
+                    <p className="text-base text-gray-400"> {member.email}</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          <div className="overflow-x-auto p-2 border bg-white lg:block hidden">
             <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
               <div className="overflow-hidden">
                 <table className="min-w-full">
