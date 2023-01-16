@@ -36,7 +36,8 @@ const Customer = () => {
                     <div className="flex space-x-2">
                        <Image src='/img/user/Avatar_4.png' alt="pic" width={40} height={40} />
                        <div>
-                      Angeline Lee
+                       <a><Link href={'customers/'+ member.id} key={member.id}> {member.name}</Link></a>
+                        
                       <p className="text-gray-400 text-sm">{member.order_id}</p>
                     </div>
                     </div>
