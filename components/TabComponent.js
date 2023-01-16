@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { BsChevronDown } from "react-icons/bs";
 const PersonalInfo = () => {
     return (
         <React.Fragment>
-            <div className="flex flex-col md:w-1/2 w-full font-play bg-white shadow-sm p-4">
+            <div className="flex flex-col lg:w-1/2 w-full font-play bg-white shadow-sm p-4">
 
                 <div className="py-2 flex items-center justify-between">
                     <p className="text-black text-xl font-medium">My Details</p>
@@ -13,12 +14,12 @@ const PersonalInfo = () => {
                         <button className="py-2 text-white bg-blue-500 p-2 border px-4 text-sm">Save</button>
                     </div>
                 </div>
-                <div className="py-4 w-full md:flex md:items-center md:justify-between text-base font-normal gap-4">
-                    <div className="md:w-1/2 w-full">
+                <div className="py-4 w-full flex items-center justify-between text-base font-normal gap-4">
+                    <div className="w-1/2">
                         <p className="text-black py-2.5">First Name</p>
                         <input type="text" className="border p-3 w-full" value='John' />
                     </div>
-                    <div className="md:w-1/2 w-full">
+                    <div className="w-1/2">
                         <p className="text-black py-2.5">Last Name</p>
                         <input type="text" className="border p-3 w-full" value='Steady' />
                     </div>
@@ -112,7 +113,7 @@ const TabComponent = () => {
     return (
         <React.Fragment>
 
-            <div className="flex flex-wrap items-center md:w-2/3 gap-4 text-gray-500 font-play md:text-lg text-base font-medium">
+            <div className="hidden lg:flex flex-wrap items-center md:w-2/3 gap-4 text-gray-500 font-play md:text-lg text-base font-medium">
                 <p onClick={handleTab1}
                     className={activeTab === "tab1" ? "active text-black border-b-2 border-gray-400 py-2" : ""}
                 >
@@ -152,6 +153,21 @@ const TabComponent = () => {
                     Stripe
                 </p>
             </div>
+            
+            <div className="lg:hidden block w-full relative mt-2 mb-4">
+                  <select className="block appearance-none w-full bg-white px-4 py-3.5">
+                    <option>Personal Information</option>
+                    <option>Accounts</option>
+                    <option>Emails</option>
+                    <option>Security</option>
+                    <option>Notifications</option>
+                    <option>Stripe</option>
+                  </select>
+                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                    <BsChevronDown />
+                  </div>
+                </div>
+
             <div className='2xl:w-2/3 w-full mt-2'>
                 {activeTab === "tab1" ? <PersonalInfo /> : activeTab === "tab2" ? <Account /> : activeTab === "tab4" ? <SecuritySetting /> : activeTab === "tab5" ? <SettingNotification /> : activeTab === "tab6" ? <SettingStripe /> : <EmailSetting />}
             </div>
