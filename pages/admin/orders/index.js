@@ -23,7 +23,34 @@ const Order = () => {
               <input type="text" placeholder="search" className="pl-10 py-2.5 w-full" />
             </div>
           </div>
-          <div className="h-full overflow-x-auto overflow-y-auto p-2 border bg-white">
+
+          <div className="w-full lg:hidden block">
+            {ordersdata.map((order, index) => {
+              return (
+                <div className="bg-white border mb-2 p-4">
+                  <div className="flex gap-2 justify-between items-center mt-1 mb-1">
+                    <div className="flex space-x-2">
+                       <Image src='/img/user/Avatar_4.png' alt="pic" width={40} height={40} />
+                       <div>
+                      Angeline Lee
+                      <p className="text-gray-400 text-sm"> {order.order_id}</p>
+                    </div>
+                    </div>
+                    
+                    <div className={`h-6 flex justify-center items-center rounded-lg px-2 text-[12px] ${order.status === 'Completed' ? 'text-green-500 bg-green-50' : order.status === 'Pending Payment' ? 'text-orange-400 bg-orange-100' : order.status === 'In Repair' ? 'text-red-400 bg-red-100' : 'text-gray-400 bg-gray-200'}`}>
+                      <Link href={'/admin/' + order.id} key={order.id}> {order.status}</Link>
+                    </div>
+                  </div>
+                  <div>
+                    <p className="text-lg"> {order.title}</p>
+                    <p className="text-base text-gray-400"> {order.delivery_date}</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          <div className="h-full overflow-x-auto overflow-y-auto p-2 border bg-white lg:block hidden">
             <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
               <div className="overflow-hidden">
                 <table className="min-w-full">
