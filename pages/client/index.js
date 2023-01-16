@@ -38,7 +38,7 @@ const Client = () => {
                   </div>
                 </div>
                 <div className="w-auto md:w-44 border relative mt-2">
-                  <select className="block appearance-none w-full px-4 py-2.5 bg-blue-500 text-white">
+                  <select className="block appearance-none w-full px-4 py-2.5 sm:bg-blue-500 sm:text-white text-black">
                     <option className="text-red-500">All</option>
                     <option>Draft</option>
                     <option>Pending Review</option>

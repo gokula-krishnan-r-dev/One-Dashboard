@@ -52,8 +52,8 @@ const DropdownUser = () => {
                 </Popup>
             </div>
             <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-                <div className="max-w-2xl mx-auto bg-white shadow-md font-play">
-                    <div className="py-2 flex flex-col sm:px-6 lg:px-8">
+                <div className="sm:max-w-2xl max-w-sm mx-auto bg-white shadow-md font-play">
+                    <div className="py-2 flex flex-col sm:px-6 lg:px-8 sm:p-0 p-3">
                         <div className="flex justify-between items-center mt-2">
                             <h3 className="text-2xl">Edit Profile</h3>
                             <AiOutlineClose  size={16} onClick={closeModal}/>
@@ -79,7 +79,7 @@ const DropdownUser = () => {
                                         className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                         id="firstname"
                                         type="text"
-                                        placeholder="Enter your first name"
+                                        placeholder="First Name"
                                     />
 
                                 </div>
@@ -95,7 +95,7 @@ const DropdownUser = () => {
                                         className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                         id="lastname"
                                         type="text"
-                                        placeholder="Enter your last name"
+                                        placeholder="Last Name"
                                     />
                                 </div>
                             </div>
@@ -111,7 +111,7 @@ const DropdownUser = () => {
                                 className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                 id="email"
                                 type="email"
-                                placeholder="Enter Your email"
+                                placeholder="Email"
                             />
                         </div>
                         <div className="py-2">
@@ -125,10 +125,10 @@ const DropdownUser = () => {
                                 className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                 id="phone"
                                 type="text"
-                                placeholder="Enter Your Phone Number"
+                                placeholder="Phone Number"
                             />
                         </div>
-                        <div className="py-2">
+                        <div className="py-2 text-gray-400">
                             <p>Billing Address</p>
                         </div>
                         <div className="py-2">
@@ -151,7 +151,7 @@ const DropdownUser = () => {
                                         className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                         id="firstnameaddress"
                                         type="text"
-                                        placeholder="Enter your first name"
+                                        placeholder="First Name"
                                     />
 
                                 </div>
@@ -162,7 +162,7 @@ const DropdownUser = () => {
                                         className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                                         id="lastnameaddress"
                                         type="text"
-                                        placeholder="Enter your last name"
+                                        placeholder="Last Name"
                                     />
                                 </div>
                             </div>
