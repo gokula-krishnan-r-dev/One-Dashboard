@@ -70,7 +70,7 @@ const DropdownUser = () => {
                         <div className="py-2 space-x-4 flex justify-between">
                             <div className="basis-1/2">
                                 <label
-                                    className="block text-gray-400 text-sm mb-2"
+                                    className="block text-sm mb-2"
                                 >
                                     First Name
                                 </label>
@@ -86,7 +86,7 @@ const DropdownUser = () => {
                             </div>
                             <div className="basis-1/2">
                                 <label
-                                    className="block text-gray-400 text-sm mb-2"
+                                    className="block text-sm mb-2"
                                 >
                                     Last Name
                                 </label>
@@ -102,7 +102,7 @@ const DropdownUser = () => {
                         </div>
                         <div className="py-2">
                             <label
-                                className="block text-gray-400 text-sm mb-2"
+                                className="block text-sm mb-2"
                                 htmlFor="username"
                             >
                                 Email
@@ -116,7 +116,7 @@ const DropdownUser = () => {
                         </div>
                         <div className="py-2">
                             <label
-                                className="block text-gray-400 text-sm mb-2"
+                                className="block text-sm mb-2"
                                 htmlFor="username"
                             >
                                 Phone Number
@@ -128,7 +128,7 @@ const DropdownUser = () => {
                                 placeholder="Phone Number"
                             />
                         </div>
-                        <div className="py-2 text-gray-400">
+                        <div className="py-2">
                             <p>Billing Address</p>
                         </div>
                         <div className="py-2">
