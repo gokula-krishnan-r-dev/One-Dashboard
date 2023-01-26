@@ -10,7 +10,7 @@ const Team = () => {
    
     return (
         <React.Fragment>
-            <div className="flex gap-4 p-4 pt-4 bg-[#FAFAFA] font-play h-[calc(100vh-80px)] overflow-y-auto">
+            <div className="flex gap-4 p-4 pt-4 bg-[#FAFAFA] font-play md:ml-64 overflow-y-auto">
                 <div className="flex flex-col w-full bg-white shadow-sm p-2">
                       <p className="text-gray-400">Team</p>
                     <div className="overflow-x-auto py-2 sm:flex sm:items-center sm:justify-between">    

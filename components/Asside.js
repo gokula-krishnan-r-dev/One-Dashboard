@@ -39,7 +39,7 @@ const Asside = () => {
     );
 
     const wrapperClasses = classNames(
-        "h-screen border px-4 pt-8 pb-4 bg-light sm:flex sm:justify-between sm:flex-col hidden",
+        "h-screen border px-4 pt-8 pb-4 bg-light sm:flex sm:justify-between sm:flex-col hidden bg-white fixed z-20",
         {
             ["w-64"]: !toggleCollapse,
             ["w-8"]: toggleCollapse,

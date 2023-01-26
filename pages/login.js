@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import Image from "next/image";
 import backgoroundImg from "../public/img/bg.svg";
 import poster from "../public/img/poster.svg";
@@ -10,6 +11,9 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import Link from "next/link";
 const Login = () => {
+
+    const TEST_SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
+    const DELAY = 1500;
     const [passwordShown, setPasswordShown] = useState(false);
     const tooglePssword = () => {
         setPasswordShown(!passwordShown)

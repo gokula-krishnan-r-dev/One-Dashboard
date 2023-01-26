@@ -10,7 +10,7 @@ const AdminDashboard = () => {
   const router = new useRouter()
   return (
     <React.Fragment>
-      <div className="p-4 pt-4 bg-[#FAFAFA] h-[calc(100vh-80px)]">
+      <div className="p-4 pt-4 bg-[#FAFAFA] md:ml-64">
         <div className="flex flex-col w-full h-full">
           <div className="font-play">
             <p className="text-gray-400 md:text-base text-sm">Overview</p>
@@ -54,7 +54,7 @@ const AdminDashboard = () => {
               </div>
             </div>
           </div>
-          <div className="h-full overflow-y-auto">
+          <div className="h-full">
           <div className="w-full ">
               <h4 className="md:text-3xl text-xl font-semibold text-blue-500 py-4">Active Order</h4>
               <div className="flex flex-wrap gap-4 mt-8 items-center lg:justify-start justify-center">

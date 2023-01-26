@@ -9,7 +9,7 @@ const Client = () => {
   const router = new useRouter()
   return (
     <React.Fragment>
-      <div className="p-4 pt-4 bg-[#FAFAFA] h-[calc(100vh-80px)] overflow-y-auto">
+      <div className="p-4 pt-4 bg-[#FAFAFA] md:ml-64 overflow-y-auto">
         <div className='p-4 fixed  bottom-2 right-2 bg-blue-600 rounded-full'>
            <SiGooglechat className="text-white" size={32} />
         </div>
