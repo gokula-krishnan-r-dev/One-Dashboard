@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from "next/router";
 import { GrNotification } from "react-icons/gr";
 import { BiMessageSquareDetail } from "react-icons/bi";
@@ -15,11 +15,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 
-const SideBar = () => {
+const SideClient = () => {
     const [open, setOpen] = useState(true);
     const [subMenuOpen, setSubMenuOpen] = useState(false);
- 
-    const [menuClient, setMenuClient] = useState([
+    
+    const [menu, setMenu] = useState([
         {
             title: 'My Project',
             visible: false,
@@ -33,57 +33,6 @@ const SideBar = () => {
             haveSub: false,
             icon: <TbUsers className="text-black" />,
             linkurl: '/client/team',
-        },
-    ])
-    const [menu, setMenu] = useState([
-        {
-            title: 'Overviews',
-            visible: false,
-            haveSub: false,
-            icon: <SiDatabricks className="text-black" />,
-            linkurl: '/admin',
-        },
-        {
-            title: 'Customers',
-            visible: false,
-            haveSub: false,
-            icon: <TbUsers className="text-black" />,
-            linkurl: '/admin/customers',
-        },
-        {
-            title: 'Orders',
-            visible: false,
-            haveSub: true,
-            child: [
-                { title: 'All type' },
-                { title: 'Active' },
-                { title: 'Comolete' },
-                { title: 'Cancel' }
-            ],
-            icon: <CiShop className="text-black" />,
-            linkurl: '/admin/orders',
-        },
-        {
-            title: 'Messages',
-            visible: false,
-            haveSub: false,
-            icon: <BiMessageSquareDetail className="text-black" />,
-            linkurl: '/admin/messages',
-        },
-        {
-            title: 'Settings',
-            visible: false,
-            haveSub: true,
-            child: [
-                { title: 'Personal Inormations' },
-                { title: 'Account' },
-                { title: 'Emails' },
-                { title: 'Security' },
-                { title: 'Notifications' },
-                { title: 'Stripe' }
-            ],
-            icon: <SlSettings className="text-black" />,
-            linkurl: '/admin/settings',
         },
     ]);
 
@@ -170,4 +119,4 @@ const SideBar = () => {
     );
 };
 
-export default SideBar;
+export default SideClient;
