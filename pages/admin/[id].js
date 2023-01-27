@@ -40,7 +40,7 @@ const ProjectDetailAdmin = ({ itemData }) => {
 
     return (
         <React.Fragment>
-            <div className="p-4 pt-4 bg-[#FAFAFA] md:ml-64">
+            <div className="p-4 pt-4 bg-[#FAFAFA]">
                 <div className="w-full py-4 h-full overflow-y-auto">
                     <p className="text-gray-400 flex items-center space-x-2 py-1"><span>Order</span> <BsChevronRight /> <span>#{itemData.order_id}</span></p>
                     <h3 className="md:text-3xl text-xl">Project Name 1</h3>
