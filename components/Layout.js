@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
     <div className="h-screen flex flex-row justify-start">
       { pageUrl.substr(1,4) == 'admi' ?  <SideBar /> : <SideClient/> }
     
-      <div className="flex-1 h-screen lg:ml-64">
+      <div className="flex-1 h-screen md:ml-64">
           <NavBar />
           {children}
       </div>

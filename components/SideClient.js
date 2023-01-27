@@ -70,7 +70,7 @@ const SideClient = () => {
         */}
 
             <div
-                className={` ${open ? 'w-48 px-2' : 'w-0 '
+                className={` ${open ? 'w-64 px-2' : 'w-0 '
                     } lg:w-64 bg-white fixed left-0 z-20 h-screen duration-500 border-r`}
             >
                 <div className="justify-center mt-3">
