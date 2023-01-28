@@ -10,7 +10,7 @@ const HelpCenter = () => {
             <div className="menu">
                 <Popup
                     trigger={
-                        <div className="rounded-full bg-white p-3 rounded border">
+                        <div className="bg-white p-3 rounded-full border">
                             <BsQuestionLg size={28} className="text-white bg-blue-500 rounded-full p-1" />
                         </div>
                     }
@@ -23,7 +23,7 @@ const HelpCenter = () => {
                     arrow={false}
                 >
                     <div className="max-w-[191px] bg-blue-50 fixed bottom-8 left-8 font-play">
-                        <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-white p-3 rounded border">
+                        <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 rounded-full bg-white p-3  border">
                             <BsQuestionLg size={28} className="text-white bg-blue-500 rounded-full p-1" />
                         </div>
                         <Image src='/img/Ellipse10.png' alt="pic" width={90} height={90} className="absolute top-0 left-0" />

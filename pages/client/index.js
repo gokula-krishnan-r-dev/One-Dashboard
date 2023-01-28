@@ -19,7 +19,7 @@ const Client = () => {
             <div className="py-2 block w-full md:flex md:justify-between md:items-center md:gap-2 flex-wrap">
                  <div className="lg:block lg:w-44 flex items-center justify-between w-full">
                   <h3 className="md:text-3xl text-xl">My Projects</h3>
-                  <div className="block lg:hidden md:w-44 w-1/2 mt-2">
+                  <div className="block lg:hidden md:w-1/3 w-1/2 mt-2">
                     <button className="bg-blue-500 text-white py-2.5 w-full" onClick={() => router.push('/client/create')}>New Project Request</button>
                   </div>
                  </div>

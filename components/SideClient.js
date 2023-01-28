@@ -11,7 +11,7 @@ import { MdEdit } from "react-icons/md";
 import { CiShop } from "react-icons/ci";
 import LogoIcon from '../public/img/Logo.svg'
 import Image from 'next/image';
-
+import HelpCenter from './HelpCenter'
 import Link from 'next/link';
 
 
@@ -107,6 +107,9 @@ const SideClient = () => {
                         </div>
                     ))}
                 </ul>
+                <div className="absolute bottom-8 left-16">
+                    <HelpCenter />
+                </div>
             </div>
         </div>
     );
