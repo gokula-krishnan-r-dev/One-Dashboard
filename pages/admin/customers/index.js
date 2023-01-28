@@ -9,7 +9,7 @@ import { MdEdit } from "react-icons/md";
 const Customer = () => {
   return (
     <React.Fragment>
-      <div className="p-4 pt-4 bg-[#FAFAFA] mt-20">
+      <div className="p-4 pt-4 mt-20">
         <div className="flex flex-col w-full">
           <div className="overflow-x-auto font-play">
             <p className="text-gray-400 md:text-base text-sm">Overview</p>

@@ -10,11 +10,11 @@ const Team = () => {
    
     return (
         <React.Fragment>
-            <div className="flex gap-4 p-4 pt-4 bg-[#FAFAFA] mt-20 font-play overflow-y-auto">
+            <div className="flex gap-4 p-4 pt-4 mt-20 font-play overflow-y-auto">
                 <div className="flex flex-col w-full bg-white shadow-sm p-2">
                       <p className="text-gray-400">Team</p>
                     <div className="overflow-x-auto py-2 sm:flex sm:items-center sm:justify-between">    
-                        <h2 className="md:text-3xl text-xl font-semibold">Team Member(4)</h2>
+                        <h2 className="md:text-3xl text-xl font-semibold">Team Member(8)</h2>
                         <button className="px-4 py-3 bg-blue-500 text-white flex items-center space-x-2 sm:mt-0 mt-4" onClick={() => setOpen(o => !o)}><AiOutlinePlus size={24} /><span>Add Member</span></button>    
                     </div>
                     <div className="overflow-x-auto p-2">

@@ -413,6 +413,28 @@ const members = [
         email: "davidmorgan@teamwork.com",
         img: "img/user/avatar_team.png",
         act: <AiOutlineMore size={24} />
+    }, {
+        id:6,
+        name: "David Morgan",
+        country: "United Kingdom",
+        email: "davidmorgan@teamwork.com",
+        img: "img/user/avatar_team.png",
+        act: <AiOutlineMore size={24} />
+    },  {
+        id:7,
+        name: "David Morgan",
+        country: "Australia",
+        email: "davidmorgan@teamwork.com",
+        img: "img/user/avatar_team.png",
+        act: <AiOutlineMore size={24} />
+    },
+    {
+        id:8,
+        name: "David Morgan",
+        country: "Germany",
+        email: "davidmorgan@teamwork.com",
+        img: "img/user/avatar_team.png",
+        act: <AiOutlineMore size={24} />
     },
 ]
 

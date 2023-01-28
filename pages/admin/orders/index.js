@@ -9,7 +9,7 @@ import { MdEdit } from "react-icons/md";
 const Order = () => {
   return (
     <React.Fragment>
-      <div className="p-4 pt-4 bg-[#FAFAFA] mt-20">
+      <div className="p-4 pt-4 mt-20">
         <div className="flex flex-col w-full h-full">
           <p className="text-gray-400 md:text-base text-sm">Orders</p>
           <div className="py-2 inline-block min-w-full md:flex md:justify-between md:items-center">

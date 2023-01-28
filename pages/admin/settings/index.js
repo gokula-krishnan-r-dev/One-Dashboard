@@ -5,7 +5,7 @@ import TabComponent from "../../../components/TabComponent"
 const Settings = () => {
     return (
         <React.Fragment>
-            <div className="p-4 pt-4 bg-[#FAFAFA] mt-20">
+            <div className="p-4 pt-4 mt-20">
             <div className="overflow-x-auto font-play">
                         <p className="text-gray-400">Settings</p>
                         <div className="py-2 inline-block min-w-full flex justify-between items-center">

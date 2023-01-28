@@ -4,7 +4,7 @@ import ProjectInput from '../../components/ProjectInput'
 const NewProject = () => {
     return (
         <React.Fragment>
-            <div className="p-4 pt-4 bg-[#FAFAFA] h-[calc(100vh-80px)] mt-20 overflow-y-auto">
+            <div className="p-4 pt-4 h-[calc(100vh-80px)] mt-20 overflow-y-auto">
                 <div className="flex flex-col w-full">
                     <div className="overflow-x-auto font-play">
                         <div className="flex space-x-2">      

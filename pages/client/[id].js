@@ -38,7 +38,7 @@ const ProjectDetail = ({ itemData }) => {
     return (
         <React.Fragment>
 
-            <div className="p-4 pt-4 bg-[#FAFAFA] overflow-y-auto mt-20">
+            <div className="p-4 pt-4 overflow-y-auto mt-20">
                 <div className="w-full py-4">
                     <p className="text-gray-400 flex items-center space-x-2 py-1"><span>Order</span> <BsChevronRight /> <span>#{itemData.order_id}</span></p>
                     <h3 className="text-3xl">Project Name 1</h3>

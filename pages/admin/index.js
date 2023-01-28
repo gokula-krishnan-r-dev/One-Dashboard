@@ -10,7 +10,7 @@ const AdminDashboard = () => {
   const router = new useRouter()
   return (
     <React.Fragment>
-      <div className="p-4 pt-4 bg-[#FAFAFA] mt-20">
+      <div className="p-4 pt-4 mt-20">
         <div className="flex flex-col w-full h-full">
           <div className="font-play">
             <p className="text-gray-400 md:text-base text-sm">Overview</p>
