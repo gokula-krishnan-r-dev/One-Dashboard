@@ -16,10 +16,17 @@ const Client = () => {
         <div className="flex flex-col w-full">
           <div className="overflow-x-auto font-play">
             <p className="text-gray-400">Overview</p>
-            <div className="py-2 block min-w-full md:flex md:justify-between md:items-center md:gap-2 flex-wrap">
-              <h3 className="md:text-3xl text-xl">My Projects</h3>
-              <div className="flex items-center flex-wrap gap-2">
-                <div className="w-full md:w-44 sm:block hidden border relative mt-2">
+            <div className="py-2 block w-full md:flex md:justify-between md:items-center md:gap-2 flex-wrap">
+                 <div className="lg:block lg:w-44 flex items-center justify-between w-full">
+                  <h3 className="md:text-3xl text-xl">My Projects</h3>
+                  <div className="block lg:hidden md:w-44 w-1/2 mt-2">
+                    <button className="bg-blue-500 text-white py-2.5 w-full" onClick={() => router.push('/client/create')}>New Project Request</button>
+                  </div>
+                 </div>
+               
+              
+              <div className="w-full lg:w-1/2 flex justify-between items-center gap-2 flex-wrap md:flex-nowrap">
+                <div className="w-full md:w-1/3 border relative mt-2">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                     <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
                       <BsSearch />
@@ -27,8 +34,8 @@ const Client = () => {
                   </span>
                   <input type="text" placeholder="search" className="pl-10 py-2.5 w-full" />
                 </div>
-                <div className="w-1/2 md:w-44 border relative mt-2">
-                  <select className="block appearance-none w-full bg-white px-4 py-2.5">
+                <div className="w-1/2 md:w-1/3 border relative mt-2">
+                  <select className="appearance-none w-full px-4 py-2.5">
                     <option>This Week</option>
                     <option>Option 2</option>
                     <option>Option 3</option>
@@ -37,7 +44,7 @@ const Client = () => {
                     <BsChevronDown />
                   </div>
                 </div>
-                <div className="w-auto md:w-44 border relative mt-2">
+                <div className="w-auto md:w-1/3 border relative mt-2">
                   <select className="block appearance-none w-full px-4 py-2.5 sm:bg-blue-500 sm:text-white text-black">
                     <option className="text-red-500">All</option>
                     <option>Draft</option>
@@ -53,7 +60,7 @@ const Client = () => {
                     <BsChevronDown className="text-white font-medium" />
                   </div>
                 </div>
-                <div className="w-full hidden sm:block md:w-60 mt-2">
+                <div className="w-full hidden lg:block md:w-60 mt-2">
                   <button className="bg-blue-500 text-white py-2.5 w-full" onClick={() => router.push('/client/create')}>New Project Request</button>
                 </div>
               </div>
