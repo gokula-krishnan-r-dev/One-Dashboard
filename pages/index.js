@@ -43,7 +43,7 @@ const Home = () => {
           <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
             <p className="uppercase tracking-loose w-full">What business are you?</p>
             <h1 className="my-4 text-5xl font-bold leading-tight">
-              Main Hero Message to sell yourself!
+              Main Hero Message to sell Your Products!
             </h1>
             <p className="leading-normal text-2xl mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit
