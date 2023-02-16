@@ -1,13 +1,52 @@
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .image {
-    object-fit: contain;
-    width: 100% !important;
-    position: relative !important;
-    height: unset !important;
-    background: red;
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+  background: red;
+}
+
+.text--font--sidebar {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+}
+.text--font {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+@media (max-height: 622px) {
+  .EditProfile {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+.SmoothAnimation {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 786px) {
+  * {
+    cursor: none;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ebebeb;
+  border-radius: 24px;
 }
