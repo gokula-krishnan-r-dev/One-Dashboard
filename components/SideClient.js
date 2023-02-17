@@ -94,7 +94,7 @@ const SideClient = () => {
                 clicked === menu.linkurl
                   ? "border-[#007AFF]  text-[#131313]"
                   : "border-r-0"
-              }  `}
+              } ${!open && "sidebar"}  `}
             >
               <ul>
                 <a>
@@ -109,7 +109,6 @@ const SideClient = () => {
                         onClick={() => {
                           onMenuClick(index)
                           setClicked(menu.linkurl)
-                          setOpen(false)
                         }}
                       >
                         {menu.icon}

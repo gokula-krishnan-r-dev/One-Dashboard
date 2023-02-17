@@ -75,13 +75,13 @@
   width: 256px;
   padding-left: 8px;
   overflow: hidden !important;
-  transition: transform 0.2s linear;
+  transition: transform 0.3s linear;
 }
 
 @media (max-width: 786px) {
   .sidebar {
     transform: translateX(-100%);
-    transition: transform 0.2s linear;
+    transition: transform 0.3s linear;
   }
   .sidebar.visible {
     transform: translateX(0);

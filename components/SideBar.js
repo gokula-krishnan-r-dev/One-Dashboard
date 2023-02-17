@@ -160,7 +160,6 @@ const SideBar = () => {
                         onClick={() => {
                           onMenuClick(index)
                           setClicked(menu.linkurl)
-                          setOpen(false)
                         }}
                       >
                         {menu.icon}
