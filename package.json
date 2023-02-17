@@ -26,7 +26,6 @@
     "react-spring": "^9.6.1",
     "reactjs-popup": "^2.0.5",
     "styled-components": "^5.3.6",
-    "use-mediaquery": "^1.0.1",
     "yup": "^0.32.11"
   },
   "devDependencies": {
