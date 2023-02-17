@@ -74,7 +74,7 @@ const Client = () => {
                     className="pl-10 py-2.5 w-full outline-none"
                   />
                 </div>
-                <div className="w-[48%] md:w-[24%] border relative mt-2">
+                <div className="w-[48%] md:w-[21%] border relative mt-2">
                   <div
                     className="select relative cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
                     onClick={(e) => {
@@ -131,7 +131,7 @@ const Client = () => {
                     )}
                   </div>
                 </div>
-                <div className="w-[48%] md:w-[30%]   border relative mt-2">
+                <div className="w-[48%] md:w-[25%]   border relative mt-2">
                   <div
                     className="select relative  cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
                     onClick={(e) => {
@@ -200,7 +200,7 @@ const Client = () => {
             </div>
           </div>
           <div className="h-full">
-            <div className="flex w-full flex-wrap gap-4 mt-6 items-center lg:justify-start justify-center">
+            <div className="flex w-full flex-wrap gap-2 mt-6 items-center lg:justify-start justify-center">
               {products.map((product, index) => (
                 <div key={index}>
                   <CardProject product={product} />

@@ -47,7 +47,7 @@ const ProjectDetail = ({ itemData }) => {
           </h3>
         </div>
         <div className="flex  flex-wrap lg:flex-nowrap w-full space-x-2">
-          <div className="lg:w-2/3 w-full">
+          <div className="lg:w-2/3 pr-0 md:pr-9 w-full">
             <div className="py-2 smooth-tras">
               <Requiretment />
             </div>

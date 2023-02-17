@@ -35,7 +35,7 @@ const WorkDelivery = () => {
       </div>
 
       <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-        <div className="md:w-[678px] w-[350px] bg-white shadow-md flex flex-col items-center p-6 font-play">
+        <div className="md:w-[678px] rounded-[10px] w-[350px] bg-white shadow-md flex flex-col items-center p-6 font-play">
           <div className="w-full flex justify-between pb-4">
             <p className="text-black text-xl font-semibold">
               Deliver your work
@@ -76,7 +76,7 @@ const WorkDelivery = () => {
 
             <div className="w-full relative">
               <div className="absolute bottom-2 right-2 flex items-center space-x-2">
-                <span className="text-gray-400 font-light">0/2.500</span>
+                <span className="text-gray-400 font-light">0/2500</span>
                 <AiOutlineSmile size={24} />
               </div>
               <textarea

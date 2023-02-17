@@ -38,15 +38,15 @@ export const getStaticProps = async (context) => {
 const ProjectDetailAdmin = ({ itemData }) => {
   return (
     <React.Fragment>
-      <div className="p-4 pt-4 mt-20">
-        <div className="w-full py-4 h-full overflow-y-auto">
+      <div className="p-4 pt-4 mt-20 ">
+        <div className="w-full py-4  h-full overflow-y-auto">
           <p className="text-gray-400 flex items-center space-x-2 py-1">
             <span>Order</span> <BsChevronRight />{" "}
             <span>#{itemData.order_id}</span>
           </p>
           <h3 className="md:text-3xl text-xl">Project Name 1</h3>
-          <div className="overflow-y-auto flex flex-wrap lg:flex-nowrap w-full gap-2">
-            <div className="lg:w-2/3 w-full">
+          <div className="overflow-y-auto  flex flex-wrap lg:flex-nowrap w-full gap-2">
+            <div className="lg:w-2/3 pr-0 md:pr-9 w-full">
               <div className="py-2">
                 <Requiretment />
               </div>

@@ -29,6 +29,11 @@ const optionsData2 = [
   { option: "Month", value: "Month" },
   { option: "Year", value: "Year" },
 ]
+const Days = [
+  { option: "1 days", value: "This Week" },
+  { option: "2 days", value: "This Week" },
+  { option: "3 days", value: "This Week" },
+]
 const products = [
   {
     id: 1,
@@ -1641,4 +1646,5 @@ export {
   AddMemberData,
   optionsData,
   optionsData2,
+  Days,
 }

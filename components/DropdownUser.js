@@ -47,10 +47,93 @@ const DropdownUser = () => {
     }, [ref])
   }
   const [visibility, setVisibility] = useState(false)
+  const [statevisibility, setStateVisibility] = useState(false)
   const [selectedOption, setSelectedOption] = useState("")
+  const [stateselectedOption, setStateSelectedOption] = useState("")
   const [flagOption, setflagedOption] = useState("")
   const [search, setSearch] = useState("")
   const options = [
+    {
+      countryName: "United States",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
+    },
+
+    {
+      countryName: "United Kingdom",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg",
+    },
+
+    {
+      countryName: "Canada",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Canada_%28Pantone%29.svg",
+    },
+
+    {
+      countryName: "Australia",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg",
+    },
+
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+    {
+      countryName: "France",
+      flagImgUrl:
+        "https://upload.wikimedia.org/wikipedia/en/c/c3/Flag_of_France.svg",
+    },
+  ]
+  const options1 = [
     {
       countryName: "United States",
       flagImgUrl:
@@ -151,7 +234,7 @@ const DropdownUser = () => {
                 />
               </div>
               <span className="md:block hidden"> Angelina Lee</span>
-              <BsChevronDown size={18} />
+              <BsChevronDown size={18} className="md:block hidden" />
             </div>
           }
           position="center top"
@@ -182,12 +265,12 @@ const DropdownUser = () => {
       <Popup open={open} closeOnDocumentClick onClose={closeModal}>
         <div className="sm:max-w-2xl rounded-[8px] cursor-pointer max-w-sm mx-auto bg-white border-[1px] border-[#EBEBEB] font-play">
           <form onSubmit={handleSubmit}>
-            <div className="py-1 md:py-2 flex   flex-col sm:px-6 lg:px-8 sm:p-0 p-3">
+            <div className="py-1 md:py-2 flex EditProfile--gap   flex-col sm:px-6 lg:px-8 sm:p-0 p-3">
               <div className="flex justify-between items-center mt-0 md:mt-2">
                 <h3 className="text-2xl">Edit Profile</h3>
                 <Image
                   onClick={closeModal}
-                  className="cursor-pointer"
+                  className="cursor-pointer "
                   src={Closeicon}
                 />
               </div>
@@ -196,13 +279,19 @@ const DropdownUser = () => {
                   <div className="absolute bg-white shadow-md rounded-full p-1 -bottom-2 -right-2">
                     <AiOutlineCamera
                       size={32}
-                      className="bg-blue-500 text-white rounded-full p-1"
+                      className="bg-blue-500 EditProfile--subimg   text-white rounded-full p-1"
                     />
                   </div>
-                  <Image src={PicImg} width={86} height={86} alt="pic" />
+                  <Image
+                    src={PicImg}
+                    className="EditProfile--img"
+                    width={86}
+                    height={86}
+                    alt="pic"
+                  />
                 </div>
               </div>
-              <div className="py-0 EditProfile md:py-0  space-x-4 flex justify-between">
+              <div className="py-0 EditProfile  md:py-0  space-x-4 flex justify-between">
                 <div className="basis-1/2">
                   <label className="block text-sm mb-0 md:mb-1">
                     First Name
@@ -247,7 +336,7 @@ const DropdownUser = () => {
                   placeholder="Email"
                 />
               </div>
-              <div className="py-1 EditProfile md:py-2">
+              <div className="py-1 EditProfile md:py-2 EditProfile--gap">
                 <label
                   className="block text-sm md:mb-2 mb-0"
                   htmlFor="username"
@@ -393,19 +482,62 @@ const DropdownUser = () => {
                   </div>
                 </div>
                 <div className="basis-1/3 relative">
-                  <select className="appearance-none w-full bg-white border text-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
-                    <option>State</option>
-                    <option>Option 2</option>
-                    <option>Option 3</option>
-                  </select>
-                  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                    <svg
-                      className="fill-current h-4 w-4"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                    </svg>
+                  <div
+                    className="select border relative  cursor-pointer block bg-white   px-[16px]  text-black   w-[100%] h-[40px]"
+                    onClick={(e) => {
+                      setStateVisibility(!statevisibility)
+                    }}
+                  >
+                    <div className="selected-option h-full flex items-center relative justify-between">
+                      <span
+                        className="flex !text-[13px] gap-1 items-center"
+                        title={
+                          stateselectedOption === ""
+                            ? "Select a state"
+                            : stateselectedOption
+                        }
+                      >
+                        {stateselectedOption === ""
+                          ? "Select a state"
+                          : stateselectedOption.length <= 20
+                          ? stateselectedOption
+                          : `${stateselectedOption.slice(0, 20)}...`}
+                      </span>
+                      <Image
+                        className={`${
+                          statevisibility
+                            ? "rotate-[0deg] transition-all"
+                            : "rotate-[180deg] transition-all"
+                        }`}
+                        width={20}
+                        height={20}
+                        src="/img/icon/ArrowUp 2.svg"
+                        alt="icon"
+                      />
+                    </div>
+                    {statevisibility && (
+                      <div className="options absolute z-50 px-3 top-[40px] left-0 w-full max-h-[80px] bg-white overflow-y-scroll border-[1px] border-[#f3dcdc] ">
+                        <ul>
+                          {options1.map(
+                            ({ countryName, flagImgUrl }, index) => (
+                              <li
+                                key={index}
+                                className={
+                                  stateselectedOption === countryName
+                                    ? "active-option py-2 h-[37px] mt-[10px] justify-start items-start flex border-b-[1px] text-[#131313] text-[12px] font-play font-[400] leading-[17px] w-[100%] border-[#EBEBEB]"
+                                    : "border-b-[1px] h-[37px] mt-[10px] py-2 justify-start items-start flex text-[#131313] w-[100%] text-[12px] font-play font-[400] leading-[17px] border-[#EBEBEB]"
+                                }
+                                onClick={() => {
+                                  setStateSelectedOption(countryName)
+                                }}
+                              >
+                                {countryName}
+                              </li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                    )}
                   </div>
                 </div>
                 <div className="basis-1/3">

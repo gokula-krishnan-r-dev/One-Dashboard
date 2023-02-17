@@ -18,7 +18,13 @@ const SideClient = () => {
   const [open, setOpen] = useState(true)
   const [subMenuOpen, setSubMenuOpen] = useState(false)
   const [clicked, setClicked] = useState("/client")
-
+  useEffect(() => {
+    function handleResize() {
+      setOpen(window.innerWidth >= 786)
+    }
+    window.addEventListener("resize", handleResize)
+    return () => window.removeEventListener("resize", handleResize)
+  }, [])
   const [menu, setMenu] = useState([
     {
       title: "My Project",
@@ -55,13 +61,13 @@ const SideClient = () => {
 
       <div
         className={` ${
-          open ? "w-64 " : "w-0 "
-        } lg:w-64 fixed  SmoothAnimation bg-white left-0 z-20 h-screen duration-500 border-r`}
+          open ? "sidebar visible" : "w-0 "
+        } lg:w-[190px] 2xl:w-[256px] fixed  SmoothAnimation bg-white left-0 z-20 h-screen duration-500 border-r`}
       >
         <div className="justify-center px-2 mt-3">
           <div
             className={`text-white flex justify-between  font-medium text-2xl text-center duration-200 ${
-              !open && "invisible"
+              !open && "sidebar"
             }`}
           >
             <Image
@@ -69,33 +75,33 @@ const SideClient = () => {
               height={60}
               alt="loog"
               src={LogoIcon}
-              className={`ml-4 ${!open && "invisible"} cursor-pointer`}
+              className={`ml-4 lg:w-[140px] 2xl:w-[158px] md:w-[158px] ${
+                !open && "sidebar visible"
+              } cursor-pointer`}
             />
             <button
               onClick={toggleSidebar}
-              className={`md:hidden block ${!open && "invisible"}`}
+              className={`md:hidden block ${!open && "sidebar visible"}`}
             >
               <AiOutlineMenu size={24} className="text-black" />
             </button>
           </div>
         </div>
-        <ul className={`pt-6 duration-300 pl-2   ${!open && "invisible"}`}>
+        <ul className={`pt-6 duration-300 pl-2   ${!open && "sidebar "}`}>
           {menu.map((menu, index) => (
             <div
               className={`border-r-4  w-full ${
                 clicked === menu.linkurl
                   ? "border-[#007AFF]  text-[#131313]"
                   : "border-r-0"
-              } ${!open && "invisible"} `}
+              }  `}
             >
               <ul>
                 <a>
                   <Link href={menu.linkurl}>
                     <li className="ml-4 ">
                       <div
-                        className={`flex space-x-3 ${
-                          !open && "invisible"
-                        } h-[33px] text-center mt-6 items-center text-gray-400 ${
+                        className={`flex space-x-3  h-[33px] text-center mt-6 items-center text-gray-400 ${
                           clicked === menu.linkurl
                             ? "text-[#131313] font-[600] text--font"
                             : null
@@ -103,6 +109,7 @@ const SideClient = () => {
                         onClick={() => {
                           onMenuClick(index)
                           setClicked(menu.linkurl)
+                          setOpen(false)
                         }}
                       >
                         {menu.icon}
@@ -124,7 +131,7 @@ const SideClient = () => {
             </div>
           ))}
         </ul>
-        <div className="absolute bottom-8 left-16">
+        <div className="absolute  bottom-8 left-16">
           <HelpCenter />
         </div>
       </div>
