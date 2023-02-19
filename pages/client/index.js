@@ -44,7 +44,9 @@ const Client = () => {
             <p className="text-gray-400">Overview</p>
             <div className="py-2 block w-full md:flex md:justify-between md:items-center md:gap-2 flex-wrap">
               <div className="lg:block lg:w-44 flex items-center justify-between w-full">
-                <h3 className="md:text-3xl text-xl">My Projects</h3>
+                <h3 className="md:text-3xl text-xl font-semibold">
+                  My Projects
+                </h3>
                 <div className="block lg:hidden md:w-1/3 w-1/2 mt-2">
                   <button
                     className="bg-blue-500 text-[14px] md:text-[15px]  text-white py-2.5 w-full"
@@ -70,7 +72,7 @@ const Client = () => {
                   </span>
                   <input
                     type="text"
-                    placeholder="search"
+                    placeholder="Search"
                     className="pl-10 py-2.5 w-full outline-none"
                   />
                 </div>
@@ -79,6 +81,7 @@ const Client = () => {
                     className="select relative cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
                     onClick={(e) => {
                       setWeekVisibility(!weekvisibility)
+                      setVisibility(false)
                     }}
                   >
                     <div className="selected-option h-full flex items-center relative justify-between  ">
@@ -136,6 +139,7 @@ const Client = () => {
                     className="select relative  cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
                     onClick={(e) => {
                       setVisibility(!visibility)
+                      setWeekVisibility(false)
                     }}
                   >
                     <div className="selected-option  h-full flex items-center relative justify-between ">

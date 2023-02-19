@@ -69,7 +69,29 @@ const Customer = () => {
                   </div>
                   <div>
                     <p className="text-lg"> {member.country.name}</p>
-                    <p className="text-base text-gray-400"> {member.email}</p>
+                    <div className="flex justify-between">
+                      <p className="text-base text-gray-400"> {member.email}</p>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M9 5.625C9.62132 5.625 10.125 5.12132 10.125 4.5C10.125 3.87868 9.62132 3.375 9 3.375C8.37868 3.375 7.875 3.87868 7.875 4.5C7.875 5.12132 8.37868 5.625 9 5.625Z"
+                          fill="#131313"
+                        />
+                        <path
+                          d="M9 10.125C9.62132 10.125 10.125 9.62132 10.125 9C10.125 8.37868 9.62132 7.875 9 7.875C8.37868 7.875 7.875 8.37868 7.875 9C7.875 9.62132 8.37868 10.125 9 10.125Z"
+                          fill="#131313"
+                        />
+                        <path
+                          d="M9 14.625C9.62132 14.625 10.125 14.1213 10.125 13.5C10.125 12.8787 9.62132 12.375 9 12.375C8.37868 12.375 7.875 12.8787 7.875 13.5C7.875 14.1213 8.37868 14.625 9 14.625Z"
+                          fill="#131313"
+                        />
+                      </svg>
+                    </div>
                   </div>
                 </div>
               )

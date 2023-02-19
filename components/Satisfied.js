@@ -35,13 +35,13 @@ const Satisfied = () => {
       <Popup open={open} closeOnDocumentClick onClose={closeModal}>
         <div className="md:w-[750px] w-[350px] border bg-white shadow-sm flex flex-col items-center justify-center p-4 font-play">
           <p className="text-2xl text-black text-center py-2">
-            Please rate your Experince
+            Please rate your experience
           </p>
           <div className="py-2">
             <ReactStars
               count={5}
               onChange={ratingChanged}
-              value={1.5}
+              value={0}
               size={41}
               isHalf={true}
               emptyIcon={

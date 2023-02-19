@@ -21,7 +21,7 @@ const SideBar = () => {
   const router = useRouter()
   useEffect(() => {
     function handleResize() {
-      setOpen(window.innerWidth >= 786)
+      setOpen(window.innerWidth >= 767)
     }
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
@@ -164,7 +164,7 @@ const SideBar = () => {
                       <div
                         className={`border-r-4 flex ${
                           !open && "sidebar visible "
-                        } space-x-3 mt-6 items-center text-gray-400  w-full ${
+                        } space-x-3 mt-3 py-[5px] items-center text-gray-400  w-full ${
                           clicked === menu.linkurl
                             ? "border-[#007AFF] text-[#131313]"
                             : "border-r-0"
@@ -177,7 +177,7 @@ const SideBar = () => {
                         {React.cloneElement(menu.icon, { color })}
                         <span>{menu.title}</span>
                       </div>
-                      <div className="mt-4 ml-8 SmoothAnimation">
+                      <div className="mt-0 ml-8 SmoothAnimation">
                         {menu.haveSub && menu.visible && (
                           <ul className="text-[12px] SmoothAnimation  text-gray-400 ">
                             {menu.child.map((item) => (

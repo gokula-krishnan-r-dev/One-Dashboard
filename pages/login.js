@@ -36,14 +36,14 @@ const Login = () => {
 
   return (
     <>
-      <div className="h-screen md:flex">
+      <div className="h-screen flex md:flex">
         <div className="flex flex-col lg:w-[35%] justify-center w-full py-10 items-center bg-white">
-          <div className="w-[100%] sm:w-[518px] lg:w-[83%] font-play  px-6">
+          <div className="w-[100%] sm:w-[518px] lg:w-[83%] font-play  px-7">
             <Image
               src={logoimg}
               width={280}
               height={108}
-              className="mx-auto xl:w-[55%]"
+              className="mx-auto w-[50%] sm:w-[40%] xl:w-[55%]"
               alt="logo"
             />
             <form className="bg-teal-white" onSubmit={handleSubmit(onSubmit)}>

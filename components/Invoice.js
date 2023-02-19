@@ -3,13 +3,13 @@ import { BsChevronDown, BsChevronUp } from "react-icons/bs"
 import DetailInvoice from "./card/DetailInvoice"
 import { useSpring, animated } from "react-spring"
 const Invoice = () => {
-  const [clicked, setClicked] = useState(false)
+  const [clicked, setClicked] = useState(true)
   const fade = useSpring({
     opacity: clicked ? 1 : 0,
   })
   return (
     <React.Fragment>
-      <div className="bg-white border shadow-sm p-3 xl:px-3 px-3 py-3  2xl:py-3 xl:py-1 font-play">
+      <div className="bg-white border shadow-sm  xl:px-3 px-3 py-3  2xl:py-3 xl:py-1 font-play">
         <div
           className="bg-white flex flex-col w-full"
           onClick={() => setClicked(!clicked)}

@@ -5,7 +5,7 @@ const ListTeam = (props) => {
   return (
     <React.Fragment>
       <div className="font-play py-2 font-medium">
-        <div className="p-2 flex -space-x-3 pl-8">
+        <div className="p-2 flex -space-x-3 pl-3">
           {team.map((t, index) => {
             return (
               <>

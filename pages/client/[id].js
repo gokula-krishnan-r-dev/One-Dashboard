@@ -47,6 +47,26 @@ const ProjectDetail = ({ itemData }) => {
           </h3>
         </div>
         <div className="flex  flex-wrap lg:flex-nowrap w-full space-x-0">
+          <div className="lg:w-1/3 w-full flex md:hidden flex-col pl-0 2xl:pl-16">
+            {itemData.status != "Completed" ? (
+              <div className="py-2">
+                <CardExtendDeliver />
+              </div>
+            ) : null}
+            <div className="py-2">
+              <ListTeam team={itemData.team} />
+            </div>
+
+            <div className="py-2">
+              <DetailProject itemData={itemData} />
+            </div>
+            <div className="py-2">
+              <div className="bg-white shadow-sm border font-play p-4 font-medium">
+                <p className="py-2">Your order is on progress.</p>
+                <ProgressBar progressPercentage={itemData.progress} />
+              </div>
+            </div>
+          </div>
           <div className="lg:w-[75%] pr-0 md:pr-9 w-full">
             <div className="py-2 smooth-tras">
               <Requiretment />

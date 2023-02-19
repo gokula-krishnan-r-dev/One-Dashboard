@@ -35,7 +35,7 @@ const WorkDelivery = () => {
       </div>
 
       <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-        <div className="md:w-[678px] rounded-[10px] w-[350px] bg-white shadow-md flex flex-col items-center p-6 font-play">
+        <div className="md:w-[678px] rounded-[10px] w-[350px] bg-white shadowbox flex flex-col items-center p-6 font-play">
           <div className="w-full flex justify-between pb-4">
             <p className="text-black text-xl font-semibold">
               Deliver your work
