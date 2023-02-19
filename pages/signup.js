@@ -22,14 +22,14 @@ const Signup = () => {
   }
   return (
     <>
-      <div className="h-screen md:flex">
+      <div className="h-screen flex md:flex">
         <div className="flex flex-col justify-center lg:w-[35%] w-full py-10 items-center bg-white">
-          <div className="w-[100%] sm:w-[518px] px-6 lg:w-[77%] font-play">
+          <div className="w-[100%] sm:w-[518px] px-7 lg:w-[77%] font-play">
             <Image
               src={logoimg}
               width={280}
               height={108}
-              className="mx-auto xl:w-[55%]"
+              className="mx-auto w-[50%] sm:w-[40%] xl:w-[55%]"
               alt="logo"
             />
             <form className="bg-teal-white" onSubmit={handleSubmit(onSubmit)}>
@@ -107,75 +107,7 @@ const Signup = () => {
                   </p>
                 )}
               </div>
-              <div className="py-0 md:space-x-4 md:flex md:justify-between">
-                <div className="w-full relative">
-                  <label
-                    className="block text-gray-400 text-lg xl:text-[14px] 2xl:text-lg mb-2"
-                    htmlFor="password"
-                  >
-                    Password
-                  </label>
-                  <div className="relative">
-                    <input
-                      className=" appearance-none border rounded w-full xl:py-2 py-3 2xl:py-3 px-3 text-gray-700 mb-3 text-[16px] xl:text-[14px] 2xl:text-[16px] leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
-                      id="password"
-                      type={passwordShown ? "text" : "password"}
-                      placeholder="Enter your password"
-                      {...register("password", {
-                        required: true,
-                        pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/,
-                      })}
-                    />
 
-                    {errors.password && (
-                      <p className="absolute -bottom-2 text-red-500 text-[12px]">
-                        Please check the Password
-                      </p>
-                    )}
-                    <div className="absolute right-1 top-3 flex items-center">
-                      <BiShow
-                        size={24}
-                        className="text-gray-200"
-                        onClick={tooglePssword}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full">
-                  <label
-                    className="block text-gray-400 text-lg xl:text-[14px] 2xl:text-lg mb-2"
-                    htmlFor="repassword"
-                  >
-                    Re-Password
-                  </label>
-                  <div className="relative">
-                    <input
-                      className=" appearance-none border rounded w-full xl:py-2 py-3 2xl:py-3 px-3 text-gray-700 mb-3 text-[16px] xl:text-[14px] 2xl:text-[16px] leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
-                      id="cpassword"
-                      type={passwordShown ? "text" : "password"}
-                      placeholder="Enter your password"
-                      {...register("cpassword", {
-                        required: true,
-                        pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,15}$/,
-                      })}
-                    />
-
-                    {errors.cpassword && (
-                      <p className="absolute -bottom-2 text-red-500 text-[12px]">
-                        Please check the re-Password
-                      </p>
-                    )}
-
-                    <div className="absolute right-1 top-3 flex items-center">
-                      <BiShow
-                        size={24}
-                        className="text-gray-200"
-                        onClick={tooglePssword}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div className="mt-0">
                 <button className="block text-lg xl:text-[14px] 2xl:text-lg w-full bg-[#007AFF] mt-4 py-2 text-white mb-2">
                   Sign Up

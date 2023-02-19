@@ -16,7 +16,11 @@ const ProgressBar = ({ progressPercentage }) => {
         }`}
       >
         {/* progressPercentage< 20 ? 'bg-[#7900A4]' : progressPercentage >=20 && progressPercentage < 60 ? 'bg-[#F9C152]' : progressPercentage >=60 && progressPercentage < 90 ? 'bg-teal-500' : 'bg-green-600'; */}
-        <span className="absolute text-white text-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <span
+          className={`absolute text-white ${
+            progressPercentage >= 0 ? "ml-5" : "ml-0"
+          } text-sm absolute top-1/2 left-1/2 transform text-[12px] -translate-x-1/2 -translate-y-1/2`}
+        >
           {progressPercentage}%
         </span>
       </div>

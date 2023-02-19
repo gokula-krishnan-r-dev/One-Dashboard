@@ -54,9 +54,9 @@ const Notifications = (props) => {
         <GrNotification size={16} />
       </div>
       <div
-        className={` md:w-[450px] w-[365px] h-[100vh] md:h-[460px] ${
+        className={` md:w-[450px] w-[365px] h-[82vh] md:h-[460px] ${
           visible ? "bg-white overflow-y-scroll " : "hidden"
-        }  fixed md:absolute border-[1px] shadow-md md:-right-20 rounded-[8px] md:top-16 right-0  top-20 `}
+        }  fixed md:absolute border-[1px] shadow-md md:-right-6 rounded-[8px] md:top-16 right-0  top-20 `}
         ref={popperRef}
         {...attributes.popper}
       >
@@ -65,11 +65,11 @@ const Notifications = (props) => {
           style={styles.offset}
           visible={visible}
         >
-          <div className="w-[100%] px-5 sticky top-0 bg-[white]  flex space-x-2 items-center justify-between py-5 p-2  ">
+          <div className="w-[100%] px-5 sticky top-0  bg-[white]  flex space-x-2 items-center justify-between py-4  ">
             <div className="flex   space-x-4">
               {/* <GrNotification size={28} /> */}
-              <Image src={notificationicon} alt="icon" />
-              <span className="text-[20px] font-[500] leading-[25px] text-[ #131313]">
+              <Image className="w-5" src={notificationicon} alt="icon" />
+              <span className="text-[18px] font-[500] leading-[25px] text-[ #131313]">
                 Notification
               </span>
             </div>

@@ -4,16 +4,16 @@ import { useSpring, animated } from "react-spring"
 
 import DetailREquiretment from "./card/DetailRequirement"
 const Requiretment = () => {
-  const [clicked, setClicked] = useState(false)
+  const [clicked, setClicked] = useState(true)
   const fade = useSpring({
     opacity: clicked ? 1 : 0,
   })
 
   return (
     <React.Fragment>
-      <div className="bg-white  smoth SmoothAnimation   border xl:px-3 px-3 py-3 xl:py-1 2xl:py-3 shadow-sm  font-play">
+      <div className="bg-white     border xl:px-3 px-3 py-3 xl:py-1 2xl:py-3 shadow-sm  font-play">
         <div
-          className="bg-white SmoothAnimation cursor-pointer flex flex-col w-full"
+          className="bg-white   flex flex-col w-full"
           onClick={() => setClicked(!clicked)}
         >
           <div className="flex justify-between p-2">

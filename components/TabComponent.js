@@ -7,7 +7,7 @@ const PersonalInfo = () => {
     <React.Fragment>
       <div className="flex  rounded-[8px] flex-col lg:w-[37%] w-full font-play bg-white shadow-sm px-6 p-4">
         <div className="py-2 flex items-center justify-between">
-          <p className="text-black text-[16px] pl-2 font-medium">My Details</p>
+          <p className="text-black text-[16px]  font-medium">My Details</p>
           <div className="flex space-x-2 font-normal">
             <button className="py-2 text-blue-500 p-2 border px-4 text-sm">
               Cancel
@@ -217,17 +217,6 @@ const TabComponent = () => {
       </div>
 
       <div className="lg:hidden block w-full relative mt-2 mb-4">
-        {/* <select className="block appearance-none w-full bg-white px-4 py-3.5">
-          <option>Personal Information</option>
-          <option>Accounts</option>
-          <option>Emails</option>
-          <option>Security</option>
-          <option>Notifications</option>
-          <option>Stripe</option>
-        </select>
-        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-          <BsChevronDown />
-        </div> */}
         <div
           className="select relative  cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
           onClick={(e) => {

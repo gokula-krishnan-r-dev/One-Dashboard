@@ -4,7 +4,7 @@ import CardDisscussion from "./card/CardDiscussion"
 import { useSpring, animated } from "react-spring"
 
 const Discussion = () => {
-  const [clicked, setClicked] = useState(false)
+  const [clicked, setClicked] = useState(true)
   const fade = useSpring({
     opacity: clicked ? 1 : 0,
   })

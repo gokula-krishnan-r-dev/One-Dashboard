@@ -5,7 +5,7 @@ const ListNotifications = (props) => {
   const { notifications } = props
   //console.log(notifications)
   return (
-    <div className="max-w-full lg:max-w-full  px-6 mt-4 mb-4  font-play">
+    <div className="max-w-full lg:max-w-full  px-6 mt-2 mb-2  font-play">
       <div className="flex  space-x-4 items-center  ">
         {notifications.icon}
 

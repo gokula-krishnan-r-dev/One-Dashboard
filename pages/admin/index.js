@@ -41,7 +41,7 @@ const AdminDashboard = () => {
             <div className="py-2 inline-block min-w-full lg:flex md:justify-between md:items-center">
               <h3 className="md:text-3xl text-xl font-semibold">Orders</h3>
               <div className="flex items-center flex-wrap gap-1">
-                <div className="w-28 md:w-[30%] border relative mt-2">
+                <div className="w-28 md:w-[25%] border relative mt-2">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                     <button
                       type="submit"
@@ -56,11 +56,12 @@ const AdminDashboard = () => {
                     className="pl-10 py-2.5 outline-none w-full"
                   />
                 </div>
-                <div className="w-[30%] md:w-44 border relative mt-2">
+                <div className="w-[33%] md:w-[23%] border relative mt-2">
                   <div
                     className="select relative cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
                     onClick={(e) => {
                       setWeekVisibility(!weekvisibility)
+                      setVisibility(false)
                     }}
                   >
                     <div className="selected-option h-full flex items-center relative justify-between  ">
@@ -113,11 +114,12 @@ const AdminDashboard = () => {
                     )}
                   </div>
                 </div>
-                <div className="w-[30%] md:w-44 border relative mt-2">
+                <div className="w-[30%] md:w-[25%] border relative mt-2">
                   <div
                     className="select relative  cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
                     onClick={(e) => {
                       setVisibility(!visibility)
+                      setWeekVisibility(false)
                     }}
                   >
                     <div className="selected-option  h-full flex items-center relative justify-between ">
@@ -167,7 +169,10 @@ const AdminDashboard = () => {
                   </div>
                 </div>
                 <div className="w-full md:w-24 mt-2">
-                  <button className="bg-blue-500 text-[15px] text-white py-2.5 w-full">
+                  <button
+                    onClick={() => router.push("/admin/create")}
+                    className="bg-blue-500 text-[15px] text-white py-2.5 w-full"
+                  >
                     New Order
                   </button>
                 </div>

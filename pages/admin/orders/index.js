@@ -72,8 +72,8 @@ const Order = () => {
                     </div>
                   </div>
                   <div>
-                    <p className="text-lg"> {order.title}</p>
-                    <p className="text-base text-gray-400">
+                    <p className="text-lg font-[600] pt-2"> {order.title}</p>
+                    <p className="text-base pt-2 text-gray-400">
                       {" "}
                       {order.delivery_date}
                     </p>

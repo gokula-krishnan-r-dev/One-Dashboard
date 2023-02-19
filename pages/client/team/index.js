@@ -9,7 +9,11 @@ import Closeicon from "../../../public/img/icon/Close Icon.svg"
 
 const Team = () => {
   const [open, setOpen] = useState(false)
-  const closeModal = () => setOpen(false)
+  const [removeopen, setremoveOpen] = useState(false)
+  const closeModal = () => {
+    setOpen(false)
+    setremoveOpen(false)
+  }
 
   return (
     <React.Fragment>
@@ -17,11 +21,11 @@ const Team = () => {
         <div className="flex flex-col w-full   p-2">
           <p className="text-gray-400">Team</p>
           <div className="overflow-x-auto py-2 sm:flex sm:items-center sm:justify-between">
-            <h2 className="md:text-[18px] text-xl font-semibold">
+            <h2 className="md:text-3xl text-xl font-semibold">
               Team Member(8)
             </h2>
             <button
-              className="px-4 py-3 bg-blue-500 text-white flex items-center space-x-2 sm:mt-0 mt-4"
+              className="px-4 py-2 text-[14px] bg-blue-500 text-white flex items-center space-x-2 sm:mt-0 mt-4"
               onClick={() => setOpen((o) => !o)}
             >
               <AiOutlinePlus size={24} />
@@ -83,8 +87,20 @@ const Team = () => {
                             <td className="md:text-[14px] text-[12px] text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap">
                               {member.email}
                             </td>
-                            <td className="text-[14px] text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap flex justify-center items-center">
-                              {member.act}
+                            <td className="text-[14px] relative text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap flex justify-center items-center">
+                              {/* {member.act} */}
+                              <AiOutlineMore
+                                onClick={() => setremoveOpen(!removeopen)}
+                                size={24}
+                              />
+                              {/* {removeopen && (
+                                <div
+                                  key={index}
+                                  className="bg-white absolute top-9 p-4"
+                                >
+                                  Remove
+                                </div>
+                              )} */}
                             </td>
                           </tr>
                         </>
@@ -104,12 +120,16 @@ const Team = () => {
                       alt="pic"
                       src="/img/user/Avatar_team1.svg"
                     />
-                    <div className="py-1.5">
+                    <div className="py-1.5 w-full">
                       <div className="flex items-center justify-between">
                         <p className="text-base  text-[#131313] font-play font-[700] leading-[150%]">
                           {member.name}
                         </p>
-                        <AiOutlineMore size={20} className="" />
+                        <AiOutlineMore
+                          onClick={() => setremoveOpen(!removeopen)}
+                          size={20}
+                          className=""
+                        />
                       </div>
 
                       <p className="sm:text-sm text-[12px] font-play font-[500] text-[#13131380]">
@@ -126,6 +146,9 @@ const Team = () => {
           </div>
         </div>
       </div>
+      {/* <Popup open={removeopen} onClose={closeModal} closeOnDocumentClick> */}
+
+      {/* </Popup> */}
       <Popup open={open} closeOnDocumentClick onClose={closeModal}>
         <div className="md:w-[600px] w-[90%] flex items-center justify-center mx-auto flex-col rounded-[8px] shadow-md p-4 bg-white z-50">
           <div className="flex items-center justify-between w-full">

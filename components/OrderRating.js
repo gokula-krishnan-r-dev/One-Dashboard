@@ -3,7 +3,7 @@ import { BsChevronDown, BsChevronUp } from "react-icons/bs"
 import { useSpring, animated } from "react-spring"
 import CardRating from "./card/CardRating"
 const OrderRating = () => {
-  const [clicked, setClicked] = useState(false)
+  const [clicked, setClicked] = useState(true)
   const fade = useSpring({
     opacity: clicked ? 1 : 0,
   })

@@ -245,7 +245,7 @@ const DropdownUser = () => {
           contentStyle={{ padding: "0px", border: "none" }}
           arrow={false}
         >
-          <div className="w-60 fixed cursor-pointer bg-white shadow-md top-6 right-0 mt-12 flex flex-col px-6">
+          <div className="w-60 fixed cursor-pointer bg-white shadow-md top-6 right-0 mt-12 flex flex-col px-3">
             <li
               className="border-b p-2 border-gray-300 py-2.5 flex items-center space-x-2"
               onClick={openModal}

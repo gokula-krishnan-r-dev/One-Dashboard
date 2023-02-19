@@ -4,7 +4,7 @@ import Image from "next/image"
 import { useSpring, animated } from "react-spring"
 import CardDelivery from "./card/CardDelivery"
 const Delivery = () => {
-  const [clicked, setClicked] = useState(false)
+  const [clicked, setClicked] = useState(true)
   const fade = useSpring({
     opacity: clicked ? 1 : 0,
   })

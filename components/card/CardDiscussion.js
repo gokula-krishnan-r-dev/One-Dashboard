@@ -41,8 +41,14 @@ const CardDisscussion = () => {
           return (
             <>
               <div key={index} className="flex space-x-0 border-b mb-4">
-                <div className="w-[55px]">
-                  <Image src={discuss.image} alt="pic" width={45} height={45} />
+                <div className="md:w-[55px] w-[120px]">
+                  <Image
+                    className="md:w-[45px] w-[90px]"
+                    src={discuss.image}
+                    alt="pic"
+                    width={45}
+                    height={45}
+                  />
                 </div>
                 <div className="block py-0">
                   <h4 className="text-black text-[20px] 2xl:text-[16px] xl:text-[16px] font-medium">

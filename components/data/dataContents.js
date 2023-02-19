@@ -42,7 +42,7 @@ const products = [
     dateTime: "Today at 1.18 PM",
     img: "/img/product/product_1.png",
     order_id: "OD170720201001",
-    progress: 25,
+    progress: 0,
     users: {
       id: 1,
       name: "Angelina Lee",
@@ -222,7 +222,7 @@ const products = [
     dateTime: "Today at 1.18 PM",
     img: "/img/product/product_6.png",
     order_id: "OD170720201006",
-    progress: 90,
+    progress: 0,
     users: {
       id: 1,
       name: "Angelina Lee",
@@ -258,7 +258,7 @@ const products = [
     dateTime: "Today at 1.18 PM",
     img: "/img/product/product_6.png",
     order_id: "OD170720201007",
-    progress: 100,
+    progress: 10,
     users: {
       id: 16,
       name: "Antonie Lee",
