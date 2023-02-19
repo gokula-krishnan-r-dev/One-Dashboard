@@ -47,7 +47,7 @@ const Client = () => {
                 <h3 className="md:text-3xl text-xl">My Projects</h3>
                 <div className="block lg:hidden md:w-1/3 w-1/2 mt-2">
                   <button
-                    className="bg-blue-500  text-white py-2.5 w-full"
+                    className="bg-blue-500 text-[14px] md:text-[15px]  text-white py-2.5 w-full"
                     onClick={() => router.push("/client/create")}
                   >
                     New Project Request
@@ -188,7 +188,7 @@ const Client = () => {
                     <BsChevronDown className="text-white font-medium" />
                   </div>
                 </div>
-                <div className="w-full hidden lg:block md:w-60 mt-2">
+                <div className="w-full hidden lg:block md:w-52 mt-2">
                   <button
                     className="bg-blue-500 text-[14px] text-white py-2.5 w-full"
                     onClick={() => router.push("/client/create")}

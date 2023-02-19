@@ -38,7 +38,7 @@ const Login = () => {
     <>
       <div className="h-screen md:flex">
         <div className="flex flex-col lg:w-[35%] justify-center w-full py-10 items-center bg-white">
-          <div className="w-[340px] sm:w-[518px] lg:w-[83%] font-play  p-4">
+          <div className="w-[100%] sm:w-[518px] lg:w-[83%] font-play  px-6">
             <Image
               src={logoimg}
               width={280}

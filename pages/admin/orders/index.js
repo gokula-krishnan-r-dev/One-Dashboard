@@ -42,8 +42,8 @@ const Order = () => {
                       <Image
                         src="/img/user/Avatar_4.png"
                         alt="pic"
-                        width={40}
-                        height={40}
+                        width={45}
+                        height={45}
                       />
                       <div>
                         Angeline Lee

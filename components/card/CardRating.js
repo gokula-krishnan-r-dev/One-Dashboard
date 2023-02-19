@@ -10,11 +10,11 @@ const CardRating = () => {
         <p className="text-[12px] text-blue-500">Rates 5 stars</p>
       </div>
       <div className="flex items-center space-x-2 justify-center">
-        <RxStarFilled size={70} className="text-yellow-500 " />
-        <RxStarFilled size={70} className="text-yellow-500" />
-        <RxStarFilled size={70} className="text-yellow-500" />
-        <RxStarFilled size={70} className="text-yellow-500" />
-        <RxStarFilled size={70} className="text-yellow-500" />
+        <RxStarFilled size={50} className="text-yellow-500 " />
+        <RxStarFilled size={50} className="text-yellow-500" />
+        <RxStarFilled size={50} className="text-yellow-500" />
+        <RxStarFilled size={50} className="text-yellow-500" />
+        <RxStarFilled size={50} className="text-yellow-500" />
       </div>
     </>
   )

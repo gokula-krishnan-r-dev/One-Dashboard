@@ -124,7 +124,7 @@ const SideBar = () => {
       <div
         className={` ${
           open ? "sidebar visible" : "w-0"
-        } lg:w-[190px] 2xl:w-[256px] bg-white fixed SmoothAnimation  left-0 z-20 overflow-hidden h-screen  border-r`}
+        } lg:w-[190px] 2xl:w-[256px] bg-white fixed SmoothAnimation  left-0 z-20 overflow-hidden  bottom-0 top-0  border-r`}
       >
         <div className="justify-center   mt-3">
           <div
