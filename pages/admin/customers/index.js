@@ -46,7 +46,7 @@ const Customer = () => {
                       <Image
                         src="/img/user/Avatar_4.png"
                         alt="pic"
-                        width={40}
+                        width={45}
                         height={40}
                       />
                       <div>

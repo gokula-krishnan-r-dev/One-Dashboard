@@ -67,6 +67,7 @@ const Team = () => {
                           <tr>
                             <td className="flex items-center space-x-2 text-base px-6 py-4 whitespace-nowrap">
                               <Image
+                                className="md:w-[32px] !w-[28px]"
                                 src="/img/user/Avatar_team1.svg"
                                 alt="pic"
                                 width={32}
@@ -79,7 +80,7 @@ const Team = () => {
                             <td className="text-[14px] text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap">
                               {member.country}
                             </td>
-                            <td className="text-[14px] text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap">
+                            <td className="md:text-[14px] text-[12px] text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap">
                               {member.email}
                             </td>
                             <td className="text-[14px] text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap flex justify-center items-center">
@@ -98,8 +99,8 @@ const Team = () => {
                 return (
                   <div className="py-2 flex gap-2 bg-[#FFFFFF] border-[#DBDBDB] border-[1px] mt-2 mb-2 p-2 relative">
                     <Image
-                      width={70}
-                      height={70}
+                      width={45}
+                      height={45}
                       alt="pic"
                       src="/img/user/Avatar_team1.svg"
                     />
@@ -111,7 +112,7 @@ const Team = () => {
                         <AiOutlineMore size={20} className="" />
                       </div>
 
-                      <p className="text-sm font-play font-[500] text-[#13131380]">
+                      <p className="sm:text-sm text-[12px] font-play font-[500] text-[#13131380]">
                         {member.email}
                       </p>
                       <p className="text-sm text-[#0000004D]">

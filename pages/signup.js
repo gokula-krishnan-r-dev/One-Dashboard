@@ -24,7 +24,7 @@ const Signup = () => {
     <>
       <div className="h-screen md:flex">
         <div className="flex flex-col justify-center lg:w-[35%] w-full py-10 items-center bg-white">
-          <div className="w-[340px] sm:w-[518px] lg:w-[77%] font-play">
+          <div className="w-[100%] sm:w-[518px] px-6 lg:w-[77%] font-play">
             <Image
               src={logoimg}
               width={280}
@@ -182,7 +182,7 @@ const Signup = () => {
                 </button>
                 <button
                   type="submit"
-                  className="flex items-center space-x-2 justify-center w-full bg-white border mt-4 py-1 text-lg xl:text-[14px] 2xl:text-lg text-black mb-2"
+                  className="flex items-center space-x-2 justify-center w-full bg-white border mt-4 py-2 text-lg xl:text-[14px] 2xl:text-lg text-black mb-2"
                 >
                   <FcGoogle size={24} />
                   <span>Sign Up with Google</span>

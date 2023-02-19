@@ -263,7 +263,7 @@ const DropdownUser = () => {
         </Popup>
       </div>
       <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-        <div className="sm:max-w-[550px]  rounded-[8px] cursor-pointer max-w-sm mx-auto bg-white border-[1px] border-[#EBEBEB] font-play">
+        <div className="sm:max-w-[550px]  rounded-[8px] cursor-pointer max-w-[90%] mx-auto bg-white border-[1px] border-[#EBEBEB] font-play">
           <form onSubmit={handleSubmit}>
             <div className="py-1 md:py-1 flex EditProfile--gap   flex-col sm:px-6 lg:px-8 sm:p-0 p-3">
               <div className="flex justify-between items-center mt-0 md:mt-2">
@@ -293,7 +293,7 @@ const DropdownUser = () => {
                   />
                 </div>
               </div>
-              <div className="py-0 EditProfile  md:py-1  space-x-5 flex justify-between">
+              <div className="py-1 EditProfile  md:py-1  space-x-5 flex justify-between">
                 <div className="basis-1/2">
                   <label className="block text-sm font-[500] font-play mb-0 md:mb-0">
                     First Name
@@ -323,7 +323,7 @@ const DropdownUser = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-0 EditProfile EditProfile md:py-0">
+              <div className="py-1 EditProfile EditProfile md:py-0">
                 <label
                   className="block text-sm font-[500] font-play mb-0 md:mb-1"
                   htmlFor="username"
@@ -356,7 +356,7 @@ const DropdownUser = () => {
               <div className="py-1 text-sm EditProfile font-[500] font-play  md:py-0">
                 <p>Country</p>
               </div>
-              <div className="py-0 EditProfile md:py-2">
+              <div className="py-1 EditProfile md:py-2">
                 <div
                   className="select border relative  cursor-pointer block bg-white   px-[16px]  text-black   w-[100%] text-[14px] h-8"
                   onClick={(e) => {
@@ -425,7 +425,7 @@ const DropdownUser = () => {
                   )}
                 </div>
               </div>
-              <div className="py-0 font-[500]  font-play text-sm EditProfile md:py-1">
+              <div className="py-1 font-[500]  font-play text-sm EditProfile md:py-1">
                 <p>Billing Address</p>
               </div>
 
@@ -495,12 +495,12 @@ const DropdownUser = () => {
                         className="flex !text-[13px] gap-1 items-center"
                         title={
                           stateselectedOption === ""
-                            ? "Select a state"
+                            ? "state"
                             : stateselectedOption
                         }
                       >
                         {stateselectedOption === ""
-                          ? "Select a state"
+                          ? "state"
                           : stateselectedOption.length <= 20
                           ? stateselectedOption
                           : `${stateselectedOption.slice(0, 20)}...`}

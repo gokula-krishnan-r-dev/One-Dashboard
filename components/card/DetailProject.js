@@ -26,7 +26,7 @@ const DetailProject = (props) => {
           />
           <div className="flex items-center justify-between w-1/2 font-medium">
             <div className="full">
-              <p className="text-black text-[13px] py-1 font-semibold 2xl:text-base">
+              <p className="text-black lg:text-[13px] text-[12px] py-1 font-semibold 2xl:text-base">
                 {itemData.title}
               </p>
 
@@ -49,7 +49,7 @@ const DetailProject = (props) => {
             className="w-1/5"
           />
         </div>
-        <div className="flex flex-col w-full 2xl:text-sm text-[12px] font-[600] font-play">
+        <div className="flex flex-col  w-full 2xl:text-sm lg:text-[13px] sm:text-[13px] text-[10px] font-[600] font-play">
           <ul className="flex w-full justify-between pt-2 px-2">
             <li className="text-[#131313] ">Order By</li>
             <li className="text-blue-500 ">{itemData.users.name}</li>
