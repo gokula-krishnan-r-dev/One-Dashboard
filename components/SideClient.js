@@ -13,11 +13,14 @@ import LogoIcon from "../public/img/Logo.svg"
 import Image from "next/image"
 import HelpCenter from "./HelpCenter"
 import Link from "next/link"
+import { IconContext } from "react-icons"
 
 const SideClient = () => {
+  const router = useRouter()
   const [open, setOpen] = useState(true)
   const [subMenuOpen, setSubMenuOpen] = useState(false)
   const [clicked, setClicked] = useState("/client")
+  const [color, setColor] = useState("text-gray-600")
   useEffect(() => {
     function handleResize() {
       setOpen(window.innerWidth >= 786)
@@ -30,14 +33,25 @@ const SideClient = () => {
       title: "My Project",
       visible: false,
       haveSub: false,
-      icon: <SiDatabricks className="text-black" />,
+      icon:
+        clicked === router.pathname ? (
+          <SiDatabricks color={"#131313"} />
+        ) : (
+          <SiDatabricks color={"#13131380"} />
+        ),
       linkurl: "/client",
     },
     {
       title: "Team",
       visible: false,
       haveSub: false,
-      icon: <TbUsers className="text-black" />,
+      icon:
+        clicked === router.pathname ? (
+          <TbUsers color={"#131313"} />
+        ) : (
+          <TbUsers color={"#13131380"} />
+        ),
+
       linkurl: "/client/team",
     },
   ])
@@ -53,7 +67,7 @@ const SideClient = () => {
   return (
     <div className="h-screen flex items-end justify-end ">
       <button
-        className="fixed lg:hidden z-20 top-4 left-2 w-10 h-10 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl  duration-300"
+        className="fixed lg:hidden z-20 top-4 left-2 w-10 h-10 rounded-full drop-shadow-lg flex justify-center items-center text-white text-4xl  "
         onClick={toggleSidebar}
       >
         <AiOutlineMenu size={24} className="text-black" />
@@ -87,7 +101,7 @@ const SideClient = () => {
             </button>
           </div>
         </div>
-        <ul className={`pt-6 duration-300 pl-2   ${!open && "sidebar "}`}>
+        <ul className={`pt-6  pl-2   ${!open && "sidebar "}`}>
           {menu.map((menu, index) => (
             <div
               className={`border-r-4  w-full ${
@@ -111,7 +125,7 @@ const SideClient = () => {
                           setClicked(menu.linkurl)
                         }}
                       >
-                        {menu.icon}
+                        {React.cloneElement(menu.icon, { color })}
                         <span>{menu.title}</span>
                       </div>
                       <div className="mt-4 ml-8">

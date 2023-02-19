@@ -17,7 +17,7 @@ const Team = () => {
         <div className="flex flex-col w-full   p-2">
           <p className="text-gray-400">Team</p>
           <div className="overflow-x-auto py-2 sm:flex sm:items-center sm:justify-between">
-            <h2 className="md:text-3xl text-xl font-semibold">
+            <h2 className="md:text-[18px] text-xl font-semibold">
               Team Member(8)
             </h2>
             <button
@@ -36,7 +36,7 @@ const Team = () => {
                     <tr>
                       <th
                         scope="col"
-                        className="text-lg font-bold text-back font-bold px-6 py-4 text-left"
+                        className="text-lg font-bold  text-back font-bold px-6 py-4 text-left"
                       >
                         Name
                       </th>
@@ -72,15 +72,17 @@ const Team = () => {
                                 width={32}
                                 height={32}
                               />
-                              <span className="font-bold">{member.name}</span>
+                              <span className="font-bold text-[14px]">
+                                {member.name}
+                              </span>
                             </td>
-                            <td className="text-base text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap">
+                            <td className="text-[14px] text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap">
                               {member.country}
                             </td>
-                            <td className="text-base text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap">
+                            <td className="text-[14px] text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap">
                               {member.email}
                             </td>
-                            <td className="text-base text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap flex justify-center items-center">
+                            <td className="text-[14px] text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap flex justify-center items-center">
                               {member.act}
                             </td>
                           </tr>

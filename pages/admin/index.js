@@ -26,10 +26,8 @@ const AdminDashboard = () => {
           setWeekVisibility(false)
         }
       }
-      // Bind the event listener
       document.addEventListener("mousedown", handleClickOutside)
       return () => {
-        // Unbind the event listener on clean up
         document.removeEventListener("mousedown", handleClickOutside)
       }
     }, [ref])
@@ -40,10 +38,10 @@ const AdminDashboard = () => {
         <div className="flex flex-col w-full h-full">
           <div ref={wrapperRef} className="font-play">
             <p className="text-gray-400 md:text-base text-sm">Overview</p>
-            <div className="py-2 inline-block min-w-full md:flex md:justify-between md:items-center">
+            <div className="py-2 inline-block min-w-full lg:flex md:justify-between md:items-center">
               <h3 className="md:text-3xl text-xl font-semibold">Orders</h3>
               <div className="flex items-center flex-wrap gap-1">
-                <div className="w-28 md:w-44 border relative mt-2">
+                <div className="w-28 md:w-[30%] border relative mt-2">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                     <button
                       type="submit"
@@ -58,7 +56,7 @@ const AdminDashboard = () => {
                     className="pl-10 py-2.5 outline-none w-full"
                   />
                 </div>
-                <div className="w-[120px] md:w-44 border relative mt-2">
+                <div className="w-[30%] md:w-44 border relative mt-2">
                   <div
                     className="select relative cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
                     onClick={(e) => {
@@ -115,7 +113,7 @@ const AdminDashboard = () => {
                     )}
                   </div>
                 </div>
-                <div className="w-[110px] md:w-44 border relative mt-2">
+                <div className="w-[30%] md:w-44 border relative mt-2">
                   <div
                     className="select relative  cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
                     onClick={(e) => {
@@ -168,6 +166,11 @@ const AdminDashboard = () => {
                     )}
                   </div>
                 </div>
+                <div className="w-full md:w-24 mt-2">
+                  <button className="bg-blue-500 text-[15px] text-white py-2.5 w-full">
+                    New Order
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -176,7 +179,7 @@ const AdminDashboard = () => {
               <h4 className="md:text-3xl text-xl font-semibold text-blue-500 py-4">
                 Active Order
               </h4>
-              <div className="flex w-full flex-wrap gap-2 mt-0 items-center lg:justify-center justify-center">
+              <div className="flex w-full flex-wrap gap-y-4 gap-2 mt-0 items-start lg:justify-start justify-start">
                 {ordersdata.map(
                   (product, index) =>
                     product.status_order == "active" && (
@@ -191,7 +194,7 @@ const AdminDashboard = () => {
               <h4 className="md:text-3xl text-xl font-semibold text-blue-500 py-4">
                 Awaiting
               </h4>
-              <div className="flex flex-wrap gap-2 mt-0 items-center lg:justify-center justify-center">
+              <div className="flex flex-wrap gap-2 gap-y-4 mt-0 items-start lg:justify-start justify-start">
                 {ordersdata.map(
                   (product, index) =>
                     product.status_order == "awaiting" && (

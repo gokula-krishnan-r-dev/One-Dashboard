@@ -36,9 +36,9 @@ const Client = () => {
   return (
     <React.Fragment>
       <div className="p-4 pt-4 overflow-y-auto mt-20">
-        <div className="p-4 fixed  bottom-2 right-2 bg-blue-600 rounded-full">
+        {/* <div className="p-4 fixed  bottom-2 right-2 bg-blue-600 rounded-full">
           <SiGooglechat className="text-white" size={32} />
-        </div>
+        </div> */}
         <div className="flex flex-col w-full">
           <div className=" font-play">
             <p className="text-gray-400">Overview</p>
@@ -190,7 +190,7 @@ const Client = () => {
                 </div>
                 <div className="w-full hidden lg:block md:w-60 mt-2">
                   <button
-                    className="bg-blue-500 text-[16px] text-white py-2.5 w-full"
+                    className="bg-blue-500 text-[14px] text-white py-2.5 w-full"
                     onClick={() => router.push("/client/create")}
                   >
                     New Project Request

@@ -263,11 +263,13 @@ const DropdownUser = () => {
         </Popup>
       </div>
       <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-        <div className="sm:max-w-2xl rounded-[8px] cursor-pointer max-w-sm mx-auto bg-white border-[1px] border-[#EBEBEB] font-play">
+        <div className="sm:max-w-[550px]  rounded-[8px] cursor-pointer max-w-sm mx-auto bg-white border-[1px] border-[#EBEBEB] font-play">
           <form onSubmit={handleSubmit}>
-            <div className="py-1 md:py-2 flex EditProfile--gap   flex-col sm:px-6 lg:px-8 sm:p-0 p-3">
+            <div className="py-1 md:py-1 flex EditProfile--gap   flex-col sm:px-6 lg:px-8 sm:p-0 p-3">
               <div className="flex justify-between items-center mt-0 md:mt-2">
-                <h3 className="text-2xl">Edit Profile</h3>
+                <h3 className="text-[18px] font-[600] text-[#131313]">
+                  Edit Profile
+                </h3>
                 <Image
                   onClick={closeModal}
                   className="cursor-pointer "
@@ -278,27 +280,27 @@ const DropdownUser = () => {
                 <div className="relative">
                   <div className="absolute bg-white shadow-md rounded-full p-1 -bottom-2 -right-2">
                     <AiOutlineCamera
-                      size={32}
+                      size={25}
                       className="bg-blue-500 EditProfile--subimg   text-white rounded-full p-1"
                     />
                   </div>
                   <Image
                     src={PicImg}
                     className="EditProfile--img"
-                    width={86}
-                    height={86}
+                    width={76}
+                    height={76}
                     alt="pic"
                   />
                 </div>
               </div>
-              <div className="py-0 EditProfile  md:py-0  space-x-4 flex justify-between">
+              <div className="py-0 EditProfile  md:py-1  space-x-5 flex justify-between">
                 <div className="basis-1/2">
-                  <label className="block text-sm mb-0 md:mb-1">
+                  <label className="block text-sm font-[500] font-play mb-0 md:mb-0">
                     First Name
                   </label>
                   <div className="relative">
                     <input
-                      className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                      className="appearance-none border rounded w-full h-8 px-3 text-gray-700 mb-0 leading-tight focus:outline-none text-[14px] focus:shadow-outline placeholder-gray-300"
                       id="firstname"
                       type="text"
                       placeholder="First Name"
@@ -307,12 +309,12 @@ const DropdownUser = () => {
                   </div>
                 </div>
                 <div className="basis-1/2">
-                  <label className="block text-sm mb-0 md:mb-1">
+                  <label className="block font-[500] font-play text-sm mb-0 md:mb-0">
                     Last Name
                   </label>
                   <div className="relative">
                     <input
-                      className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                      className="appearance-none   border rounded w-full h-8 px-3 text-gray-700 mb-0 leading-tight focus:outline-none text-[14px] focus:shadow-outline placeholder-gray-300"
                       id="lastname"
                       type="text"
                       placeholder="Last Name"
@@ -323,14 +325,14 @@ const DropdownUser = () => {
               </div>
               <div className="py-0 EditProfile EditProfile md:py-0">
                 <label
-                  className="block text-sm mb-0 md:mb-2"
+                  className="block text-sm font-[500] font-play mb-0 md:mb-1"
                   htmlFor="username"
                 >
                   Email
                 </label>
                 <input
                   required
-                  className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                  className="appearance-none border rounded text-[14px] w-full h-8 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                   id="email"
                   type="email"
                   placeholder="Email"
@@ -338,25 +340,25 @@ const DropdownUser = () => {
               </div>
               <div className="py-1 EditProfile md:py-2 EditProfile--gap">
                 <label
-                  className="block text-sm md:mb-2 mb-0"
+                  className="block text-sm font-[500] font-play md:mb-1 mb-0"
                   htmlFor="username"
                 >
                   Phone Number
                 </label>
                 <input
                   required
-                  className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                  className="appearance-none border rounded text-[14px] w-full h-8 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                   id="phone"
                   type="text"
                   placeholder="Phone Number"
                 />
               </div>
-              <div className="py-1 EditProfile  md:py-0">
+              <div className="py-1 text-sm EditProfile font-[500] font-play  md:py-0">
                 <p>Country</p>
               </div>
               <div className="py-0 EditProfile md:py-2">
                 <div
-                  className="select border relative  cursor-pointer block bg-white   px-[16px]  text-black   w-[100%] h-[40px]"
+                  className="select border relative  cursor-pointer block bg-white   px-[16px]  text-black   w-[100%] text-[14px] h-8"
                   onClick={(e) => {
                     setVisibility(!visibility)
                     setSearch("")
@@ -364,7 +366,7 @@ const DropdownUser = () => {
                 >
                   <div className="selected-option h-full flex items-center relative justify-between">
                     <span
-                      className="flex !text-[13px] gap-4 items-center"
+                      className="flex appearance-none  rounded w-full    mb-0 leading-tight !text-gray-700 focus:outline-none focus:shadow-outline  gap-4 items-center"
                       title={
                         selectedOption === ""
                           ? "Select a state"
@@ -400,7 +402,7 @@ const DropdownUser = () => {
                     />
                   </div>
                   {visibility && (
-                    <div className="options absolute z-50 px-3 top-[50px] left-0 w-full max-h-[209px] bg-white overflow-y-scroll border-[1px] border-[#f3dcdc] ">
+                    <div className="options absolute z-50 px-3 top-[40px] left-0 w-full max-h-[209px] bg-white overflow-y-scroll border-[1px] border-[#f3dcdc] ">
                       <ul>
                         {options.map(({ countryName, flagImgUrl }, index) => (
                           <li
@@ -423,15 +425,15 @@ const DropdownUser = () => {
                   )}
                 </div>
               </div>
-              <div className="py-0 EditProfile md:py-2">
+              <div className="py-0 font-[500]  font-play text-sm EditProfile md:py-1">
                 <p>Billing Address</p>
               </div>
 
-              <div className="py-2 EditProfile md:py-2 space-x-4 flex justify-between">
+              <div className="py-2 EditProfile md:py-0 space-x-4 flex justify-between">
                 <div className="basis-1/2">
                   <div className="relative">
                     <input
-                      className="appearance-none border rounded w-full py-2 px-3 text-gray-700  mb-0 md:mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                      className="appearance-none border text-[14px] rounded w-full h-8 px-3 text-gray-700  mb-0 md:mb-0 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                       id="firstnameaddress"
                       type="text"
                       required
@@ -442,7 +444,7 @@ const DropdownUser = () => {
                 <div className="basis-1/2">
                   <div className="relative">
                     <input
-                      className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-0 md:mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                      className="appearance-none text-[14px] border rounded w-full h-8 px-3 text-gray-700 mb-0 md:mb-0 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                       id="lastnameaddress"
                       type="text"
                       required
@@ -453,27 +455,27 @@ const DropdownUser = () => {
               </div>
               <div className="py-1 EditProfile md:py-2">
                 <input
-                  className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                  className="appearance-none text-[14px] border rounded w-full h-8 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                   id="company"
                   type="text"
                   required
                   placeholder="Company Name Optional"
                 />
               </div>
-              <div className="py-1 EditProfile md:py-2">
+              <div className="py-1 EditProfile md:py-1">
                 <input
-                  className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                  className="appearance-none text-[14px] border rounded w-full h-8 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                   id="address"
                   required
                   type="text"
                   placeholder="Address"
                 />
               </div>
-              <div className="py-1 EditProfile md:py-2 space-x-4 flex justify-between">
+              <div className="py-1 EditProfile md:py-1 space-x-4 flex justify-between">
                 <div className="basis-1/3">
                   <div className="relative">
                     <input
-                      className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                      className="appearance-none border rounded w-full h-8 px-3 text-gray-700 mb-3 leading-tight focus:outline-none text-[14px] focus:shadow-outline placeholder-gray-300"
                       id="ciry"
                       required
                       type="text"
@@ -483,7 +485,7 @@ const DropdownUser = () => {
                 </div>
                 <div className="basis-1/3 relative">
                   <div
-                    className="select border relative  cursor-pointer block bg-white   px-[16px]  text-black   w-[100%] h-[40px]"
+                    className="select border relative  cursor-pointer block bg-white   px-[16px]  text-black   w-[100%] h-8"
                     onClick={(e) => {
                       setStateVisibility(!statevisibility)
                     }}
@@ -516,7 +518,7 @@ const DropdownUser = () => {
                       />
                     </div>
                     {statevisibility && (
-                      <div className="options absolute z-50 px-3 top-[40px] left-0 w-full max-h-[80px] bg-white overflow-y-scroll border-[1px] border-[#f3dcdc] ">
+                      <div className="options absolute z-50 px-3 top-[35px] left-0 w-full max-h-[100px] bg-white overflow-y-scroll border-[1px] border-[#f3dcdc] ">
                         <ul>
                           {options1.map(
                             ({ countryName, flagImgUrl }, index) => (
@@ -543,7 +545,7 @@ const DropdownUser = () => {
                 <div className="basis-1/3">
                   <div className="relative">
                     <input
-                      className="appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
+                      className="appearance-none text-[14px] border rounded w-full h-8 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-300"
                       id="zipcode"
                       required
                       type="text"
@@ -552,7 +554,7 @@ const DropdownUser = () => {
                   </div>
                 </div>
               </div>
-              <div className="py-1 md:py-2 EditProfile">
+              <div className="py-1 md:py-2 mb-2 EditProfile">
                 <button className="text-white bg-blue-500 py-2 md:py-3 px-2 w-full">
                   Save
                 </button>
