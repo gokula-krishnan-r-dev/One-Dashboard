@@ -16,7 +16,7 @@ const InputMessage = () => {
 
   return (
     <React.Fragment>
-      <div className="bg-white border shadow-sm p-3 font-play">
+      <div className="bg-white border shadow-sm xl:px-3 px-3 py-3 xl:py-1 2xl:py-3 font-play">
         <div
           className="bg-white flex flex-col w-full"
           onClick={() => setClicked(!clicked)}
@@ -24,7 +24,9 @@ const InputMessage = () => {
           <div className="flex justify-between p-2">
             <div className="flex space-x-2 items-center">
               <div className="w-[2px] h-full bg-blue-500"></div>
-              <p className="text-black text-base font-semibold">Send Message</p>
+              <p className="text-black 2xl:text-[16px] xl:text-[13px] text-base font-semibold">
+                Send Message
+              </p>
             </div>
             <span className="text-black">
               {clicked === false ? <BsChevronDown /> : <BsChevronUp />}

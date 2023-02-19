@@ -34,10 +34,6 @@
   .EditProfile--img {
     width: 50px;
   }
-  .EditProfile--subimg {
-    width: 17px;
-    height: 17px;
-  }
 }
 
 .SmoothAnimation {
@@ -73,7 +69,6 @@
 
 .sidebar {
   width: 256px;
-  padding-left: 8px;
   overflow: hidden !important;
   transition: transform 0.3s linear;
 }
@@ -86,4 +81,15 @@
   .sidebar.visible {
     transform: translateX(0);
   }
+}
+
+.custome--border::after {
+  content: "";
+  position: absolute;
+  border: 3px dashed #ebebeb;
+  z-index: 9;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
 }

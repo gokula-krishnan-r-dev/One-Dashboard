@@ -15,8 +15,8 @@ const DetailProject = (props) => {
 
   return (
     <>
-      <div className="bg-white shadow-sm border font-play p-4">
-        <div className="flex w-full items-center justify-between p-2 space-x-4">
+      <div className="bg-white shadow-sm border font-play p-5 xl:py-3 xl:px-4">
+        <div className="flex w-full items-center justify-between p-1 space-x-4">
           <Image
             src={itemData.img}
             width={91}
@@ -26,12 +26,12 @@ const DetailProject = (props) => {
           />
           <div className="flex items-center justify-between w-1/2 font-medium">
             <div className="full">
-              <p className="text-black py-2 font-semibold text-base">
+              <p className="text-black text-[13px] py-1 font-semibold 2xl:text-base">
                 {itemData.title}
               </p>
 
               <div
-                className={`w-36 py-2 text-[12px] text-white text-center rounded-full ${
+                className={`2xl:w-36 xl:w-[90px] w-[120px] py-[7px] text-[10px] text-white text-center rounded-full ${
                   itemData.status == "Completed"
                     ? "bg-green-500"
                     : "bg-[#F9C152]"
@@ -46,21 +46,19 @@ const DetailProject = (props) => {
             width={60}
             height={60}
             alt="product"
-            className="w-1/4"
+            className="w-1/5"
           />
         </div>
-        <div className="flex flex-col w-full text-sm font-medium">
-          <ul className="flex w-full justify-between p-2">
-            <li className="text-[#131313]">Order By</li>
-            <li className="text-blue-500 text-blue-500">
-              {itemData.users.name}
-            </li>
+        <div className="flex flex-col w-full 2xl:text-sm text-[12px] font-[600] font-play">
+          <ul className="flex w-full justify-between pt-2 px-2">
+            <li className="text-[#131313] ">Order By</li>
+            <li className="text-blue-500 ">{itemData.users.name}</li>
           </ul>
-          <ul className="flex w-full justify-between p-2">
+          <ul className="flex w-full justify-between pt-2 px-2">
             <li className="text-[#131313]">Delivery Date</li>
             <li className="text-[#003672]">July 28, 2021 at 3.45 PM</li>
           </ul>
-          <ul className="flex w-full justify-between p-2">
+          <ul className="flex w-full justify-between pt-2 pb-2 px-2">
             <li className="text-black">Order Number</li>
             <li className="text-[#003672]">#{itemData.order_id}</li>
           </ul>

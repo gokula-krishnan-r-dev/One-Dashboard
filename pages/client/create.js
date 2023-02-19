@@ -9,21 +9,24 @@ const NewProject = () => {
           <div className="overflow-x-auto font-play">
             <div className="flex space-x-2">
               <p className="text-gray-400 flex items-center space-x-2 py-1">
-                <span className="md:text-base text-[16px] text-[500] text--font ">
+                <span className="lg:text-[14px] 2xl:text-[16px] text-[16px] text-[500] text--font ">
                   My Projects
                 </span>{" "}
-                <BsChevronRight />{" "}
-                <span className="md:text-base text-[16px] text-[500] text--font">
+                <BsChevronRight size={13} />{" "}
+                <span className="lg:text-[14px] 2xl:text-[16px] text-[16px] text-[500] text--font">
                   New Project
                 </span>
               </p>
             </div>
             <div className="py-2 inline-block min-w-full flex justify-between items-center">
-              <h3 className="md:text-3xl text-xl">Order Detail</h3>
+              <h3 className="lg:text-[24px] font-[600] 2xl:text-[27px] text-[27px]">
+                Order Detail
+              </h3>
+              <h4 className="text-[13px] pr-9">Status: Draft</h4>
             </div>
           </div>
         </div>
-        <div className="flex flex-col w-full py-4">
+        <div className="flex flex-col w-full pt-1">
           <ProjectInput />
         </div>
       </div>

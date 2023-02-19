@@ -36,18 +36,18 @@ export const getStaticProps = async (context) => {
 const ProjectDetail = ({ itemData }) => {
   return (
     <React.Fragment>
-      <div className="p-4 pt-4 overflow-y-auto mt-20">
+      <div className="p-4 pt-1 pl-6  overflow-y-auto mt-20">
         <div className="w-full py-4">
           <p className="text-gray-400 flex items-center space-x-2 py-1">
             <span>Order</span> <BsChevronRight />{" "}
             <span>#{itemData.order_id}</span>
           </p>
-          <h3 className="text-3xl text-[#131313] text-font leading-[110%] font-[600]">
+          <h3 className="text-3xl xl:text-2xl text-[#131313] text-font leading-[110%] font-[600]">
             Project Name 1
           </h3>
         </div>
-        <div className="flex  flex-wrap lg:flex-nowrap w-full space-x-2">
-          <div className="lg:w-2/3 pr-0 md:pr-9 w-full">
+        <div className="flex  flex-wrap lg:flex-nowrap w-full space-x-0">
+          <div className="lg:w-[75%] pr-0 md:pr-9 w-full">
             <div className="py-2 smooth-tras">
               <Requiretment />
             </div>
@@ -65,19 +65,21 @@ const ProjectDetail = ({ itemData }) => {
               <InputMessage />
             </div>
           </div>
-          <div className="lg:w-1/3 w-full flex flex-col pl-0 2xl:pl-16">
-            {itemData.status != "Completed" ? (
+          <div className="lg:w-[30%] w-full flex flex-col pl-0 xl:pl-5 2xl:pl-10">
+            {/* {itemData.status != "Completed" ? (
               <div className="py-2">
                 <CardExtendDeliver />
               </div>
-            ) : null}
+            ) : null} */}
 
             <div className="py-2">
               <DetailProject itemData={itemData} />
             </div>
             <div className="py-2">
               <div className="bg-white shadow-sm border font-play p-4 font-medium">
-                <p className="py-2">Your order is on progress.</p>
+                <p className="py-0 text-[12px] font-[600]">
+                  Your order is on progress.
+                </p>
                 <ProgressBar progressPercentage={itemData.progress} />
               </div>
             </div>

@@ -6,17 +6,17 @@ import imgPic from "../../public/img/user/Avatar_5.png"
 import Cubebox from "../../public/img/icon/cubeboxicon.svg"
 const CardDelivery = () => {
   return (
-    <div className="text-white text-gray-400 p-2 font-play">
+    <div className="text-white text-gray-400 p-2 pt-5 font-play">
       <div className="flex justify-between space-x-2 mb-4">
         <div className="flex space-x-4">
-          <div className="w-16">
-            <Image src={imgPic} alt="pic" width={60} height={60} />
+          <div className="w-[45px]">
+            <Image src={imgPic} alt="pic" width={45} height={45} />
           </div>
           <div className="block">
-            <h4 className="text-black text-xl font-medium">
+            <h4 className="text-black text-[20px] 2xl:text-[20px] xl:text-[16px] font-[600]">
               3D Content Studio
             </h4>
-            <p className="text-[12px] hidden md:block md:text-[16px] text-black py-1 font-normal max-w-sm">
+            <p className="text-[16px] 2xl:text-[16px] xl:text-[14px] hidden md:block  text-black py-1 font-normal max-w-sm">
               Thanks again for your oder! Your delivery is enclosed.Thanks again
               and have a great day :).
             </p>
@@ -24,21 +24,21 @@ const CardDelivery = () => {
         </div>
         {/* <SiHackthebox size={70} className="text-blue-500" /> */}
         <Image
-          width={80}
-          height={80}
+          width={67}
+          height={67}
           alt="loog"
           src={Cubebox}
           className="ml-4 hidden md:block"
         />
       </div>
-      <p className="text-[12px] md:hidden md:text-[16px] text-[#00000080] md:text-black py-1 font-normal max-w-full">
+      <p className="text-[16px] 2xl:text-[16px] xl:text-[14px] md:hidden text-[#00000080] md:text-black py-1 font-normal max-w-full">
         Thanks again for your oder! Your delivery is enclosed.Thanks again and
         have a great day :).
       </p>
-      <h5 className="text-[#131313] pt-2 text--font text-[16px] font-[500] leading-[20px]">
+      <h5 className="text-[#131313] pt-2 text--font text-[16px] 2xl:text-[16px] xl:text-[14px] font-[500] leading-[20px]">
         ATTACHMENTS
       </h5>
-      <div className="max-w-[330px] cursor-pointer mt-2 rounded overflow-hidden border-[1px] border-[#EBEBEB]">
+      <div className="max-w-[270px] text-[12px] 2xl:text-[12px] xl:text-[14px] cursor-pointer mt-2 rounded overflow-hidden border-[1px] border-[#EBEBEB]">
         <Image
           className="w-full"
           width={326}

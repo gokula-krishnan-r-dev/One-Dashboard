@@ -91,37 +91,37 @@ const Order = () => {
                     <tr className="md:text-xl text-sm">
                       <th
                         scope="col"
-                        className="font-medium text-back font-bold px-6 py-4 text-left whitespace-nowrap"
+                        className="font-medium text-back xl:text-[18px] text-[19px] font-bold px-6 py-4 text-left whitespace-nowrap"
                       >
                         Customer Name
                       </th>
                       <th
                         scope="col"
-                        className="font-medium text-gray-900 px-6 py-4 text-left whitespace-nowrap"
+                        className="font-medium xl:text-[18px] text-[19px] text-gray-900 px-6 py-4 text-left whitespace-nowrap"
                       >
                         Order Id
                       </th>
                       <th
                         scope="col"
-                        className="font-medium text-gray-900 px-6 py-4 text-left whitespace-nowrap"
+                        className="font-medium xl:text-[18px] text-[19px] text-gray-900 px-6 py-4 text-left whitespace-nowrap"
                       >
                         Project Name
                       </th>
                       <th
                         scope="col"
-                        className="font-medium text-gray-900 px-6 py-4 text-left whitespace-nowrap"
+                        className="font-medium xl:text-[18px] text-[19px] text-gray-900 px-6 py-4 text-left whitespace-nowrap"
                       >
                         Delivery Date
                       </th>
                       <th
                         scope="col"
-                        className="font-medium text-gray-900 px-6 py-4 text-left whitespace-nowrap"
+                        className="font-medium xl:text-[18px] text-[19px] text-gray-900 px-6 py-4 text-left whitespace-nowrap"
                       >
                         Amount
                       </th>
                       <th
                         scope="col"
-                        className="font-medium text-gray-900 px-6 py-4 text-left flex justify-center items-center"
+                        className="font-medium xl:text-[18px] text-[19px] text-gray-900 px-6 py-4 text-left flex justify-center items-center"
                       >
                         Status
                       </th>
@@ -137,28 +137,28 @@ const Order = () => {
                               <Image
                                 src="/img/user/Avatar_4.png"
                                 alt="pic"
-                                width={50}
-                                height={50}
+                                width={40}
+                                height={40}
                               />
                               <span className="font-semibold text-black font-semibold">
                                 Angeline Lee
                               </span>
                             </td>
-                            <td className="text-gray-500 font-medium font-light py-4 px-6">
+                            <td className="text-gray-500 text-sm font-medium font-light py-2 px-6">
                               {order.order_id}
                             </td>
-                            <td className="text-gray-500 font-medium font-light py-4 px-6 ">
+                            <td className="text-gray-500 text-sm font-medium font-light py-2 px-6 ">
                               {order.title}
                             </td>
-                            <td className="text-gray-500 font-medium font-light py-4 px-6">
+                            <td className="text-gray-500  text-sm font-medium font-light py-2 px-6">
                               {order.delivery_date}
                             </td>
-                            <td className="text-gray-500 font-medium font-light py-4 px-6">
+                            <td className="text-gray-500 text-sm font-medium font-light py-2 px-6">
                               $ {order.amount}
                             </td>
-                            <td className="text-gray-500 font-medium font-light py-4 flex justify-center items-center">
+                            <td className="text-gray-500 text-sm font-medium font-light py-2 flex justify-center items-center">
                               <div
-                                className={`p-1 px-2 py-1.5 text-center font-normal rounded-2xl text-[12px] ${
+                                className={`p-1 px-2 py-1 text-center font-normal rounded-2xl text-[12px] ${
                                   order.status === "Completed"
                                     ? "text-green-500 bg-green-50"
                                     : order.status === "Pending Payment"

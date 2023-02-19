@@ -16,7 +16,9 @@ import Link from "next/link"
 const SideBar = () => {
   const [open, setOpen] = useState(true)
   const [subMenuOpen, setSubMenuOpen] = useState(false)
+  const [color, setColor] = useState("text-gray-600")
   const [clicked, setClicked] = useState("/admin")
+  const router = useRouter()
   useEffect(() => {
     function handleResize() {
       setOpen(window.innerWidth >= 786)
@@ -24,35 +26,30 @@ const SideBar = () => {
     window.addEventListener("resize", handleResize)
     return () => window.removeEventListener("resize", handleResize)
   }, [])
-  const [menuClient, setMenuClient] = useState([
-    {
-      title: "My Project",
-      visible: false,
-      haveSub: false,
-      icon: <SiDatabricks className="text-black" />,
-      linkurl: "/client",
-    },
-    {
-      title: "Team",
-      visible: false,
-      haveSub: false,
-      icon: <TbUsers className="text-black" />,
-      linkurl: "/client/team",
-    },
-  ])
+
   const [menu, setMenu] = useState([
     {
       title: "Overviews",
       visible: false,
       haveSub: false,
-      icon: <SiDatabricks className="text-black" />,
+      icon:
+        clicked === router.pathname ? (
+          <SiDatabricks color={"#131313"} />
+        ) : (
+          <SiDatabricks color={"#13131380"} />
+        ),
       linkurl: "/admin",
     },
     {
       title: "Customers",
       visible: false,
       haveSub: false,
-      icon: <TbUsers className="text-black" />,
+      icon:
+        clicked === router.pathname ? (
+          <TbUsers color={"#131313"} />
+        ) : (
+          <TbUsers color={"#13131380"} />
+        ),
       linkurl: "/admin/customers",
     },
     {
@@ -65,14 +62,24 @@ const SideBar = () => {
         { title: "Comolete" },
         { title: "Cancel" },
       ],
-      icon: <CiShop className="text-black" />,
+      icon:
+        clicked === router.pathname ? (
+          <CiShop color={"#131313"} />
+        ) : (
+          <CiShop color={"#13131380"} />
+        ),
       linkurl: "/admin/orders",
     },
     {
       title: "Messages",
       visible: false,
       haveSub: false,
-      icon: <BiMessageSquareDetail className="text-black" />,
+      icon:
+        clicked === router.pathname ? (
+          <BiMessageSquareDetail color={"#131313"} />
+        ) : (
+          <BiMessageSquareDetail color={"#13131380"} />
+        ),
       linkurl: "/admin/messages",
     },
     {
@@ -87,7 +94,12 @@ const SideBar = () => {
         { title: "Notifications" },
         { title: "Stripe" },
       ],
-      icon: <SlSettings className="text-black" />,
+      icon:
+        clicked === router.pathname ? (
+          <SlSettings color={"#131313"} />
+        ) : (
+          <SlSettings color={"#13131380"} />
+        ),
       linkurl: "/admin/settings",
     },
   ])
@@ -162,7 +174,7 @@ const SideBar = () => {
                           setClicked(menu.linkurl)
                         }}
                       >
-                        {menu.icon}
+                        {React.cloneElement(menu.icon, { color })}
                         <span>{menu.title}</span>
                       </div>
                       <div className="mt-4 ml-8 SmoothAnimation">

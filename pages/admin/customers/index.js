@@ -84,37 +84,37 @@ const Customer = () => {
                     <tr className="md:text-xl text-sm">
                       <th
                         scope="col"
-                        className="font-medium text-back font-bold py-4 text-left px-4 whitespace-nowrap"
+                        className="font-medium xl:text-[18px] text-[19px] font-bold py-4 text-left px-4 whitespace-nowrap"
                       >
                         Name
                       </th>
                       <th
                         scope="col"
-                        className="font-medium text-gray-900 py-4 text-left px-12 whitespace-nowrap"
+                        className="font-medium text-gray-900 xl:text-[18px] text-[19px] py-4 text-left px-0 whitespace-nowrap"
                       >
                         Customer ID
                       </th>
                       <th
                         scope="col"
-                        className="font-medium text-gray-900 py-4 text-left px-4 whitespace-nowrap"
+                        className="font-medium text-gray-900 xl:text-[18px] text-[19px] py-4 text-left px-4 whitespace-nowrap"
                       >
                         Country
                       </th>
                       <th
                         scope="col"
-                        className="font-medium text-gray-900 py-4 text-left px-4 whitespace-nowrap"
+                        className="font-medium text-gray-900 xl:text-[18px] text-[19px] py-4 text-left px-4 whitespace-nowrap"
                       >
                         Email
                       </th>
                       <th
                         scope="col"
-                        className="font-medium text-gray-900 py-4 text-center px-4 whitespace-nowrap"
+                        className="font-medium text-gray-900 xl:text-[18px] text-[19px] py-4 text-center px-12 whitespace-nowrap"
                       >
                         Total Orders
                       </th>
                       <th
                         scope="col"
-                        className="font-medium text-gray-900 py-4 text-center px-4 whitespace-nowrap"
+                        className="font-medium text-gray-900 xl:text-[18px] text-[19px] py-4 text-center px-4 whitespace-nowrap"
                       >
                         Status
                       </th>
@@ -125,36 +125,37 @@ const Customer = () => {
                       //console.log(member, index)
                       return (
                         <>
-                          <tr className="md:text-base  text-sm">
-                            <td className="flex items-center justify-center gap-2 text-sm font-light py-4 px-4">
+                          <tr className="md:text-base   text-sm">
+                            <td className="flex items-start justify-start gap-3 text-sm font-light py-1 px-0">
                               <Image
+                                className="pt-3"
                                 src={member.img}
                                 alt="pic"
-                                width={50}
-                                height={50}
+                                width={40}
+                                height={40}
                               />
-                              <span className="font-semibold">
+                              <span className="font-semibold pt-2 my-auto">
                                 {member.name}
                               </span>
                             </td>
-                            <td className="text-gray-500 font-medium font-light py-6 px-12">
+                            <td className="text-gray-500 text-sm  font-medium font-light py-1 px-0">
                               {member.order_id}
                             </td>
-                            <td className="text-gray-500 font-medium font-light py-4 px-4">
+                            <td className="text-gray-500 text-sm  font-medium font-light py-1 px-4">
                               {member.country.name}
                             </td>
-                            <td className="text-gray-500 font-medium font-light py-4 text-left px-4">
+                            <td className="text-gray-500 text-sm  font-medium font-light py-1 text-left px-4">
                               {member.email}
                             </td>
-                            <td className="text-gray-500 font-medium font-light py-4  text-center px-4">
+                            <td className="text-gray-500 text-sm font-medium font-light py-1  text-center px-12">
                               $ {member.total_orders}
                             </td>
-                            <td className="text-gray-500 font-medium font-light py-4 mb-6 flex justify-center px-4">
+                            <td className="text-gray-500  font-medium font-light py-1 mb-6 flex justify-center px-4">
                               <Link
                                 href={"customers/" + member.id}
                                 key={member.id}
                               >
-                                <MdEdit size={24} />
+                                <MdEdit color="#9FA5B4" size={18} />
                               </Link>
                             </td>
                           </tr>

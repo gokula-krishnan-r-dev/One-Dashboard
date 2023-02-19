@@ -54,9 +54,9 @@ const Notifications = (props) => {
         <GrNotification size={16} />
       </div>
       <div
-        className={` md:w-[490px] w-[365px] h-[100vh] md:h-[470px] ${
+        className={` md:w-[450px] w-[365px] h-[100vh] md:h-[460px] ${
           visible ? "bg-white overflow-y-scroll " : "hidden"
-        }  fixed md:absolute md:-right-20 md:top-16 right-0  top-20 `}
+        }  fixed md:absolute border-[1px] shadow-md md:-right-20 rounded-[8px] md:top-16 right-0  top-20 `}
         ref={popperRef}
         {...attributes.popper}
       >

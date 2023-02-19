@@ -37,7 +37,7 @@ const Days = [
 const products = [
   {
     id: 1,
-    title: "Alpha UHS-VU Shoes",
+    title: "UHS VU-SHOES",
     status: "Pending Review",
     dateTime: "Today at 1.18 PM",
     img: "/img/product/product_1.png",
@@ -186,7 +186,7 @@ const products = [
     dateTime: "Today at 1.18 PM",
     img: "/img/product/product_7.png",
     order_id: "OD170720201005",
-    progress: 0,
+    progress: 80,
     users: {
       id: 11,
       name: "Barack Silver",
@@ -991,36 +991,36 @@ const customers = [
     zipcode: "387643",
     order_id: "CS15072021006",
   },
-  {
-    id: 5,
-    name: "Cristian Morgan",
-    country: {
-      name: "Germany",
-      flag: "DE",
-    },
-    email: "cristiamorgan@teamwork.com",
-    img: "/img/user/Avatar_4.png",
-    total_orders: 150,
-    street: "1234 State St",
-    city: "Hamburg",
-    zipcode: "387643",
-    order_id: "RS15072021009",
-  },
-  {
-    id: 6,
-    name: "Jacob Gabriel",
-    country: {
-      name: "Philippines",
-      flag: "PH",
-    },
-    email: "jacobgabrielm@teamwork.com",
-    img: "/img/user/Avatar_2.png",
-    total_orders: 150,
-    street: "1234 State St",
-    city: "Hamburg",
-    zipcode: "387643",
-    order_id: "RS15072021009",
-  },
+  // {
+  //   id: 5,
+  //   name: "Cristian Morgan",
+  //   country: {
+  //     name: "Germany",
+  //     flag: "DE",
+  //   },
+  //   email: "cristiamorgan@teamwork.com",
+  //   img: "/img/user/Avatar_4.png",
+  //   total_orders: 150,
+  //   street: "1234 State St",
+  //   city: "Hamburg",
+  //   zipcode: "387643",
+  //   order_id: "RS15072021009",
+  // },
+  // {
+  //   id: 6,
+  //   name: "Jacob Gabriel",
+  //   country: {
+  //     name: "Philippines",
+  //     flag: "PH",
+  //   },
+  //   email: "jacobgabrielm@teamwork.com",
+  //   img: "/img/user/Avatar_2.png",
+  //   total_orders: 150,
+  //   street: "1234 State St",
+  //   city: "Hamburg",
+  //   zipcode: "387643",
+  //   order_id: "RS15072021009",
+  // },
 ]
 
 const menuItemClients = [
@@ -1290,7 +1290,7 @@ const ordersdata = [
     dateTime: "Today at 1.18 PM",
     img: "/img/product/product_7.png",
     order_id: "OD170720201005",
-    progress: 0,
+    progress: 60,
     status_order: "active",
     delivery_date: "07 - 11 - 2021",
     amount: 80,

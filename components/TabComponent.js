@@ -5,11 +5,11 @@ import { BsChevronDown } from "react-icons/bs"
 const PersonalInfo = () => {
   return (
     <React.Fragment>
-      <div className="flex flex-col lg:w-1/2 w-full font-play bg-white shadow-sm p-4">
+      <div className="flex  rounded-[8px] flex-col lg:w-[37%] w-full font-play bg-white shadow-sm px-6 p-4">
         <div className="py-2 flex items-center justify-between">
-          <p className="text-black text-xl font-medium">My Details</p>
+          <p className="text-black text-[16px] pl-2 font-medium">My Details</p>
           <div className="flex space-x-2 font-normal">
-            <button className="py-2 text-blue-500 p-2 border px-2 text-sm">
+            <button className="py-2 text-blue-500 p-2 border px-4 text-sm">
               Cancel
             </button>
             <button className="py-2 text-white bg-blue-500 p-2 border px-4 text-sm">
@@ -17,40 +17,51 @@ const PersonalInfo = () => {
             </button>
           </div>
         </div>
-        <div className="py-4 w-full flex items-center justify-between text-base font-normal gap-4">
+        <div className="py-0 w-full flex items-center justify-between text-base font-normal gap-4">
           <div className="w-1/2">
-            <p className="text-black py-2.5">First Name</p>
-            <input type="text" className="border p-3 w-full" value="John" />
+            <p className="text-black text-[14px] py-2.5">First Name</p>
+            <input
+              type="text"
+              placeholder="FirstName"
+              className="border outline-none text-[14px] px-3 py-2 w-full"
+              defaultValue={"john"}
+            />
           </div>
           <div className="w-1/2">
-            <p className="text-black py-2.5">Last Name</p>
-            <input type="text" className="border p-3 w-full" value="Steady" />
+            <p className="text-black text-[14px] py-2.5">Last Name</p>
+            <input
+              placeholder="LastName"
+              type="text"
+              className="border outline-none  text-[14px] px-3 py-2 w-full"
+              defaultValue={"Sam"}
+            />
           </div>
         </div>
         <div className="py-2 text-base font-normal">
-          <p className="text-black py-2.5">Email</p>
+          <p className="text-black text-[14px] py-2.5">Email</p>
           <input
+            placeholder="Email"
             type="email"
-            className="border p-3 w-full"
-            value="johnsteady@gmail.com"
+            className="border outline-none text-[14px]  px-3 py-2 w-full"
+            defaultValue={"johnsteady@gmail.com"}
           />
         </div>
         <div className="py-2">
-          <p className="py-2 text-base font-normal">Profile Picture</p>
+          <p className="py-2 text-[14px] font-normal">Profile Picture</p>
           <div className="flex items-center space-x-4">
             <Image
               src="/img/user/Avatar_3.png"
-              width={79}
-              height={70}
+              width={60}
+              height={60}
               alt="pic"
             />
             <div className="border flex sm:text-sm text-[12px]">
               <input
                 type="text"
-                className="w-full p-3"
+                className="w-full  text-[14px]  px-3 py-2"
                 placeholder="No file selected"
               />
-              <button className="bg-blue-500 text-white w-32">
+              <button className="bg-blue-500 text-[14px] text-white w-32">
                 Choose File
               </button>
             </div>
@@ -139,13 +150,13 @@ const TabComponent = () => {
 
   return (
     <React.Fragment>
-      <div className="hidden lg:flex flex-wrap items-center md:w-2/3 gap-4 text-gray-500 font-play md:text-lg text-base font-medium">
+      <div className="hidden lg:flex pb-2 flex-wrap items-center md:w-2/3 gap-6 text-gray-500 font-play md:text-lg  font-medium">
         <p
           onClick={handleTab1}
           className={
             activeTab === "tab1"
-              ? "active text-black border-b-2 border-gray-400 py-2"
-              : ""
+              ? "active text-black border-b-2 text-[14px] border-gray-400 py-2"
+              : "text-[14px]"
           }
         >
           Personal Information
@@ -154,8 +165,8 @@ const TabComponent = () => {
           onClick={handleTab2}
           className={
             activeTab === "tab2"
-              ? "active text-black border-b-2 border-gray-400  py-2"
-              : ""
+              ? "active text-black text-[14px] border-b-2 border-gray-400  py-2"
+              : " text-[14px]"
           }
         >
           Accounts
@@ -165,8 +176,8 @@ const TabComponent = () => {
           onClick={handleTab3}
           className={
             activeTab === "tab3"
-              ? "active text-black border-b-2 border-gray-400  py-2"
-              : ""
+              ? "active text-black text-[14px] border-b-2 border-gray-400  py-2"
+              : " text-[14px]"
           }
         >
           Emails
@@ -175,8 +186,8 @@ const TabComponent = () => {
           onClick={handleTab4}
           className={
             activeTab === "tab4"
-              ? "active text-black border-b-2 border-gray-400 py-2"
-              : ""
+              ? "active text-black text-[14px] border-b-2 border-gray-400 py-2"
+              : " text-[14px]"
           }
         >
           Security
@@ -186,8 +197,8 @@ const TabComponent = () => {
           onClick={handleTab5}
           className={
             activeTab === "tab5"
-              ? "active text-black border-b-2 border-gray-400 py-2"
-              : ""
+              ? "active text-black text-[14px] border-b-2 border-gray-400 py-2"
+              : " text-[14px]"
           }
         >
           Notifications
@@ -197,8 +208,8 @@ const TabComponent = () => {
           onClick={handleTab6}
           className={
             activeTab === "tab6"
-              ? "active text-black border-b-2 border-gray-400 py-2"
-              : ""
+              ? "active text-black text-[14px] border-b-2 border-gray-400 py-2"
+              : " text-[14px]"
           }
         >
           Stripe

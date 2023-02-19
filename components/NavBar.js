@@ -14,10 +14,6 @@ const NavBar = () => {
           </Link>
         </div>
         <div className="flex justify-end items-center space-x-4 px-4">
-          <span className="font-play font-medium text-base hidden md:block">
-            Price
-          </span>
-
           <Notifications color="white" />
           <div className="w-[1x] h-[20px]  border-[1px] border-[#EBEBEB]" />
           <DropdownUser />
