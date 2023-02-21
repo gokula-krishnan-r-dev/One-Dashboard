@@ -4,7 +4,7 @@ import { GrDocumentUpload } from "react-icons/gr"
 import Image from "next/image"
 
 import uploadicon from "../public/img/icon/u_file-upload-alt.svg"
-const ProjectInput = () => {
+const ProjectInput = ({ userin }) => {
   const router = new useRouter()
   const [weekvisibility, setWeekVisibility] = useState(false)
   const [visibility, setVisibility] = useState(false)
@@ -19,65 +19,69 @@ const ProjectInput = () => {
   ]
   return (
     <React.Fragment>
-      <div className="shadow-sm border py-4 bg-white font-play">
+      <div className="shadow-sm border py-2 bg-white font-play">
         <div className="px-4 pt-[2px]">
           <div className="py-2">
-            <div
-              className="select block text-gray-400 appearance-none w-full bg-white border px-4 py-3 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline relative cursor-pointer   text-black  h-[45px]"
-              onClick={(e) => {
-                setVisibility(!visibility)
-              }}
-            >
-              <div className="selected-option h-full flex items-center relative justify-between  ">
-                <span
-                  className="flex !text-[13px] gap-4 items-center"
-                  title={selectedOption === "" ? "Select User" : selectedOption}
-                >
-                  <img src="/img/icon/user-search.svg" />
-                  {selectedOption === ""
-                    ? "Select User"
-                    : selectedOption.length <= 20
-                    ? selectedOption
-                    : `${selectedOption.slice(0, 20)}...`}
-                </span>
-                <Image
-                  className={`${
-                    visibility
-                      ? "rotate-[0deg] transition-all"
-                      : "rotate-[180deg] transition-all"
-                  }`}
-                  width={20}
-                  height={20}
-                  src="/img/icon/ArrowUp 2.svg"
-                  alt="icon"
-                />
-              </div>
-              {visibility && (
-                <div className="options absolute z-50  px-3 top-[50px] left-0 w-full max-h-[209px] bg-white overflow-y-scroll border-[1px] border-[#f3dcdc]  ">
-                  <ul>
-                    {options1.map(({ option }, index) => (
-                      <li
-                        key={index}
-                        className={
-                          selectedOption === option
-                            ? "border-b-[1px] h-[37px] mt-[10px] py-2 justify-start items-start flex text-[#131313] w-[100%] text-[12px] font-play font-[400] leading-[17px] border-[#EBEBEB]"
-                            : "border-b-[1px] h-[37px] mt-[10px] py-2 justify-start items-start flex text-[#131313] w-[100%] text-[12px] font-play font-[400] leading-[17px] border-[#EBEBEB]"
-                        }
-                        onClick={() => {
-                          setSelectedOption(option)
-                        }}
-                      >
-                        {option}
-                      </li>
-                    ))}
-                  </ul>
+            {userin && (
+              <div
+                className="select block text-gray-400 appearance-none w-full bg-white border px-4 py-3 pr-8 rounded leading-tight focus:outline-none focus:shadow-outline relative cursor-pointer   text-black  h-[45px]"
+                onClick={(e) => {
+                  setVisibility(!visibility)
+                }}
+              >
+                <div className="selected-option h-full flex items-center relative justify-between  ">
+                  <span
+                    className="flex !text-[13px] gap-4 items-center"
+                    title={
+                      selectedOption === "" ? "Select User" : selectedOption
+                    }
+                  >
+                    <img src="/img/icon/user-search.svg" />
+                    {selectedOption === ""
+                      ? "Select User"
+                      : selectedOption.length <= 20
+                      ? selectedOption
+                      : `${selectedOption.slice(0, 20)}...`}
+                  </span>
+                  <Image
+                    className={`${
+                      visibility
+                        ? "rotate-[0deg] transition-all"
+                        : "rotate-[180deg] transition-all"
+                    }`}
+                    width={20}
+                    height={20}
+                    src="/img/icon/ArrowUp 2.svg"
+                    alt="icon"
+                  />
                 </div>
-              )}
-            </div>
+                {visibility && (
+                  <div className="options absolute z-50  px-3 top-[50px] left-0 w-full max-h-[209px] bg-white overflow-y-scroll border-[1px] border-[#f3dcdc]  ">
+                    <ul>
+                      {options1.map(({ option }, index) => (
+                        <li
+                          key={index}
+                          className={
+                            selectedOption === option
+                              ? "border-b-[1px] h-[37px] mt-[10px] py-2 justify-start items-start flex text-[#131313] w-[100%] text-[12px] font-play font-[400] leading-[17px] border-[#EBEBEB]"
+                              : "border-b-[1px] h-[37px] mt-[10px] py-2 justify-start items-start flex text-[#131313] w-[100%] text-[12px] font-play font-[400] leading-[17px] border-[#EBEBEB]"
+                          }
+                          onClick={() => {
+                            setSelectedOption(option)
+                          }}
+                        >
+                          {option}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
           <div className="">
             <input
-              className="appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline placeholder-gray-400"
+              className="appearance-none border rounded w-full py-3 px-3 text-gray-700 leading-tight focus:outline-none text-[13px] focus:shadow-outline placeholder-gray-400"
               id="address"
               type="text"
               placeholder="Project Name"
@@ -167,7 +171,7 @@ const ProjectInput = () => {
 
           <div className="lg:mt-0  mt-3">
             <label className="flex relative flex-col justify-center items-center w-full h-full border-0 custome--border  border-gray-300  border-dashed space-x-5 bg-[#F2F8FF]">
-              <div className="md:max-w-[400px]  max-w-full flex flex-col items-center justify-center text-blue-600">
+              <div className="md:max-w-[400px] mt-6 lg:mt-0  max-w-full flex flex-col items-center justify-center text-blue-600">
                 {/* <GrDocumentUpload size={36} /> */}
                 <Image src={uploadicon} width={35} height={35} />
 

@@ -29,7 +29,7 @@ const Customer = () => {
                   </span>
                   <input
                     type="text"
-                    placeholder="search"
+                    placeholder="Search"
                     className="pl-10 py-2.5 outline-none w-full"
                   />
                 </div>

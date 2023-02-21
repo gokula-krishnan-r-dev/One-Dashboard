@@ -10,6 +10,8 @@ import Closeicon from "../../../public/img/icon/Close Icon.svg"
 const Team = () => {
   const [open, setOpen] = useState(false)
   const [removeopen, setremoveOpen] = useState(false)
+  const [removeopen1, setremoveOpen1] = useState(false)
+  console.log("🚀 ~ file: index.js:13 ~ Team ~ remo̥veopen:", removeopen)
   const closeModal = () => {
     setOpen(false)
     setremoveOpen(false)
@@ -93,14 +95,22 @@ const Team = () => {
                                 onClick={() => setremoveOpen(!removeopen)}
                                 size={24}
                               />
-                              {/* {removeopen && (
+                              {removeopen && (
                                 <div
                                   key={index}
-                                  className="bg-white absolute top-9 p-4"
+                                  className="bg-white absolute border top-12 px-4 py-2 rounded-[5px]"
                                 >
                                   Remove
                                 </div>
-                              )} */}
+                              )}
+                              {removeopen1 && (
+                                <div
+                                  key={index}
+                                  className="bg-white absolute border top-9 p-4"
+                                >
+                                  Remove
+                                </div>
+                              )}
                             </td>
                           </tr>
                         </>
@@ -121,8 +131,8 @@ const Team = () => {
                       src="/img/user/Avatar_team1.svg"
                     />
                     <div className="py-1.5 w-full">
-                      <div className="flex items-center justify-between">
-                        <p className="text-base  text-[#131313] font-play font-[700] leading-[150%]">
+                      <div className="flex items-center relative justify-between">
+                        <p className="text-base   text-[#131313] font-play font-[700] leading-[150%]">
                           {member.name}
                         </p>
                         <AiOutlineMore
@@ -131,6 +141,14 @@ const Team = () => {
                           className=""
                         />
                       </div>
+                      {removeopen && (
+                        <div
+                          key={index}
+                          className="bg-white right-0 absolute border top-12 px-4 py-2 rounded-[5px]"
+                        >
+                          Remove
+                        </div>
+                      )}
 
                       <p className="sm:text-sm text-[12px] font-play font-[500] text-[#13131380]">
                         {member.email}
@@ -146,9 +164,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-      {/* <Popup open={removeopen} onClose={closeModal} closeOnDocumentClick> */}
 
-      {/* </Popup> */}
       <Popup open={open} closeOnDocumentClick onClose={closeModal}>
         <div className="md:w-[600px] w-[90%] flex items-center justify-center mx-auto flex-col rounded-[8px] shadow-md p-4 bg-white z-50">
           <div className="flex items-center justify-between w-full">

@@ -47,12 +47,12 @@ const ProjectDetail = ({ itemData }) => {
           </h3>
         </div>
         <div className="flex  flex-wrap lg:flex-nowrap w-full space-x-0">
-          <div className="lg:w-1/3 w-full flex md:hidden flex-col pl-0 2xl:pl-16">
-            {itemData.status != "Completed" ? (
+          <div className="lg:w-1/3 w-full flex lg:hidden flex-col pl-0 2xl:pl-16">
+            {/* {itemData.status != "Completed" ? (
               <div className="py-2">
                 <CardExtendDeliver />
               </div>
-            ) : null}
+            ) : null} */}
             <div className="py-2">
               <ListTeam team={itemData.team} />
             </div>
@@ -85,7 +85,7 @@ const ProjectDetail = ({ itemData }) => {
               <InputMessage />
             </div>
           </div>
-          <div className="lg:w-[30%] w-full flex flex-col pl-0 xl:pl-5 2xl:pl-10">
+          <div className="lg:w-[30%] hidden lg:flex w-full flex-col pl-0 xl:pl-5 2xl:pl-10">
             {/* {itemData.status != "Completed" ? (
               <div className="py-2">
                 <CardExtendDeliver />

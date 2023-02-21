@@ -78,7 +78,7 @@ const SideClient = () => {
           open ? "sidebar visible" : "w-0 "
         } lg:w-[190px] 2xl:w-[256px] fixed  SmoothAnimation bg-white left-0 z-20 h-screen duration-500 border-r`}
       >
-        <div className="justify-center duration-200 px-2 mt-3">
+        <div className="justify-center  px-2 mt-3">
           <div
             className={`text-white flex justify-between  font-medium text-2xl text-center  ${
               !open && "sidebar"

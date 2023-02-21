@@ -8,6 +8,7 @@ import { AiOutlineClose } from "react-icons/ai"
 import { notifications } from "./data/dataContents"
 import notificationicon from "../public/img/icon/Notification.svg"
 import CloseIcon from "../public/img/icon/Close Icon.svg"
+import useMobile from "../Hooks/Mobile"
 const Notifications = (props) => {
   const [visible, setVisibility] = useState(false)
 
@@ -54,9 +55,11 @@ const Notifications = (props) => {
         <GrNotification size={16} />
       </div>
       <div
-        className={` md:w-[450px] w-[365px] h-[82vh] md:h-[460px] ${
+        className={` md:w-[430px] ${
+          useMobile ? "w-[200px]" : null
+        } w-[365px] h-[82vh] md:h-[400px] ${
           visible ? "bg-white overflow-y-scroll " : "hidden"
-        }  fixed md:absolute border-[1px] shadow-md md:-right-6 rounded-[8px] md:top-16 right-0  top-20 `}
+        }  fixed lg:absolute border-[1px] shadow-md rounded-[8px] lg:-right-6 md:top-16 right-0 sm:right-12 z-50 top-20 `}
         ref={popperRef}
         {...attributes.popper}
       >

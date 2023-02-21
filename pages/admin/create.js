@@ -27,7 +27,7 @@ const NewProject = () => {
           </div>
         </div>
         <div className="flex flex-col w-full pt-1">
-          <ProjectInput />
+          <ProjectInput userin={true} />
         </div>
       </div>
     </React.Fragment>

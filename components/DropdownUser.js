@@ -245,7 +245,7 @@ const DropdownUser = () => {
           contentStyle={{ padding: "0px", border: "none" }}
           arrow={false}
         >
-          <div className="w-60 fixed cursor-pointer bg-white shadow-md top-6 right-0 mt-12 flex flex-col px-3">
+          <div className="w-60 fixed  cursor-pointer bg-white shadow-md top-6 right-0 mt-12 flex flex-col px-3">
             <li
               className="border-b p-2 border-gray-300 py-2.5 flex items-center space-x-2"
               onClick={openModal}
@@ -263,7 +263,7 @@ const DropdownUser = () => {
         </Popup>
       </div>
       <Popup open={open} closeOnDocumentClick onClose={closeModal}>
-        <div className="sm:max-w-[550px]  rounded-[8px] cursor-pointer max-w-[90%] mx-auto bg-white border-[1px] border-[#EBEBEB] font-play">
+        <div className="sm:max-w-[550px]  shadow-2xl rounded-[8px] cursor-pointer max-w-[90%] mx-auto bg-white border-[1px] border-[#EBEBEB] font-play">
           <form onSubmit={handleSubmit}>
             <div className="py-1 md:py-1 flex EditProfile--gap   flex-col sm:px-6 lg:px-8 sm:p-0 p-3">
               <div className="flex justify-between items-center mt-0 md:mt-2">
@@ -369,7 +369,7 @@ const DropdownUser = () => {
                       className="flex appearance-none  rounded w-full    mb-0 leading-tight !text-gray-700 focus:outline-none focus:shadow-outline  gap-4 items-center"
                       title={
                         selectedOption === ""
-                          ? "Select a state"
+                          ? "Select a Country"
                           : selectedOption
                       }
                     >
@@ -384,7 +384,7 @@ const DropdownUser = () => {
                         />
                       )}
                       {selectedOption === ""
-                        ? "Select a state"
+                        ? "Select a Country"
                         : selectedOption.length <= 20
                         ? selectedOption
                         : `${selectedOption.slice(0, 20)}...`}
@@ -495,12 +495,12 @@ const DropdownUser = () => {
                         className="flex !text-[13px] gap-1 items-center"
                         title={
                           stateselectedOption === ""
-                            ? "state"
+                            ? "State"
                             : stateselectedOption
                         }
                       >
                         {stateselectedOption === ""
-                          ? "state"
+                          ? "State"
                           : stateselectedOption.length <= 20
                           ? stateselectedOption
                           : `${stateselectedOption.slice(0, 20)}...`}
