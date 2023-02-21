@@ -9,7 +9,7 @@ const CardRating = () => {
         <h5 className="text-black">Angeline Lee</h5>
         <p className="text-[12px] text-blue-500">Rates 5 stars</p>
       </div>
-      <div className="flex items-center space-x-2 justify-center">
+      <div className="flex items-center space-x-0 justify-center">
         <RxStarFilled size={50} className="text-yellow-500 " />
         <RxStarFilled size={50} className="text-yellow-500" />
         <RxStarFilled size={50} className="text-yellow-500" />
