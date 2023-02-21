@@ -46,7 +46,7 @@ const ProjectDetailAdmin = ({ itemData }) => {
           </p>
           <h3 className="md:text-3xl text-xl">Project Name 1</h3>
           <div className="overflow-y-auto  flex flex-wrap lg:flex-nowrap w-full gap-2">
-            <div className="lg:w-1/3 w-full md:hidden flex flex-col pl-0 2xl:pl-16">
+            <div className="lg:w-1/3 w-full lg:hidden flex flex-col pl-0 2xl:pl-16">
               <div className="py-2">
                 <ListTeam team={itemData.team} />
               </div>
@@ -54,7 +54,11 @@ const ProjectDetailAdmin = ({ itemData }) => {
                 <div className="py-2">
                   <CardExtendDeliver />
                 </div>
-              ) : null}
+              ) : (
+                <div className="py-2">
+                  <CardExtendDeliver />
+                </div>
+              )}
 
               <div className="py-2">
                 <DetailProject itemData={itemData} />
@@ -66,7 +70,7 @@ const ProjectDetailAdmin = ({ itemData }) => {
                 </div>
               </div>
             </div>
-            <div className="lg:w-2/3 pr-0 md:pr-9 w-full">
+            <div className="lg:w-[75%] pr-0 md:pr-9 w-full">
               <div className="py-2">
                 <Requiretment />
               </div>
@@ -94,12 +98,16 @@ const ProjectDetailAdmin = ({ itemData }) => {
               </div>
             </div>
 
-            <div className="lg:w-1/3 w-full md:flex hidden  flex-col pl-0 2xl:pl-16">
+            <div className="lg:w-1/3 w-full lg:flex hidden  flex-col pl-0 2xl:pl-16">
               {itemData.status != "Completed" ? (
                 <div className="py-2">
                   <CardExtendDeliver />
                 </div>
-              ) : null}
+              ) : (
+                <div className="py-2">
+                  <CardExtendDeliver />
+                </div>
+              )}
 
               <div className="py-2">
                 <DetailProject itemData={itemData} />

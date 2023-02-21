@@ -126,7 +126,7 @@ const SideBar = () => {
           open ? "sidebar visible" : "w-0"
         } lg:w-[190px] 2xl:w-[256px] bg-white fixed SmoothAnimation  left-0 z-20 overflow-hidden  bottom-0 top-0  border-r`}
       >
-        <div className="justify-center   mt-3">
+        <div className="justify-center   px-2  mt-3">
           <div
             className={`text-white flex justify-between  font-medium text-2xl text-center  pr-3  ${
               !open && "sidebar visible "
@@ -153,7 +153,9 @@ const SideBar = () => {
         </div>
 
         <ul
-          className={`pt-6    SmoothAnimation ${!open && "sidebar visible "}`}
+          className={`pt-6 pl-2   SmoothAnimation ${
+            !open && "sidebar visible "
+          }`}
         >
           {menu.map((menu, index) => (
             <div>
@@ -166,7 +168,7 @@ const SideBar = () => {
                           !open && "sidebar visible "
                         } space-x-3 mt-3 py-[5px] items-center text-gray-400  w-full ${
                           clicked === menu.linkurl
-                            ? "border-[#007AFF] text-[#131313]"
+                            ? "border-[#007AFF] font-[600] text--font text-[#131313]"
                             : "border-r-0"
                         } `}
                         onClick={() => {

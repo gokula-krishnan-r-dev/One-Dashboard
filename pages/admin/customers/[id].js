@@ -132,7 +132,7 @@ const DetailCustomer = ({ itemData }) => {
             </div>
           </div>
           <div className="py-0 lg:w-2/5 sm:w-9/12 w-full">
-            <div className="p-6">
+            <div className="px-6">
               <p className="text-blue-500 lg:text-[15px] 2xl:text-[16px] text-[16px]">
                 Billing Address
               </p>

@@ -93,6 +93,7 @@ const Login = () => {
 
                   <div className="absolute right-1 top-3 xl:top-[6px] 2xl:top-3 flex items-center">
                     <BiShow
+                      color={passwordShown ? "black" : "#DBDBDB"}
                       size={24}
                       className="text-gray-200"
                       onClick={tooglePssword}

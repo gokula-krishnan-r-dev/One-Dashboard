@@ -61,7 +61,7 @@ const Client = () => {
                 ref={wrapperRef}
                 className="w-full lg:w-[60%]  flex justify-between items-center gap-2 flex-wrap md:flex-nowrap"
               >
-                <div className="w-[100%] bg-[white] md:w-[38%] border relative mt-2">
+                <div className="w-[100%] bg-[white] md:w-[39%] border relative mt-2">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-2">
                     <button
                       type="submit"
@@ -76,7 +76,7 @@ const Client = () => {
                     className="pl-10 py-2.5 w-full outline-none"
                   />
                 </div>
-                <div className="w-[48%] md:w-[21%] border relative mt-2">
+                <div className="w-[48%] md:w-[29%] border relative mt-2">
                   <div
                     className="select relative cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
                     onClick={(e) => {
@@ -134,7 +134,7 @@ const Client = () => {
                     )}
                   </div>
                 </div>
-                <div className="w-[48%] md:w-[25%]   border relative mt-2">
+                <div className="w-[48%] md:w-[29%]   border relative mt-2">
                   <div
                     className="select relative  cursor-pointer block bg-white  w-full px-[16px]  text-black  h-[45px]"
                     onClick={(e) => {
