@@ -13,10 +13,10 @@ const DetailInvoice = () => {
             </h4>
           </div>
           <div className="md:block font-bold w-full">
-            <h3 className="text-2xl  2xl:text-[24px] xl:text-[18px] text-blue-600 md:text-right py-1">
+            <h3 className="text-[17px]  2xl:text-[24px] xl:text-[18px] text-blue-600 text-right md:text-right py-1">
               Invoice
             </h3>
-            <h3 className="text-2xl  2xl:text-[24px] xl:text-[18px]  items-end flex justify-end text-blue-600">
+            <h3 className="text-[17px]  2xl:text-[24px] xl:text-[18px]  items-end flex justify-end text-blue-600">
               #OD170720201002
             </h3>
           </div>
@@ -31,10 +31,10 @@ const DetailInvoice = () => {
             Bill To
           </p>
           <div className="flex justify-between">
-            <p className="text-[#131313] font-normal text-[16px] 2xl:text-[16px] xl:text-[14px] w-40 font-play">
+            <p className="text-[#131313] font-normal text-[13px] 2xl:text-[16px] xl:text-[14px] w-[120px] font-play">
               Angeline Lee 1234 State St Manila, Philippines, 1234
             </p>
-            <div className="w-44 text-[16px] 2xl:text-[16px] xl:text-[13px]">
+            <div className="w-[130px] text-[12px] 2xl:text-[16px] xl:text-[13px]">
               <ul className="flex items-center justify-between">
                 <li className="text-gray-400 ">Issue Date</li>
                 <li className="text-black">July 20, 2021</li>
