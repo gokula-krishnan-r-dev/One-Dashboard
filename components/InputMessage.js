@@ -38,7 +38,7 @@ const InputMessage = () => {
             <React.Fragment>
               <form className="mt-4 pl-2">
                 <div className="w-[98%]  mb-4 border border-gray-200 bg-gray-50 ">
-                  <div className="px-0  py-2 bg-white rounded-t-lg">
+                  <div className="px-4  py-2 bg-white rounded-t-lg">
                     <textarea
                       maxLength={2500}
                       onChange={(e) => setTextvalue(e.target.value.length)}
