@@ -38,7 +38,7 @@ const InputMessage = () => {
             <React.Fragment>
               <form className="mt-4 pl-2">
                 <div className="w-[98%]  mb-4 border border-gray-200 bg-gray-50 ">
-                  <div className="px-4  py-2 bg-white rounded-t-lg">
+                  <div className="px-0  py-2 bg-white rounded-t-lg">
                     <textarea
                       maxLength={2500}
                       onChange={(e) => setTextvalue(e.target.value.length)}
@@ -62,7 +62,6 @@ const InputMessage = () => {
                         type="button"
                         className="inline-flex justify-center p-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600"
                       >
-                        {/* <RiEmotionHappyLine size={20} /> */}
                         <Image src={sendfileicon} alt="icon" />
                       </button>
                       <button
