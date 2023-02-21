@@ -7,7 +7,7 @@ import zipicon from "../../public/img/icon/zipicon.svg"
 const DetailREquiretment = () => {
   return (
     <div className="text-white SmoothAnimation smooth-tras text-gray-400 p-2 font-play">
-      <div className="flex space-x-24 pt-3">
+      <div className="flex space-x-6 sm:space-x-6 md:space-x-24 pt-3">
         <div className="block py-2 font-normal">
           <p className="text-[#131313] 2xl:text-[14px] text-sm xl:text-[12px] py-1 ">
             Created
@@ -46,30 +46,31 @@ const DetailREquiretment = () => {
         sagittis.
       </p>
       <div className="flex space-x-2 items-center py-4">
-        <div className=" w-[135px] h-[50x] bg-gray-100 flex items-center space-x-2  py-1">
+        <div className="md:w-[165px] w-[120px] h-[50x] bg-gray-100 flex items-center space-x-2  py-1">
           <Image
             width={32}
             height={32}
             alt="loog"
             src={photoicon}
-            className="ml-4"
+            className="ml-4 md:w-[32px] w-[25px]"
           />
           <div className="block">
-            <p className="text-black text-sm py-1">shoes.jpg</p>
+            <p className="text-black text-[12px] md:text-sm py-1">shoes.jpg</p>
             <p className="text-gray-400 text-[10px]">12 Mb</p>
           </div>
         </div>
-        <div className="w-[165px] h-[50px] bg-gray-100 flex items-center space-x-2 py-1">
-          {/* <GrDocumentZip size={32} className="text-white" /> */}
+        <div className="md:w-[165px] w-[135px] h-[50px] bg-gray-100 flex items-center space-x-2 py-1">
           <Image
             width={32}
             height={32}
             alt="loog"
             src={zipicon}
-            className="ml-4"
+            className="ml-4 md:w-[32px] w-[25px]"
           />
           <div className="block">
-            <p className="text-black text-sm py-1">reference.zip</p>
+            <p className="text-black text-[12px] md:text-sm py-1">
+              reference.zip
+            </p>
             <p className="text-gray-400 text-[10px]">135 Mb</p>
           </div>
         </div>
