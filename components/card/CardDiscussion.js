@@ -50,7 +50,7 @@ const CardDisscussion = () => {
                     height={45}
                   />
                 </div>
-                <div className="block py-0">
+                <div className="block pl-2 lg:pl-0 py-0">
                   <h4 className="text-black text-[20px] 2xl:text-[16px] xl:text-[16px] font-medium">
                     {discuss.name}
                   </h4>

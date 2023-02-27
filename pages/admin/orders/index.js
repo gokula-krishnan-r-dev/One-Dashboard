@@ -156,9 +156,31 @@ const Order = () => {
                             <td className="text-gray-500 text-sm font-medium font-light py-2 px-6">
                               $ {order.amount}
                             </td>
-                            <td className="text-gray-500 text-sm font-medium font-light py-2 flex justify-center items-center">
+                            {/* <td className="text-gray-500 text-sm font-medium font-light py-2 flex justify-center items-center">
                               <div
                                 className={`p-1 px-2 py-1 text-center font-normal rounded-2xl text-[12px] ${
+                                  order.status === "Completed"
+                                    ? "text-green-500 bg-green-50"
+                                    : order.status === "Pending Payment"
+                                    ? "text-orange-400 bg-orange-100"
+                                    : order.status === "In Repair"
+                                    ? "text-red-400 bg-red-100"
+                                    : "text-gray-400 bg-gray-200"
+                                }`}
+                              >
+                                <Link
+                                  href={"/admin/" + order.id}
+                                  key={order.id}
+                                >
+                                  {" "}
+                                  {order.status}
+                                </Link>
+                              </div>
+                              $ {order.amount}
+                            </td> */}
+                            <td className="text-gray-500 text-sm font-medium font-light py-2 px-6">
+                              <div
+                                className={`py-1 text-center font-normal rounded-2xl text-[12px] ${
                                   order.status === "Completed"
                                     ? "text-green-500 bg-green-50"
                                     : order.status === "Pending Payment"
