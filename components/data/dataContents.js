@@ -847,6 +847,46 @@ const members = [
     img: "img/user/avatar_team.png",
     act: <AiOutlineMore size={24} />,
   },
+  {
+    id: 3,
+    name: "David Morgan",
+    country: "United States",
+    email: "davidmorgan@teamwork.com",
+    img: "img/user/avatar_team.png",
+    act: <AiOutlineMore size={24} />,
+  },
+  {
+    id: 4,
+    name: "David Morgan",
+    country: "United States",
+    email: "davidmorgan@teamwork.com",
+    img: "img/user/avatar_team.png",
+    act: <AiOutlineMore size={24} />,
+  },
+  {
+    id: 5,
+    name: "David Morgan",
+    country: "United States",
+    email: "davidmorgan@teamwork.com",
+    img: "img/user/avatar_team.png",
+    act: <AiOutlineMore size={24} />,
+  },
+  {
+    id: 6,
+    name: "David Morgan",
+    country: "United States",
+    email: "davidmorgan@teamwork.com",
+    img: "img/user/avatar_team.png",
+    act: <AiOutlineMore size={24} />,
+  },
+  {
+    id: 7,
+    name: "David Morgan",
+    country: "United States",
+    email: "davidmorgan@teamwork.com",
+    img: "img/user/avatar_team.png",
+    act: <AiOutlineMore size={24} />,
+  },
 ]
 const AddMemberData = [
   {

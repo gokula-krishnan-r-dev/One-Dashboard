@@ -92,21 +92,13 @@ const Team = () => {
                             <td className="text-[14px] relative text-gray-500 font-medium fonr-normal px-6 py-4 whitespace-nowrap flex justify-center items-center">
                               {/* {member.act} */}
                               <AiOutlineMore
-                                onClick={() => setremoveOpen(!removeopen)}
+                                onClick={() => setremoveOpen(index)}
                                 size={24}
                               />
-                              {removeopen && (
+                              {removeopen === index && (
                                 <div
                                   key={index}
-                                  className="bg-white absolute border top-12 px-4 py-2 rounded-[5px]"
-                                >
-                                  Remove
-                                </div>
-                              )}
-                              {removeopen1 && (
-                                <div
-                                  key={index}
-                                  className="bg-white absolute border top-9 p-4"
+                                  className="bg-white z-50 cursor-pointer absolute border top-12 px-4 py-2 rounded-[5px]"
                                 >
                                   Remove
                                 </div>
@@ -136,15 +128,15 @@ const Team = () => {
                           {member.name}
                         </p>
                         <AiOutlineMore
-                          onClick={() => setremoveOpen(!removeopen)}
+                          onClick={() => setremoveOpen(index)}
                           size={20}
                           className=""
                         />
                       </div>
-                      {removeopen && (
+                      {removeopen === index && (
                         <div
                           key={index}
-                          className="bg-white right-0 absolute border top-12 px-4 py-2 rounded-[5px]"
+                          className="bg-white z-50 cursor-pointer absolute border top-12 right-0 px-4 py-2 rounded-[5px]"
                         >
                           Remove
                         </div>
